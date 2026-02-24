@@ -1,310 +1,377 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>ZikrMate – Global Impact</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<title>ZikrMate – Global Remembrance</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
 
-    body {
-      height: 100vh;
-      overflow: hidden;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: linear-gradient(135deg, #0f172a, #020617);
-      color: #e2e8f0;
-      display: flex;
-      flex-direction: column;
-    }
+body{
+  height:100vh;
+  overflow:hidden;
+  font-family:"Segoe UI", Roboto, sans-serif;
+  background:radial-gradient(circle at top,#102a43,#0b1e2d 70%);
+  color:#e6f1ff;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+}
 
-    header {
-      text-align: center;
-      padding: 40px 20px 20px 20px;
-    }
+body.ramadan{
+  background:radial-gradient(circle at top,#0b1e40,#050d1f 70%);
+}
 
-    header h1 {
-      font-size: 18px;
-      font-weight: 500;
-      color: #94a3b8;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
+/* Pattern */
+.pattern{
+  position:absolute;
+  inset:0;
+  background-image:url("https://www.transparenttextures.com/patterns/arabesque.png");
+  opacity:.03;
+  z-index:0;
+}
 
-    .main-counter {
-      font-size: 64px;
-      font-weight: 700;
-      margin-top: 10px;
-      color: #f8fafc;
-    }
+/* Stars */
+.stars{position:absolute;inset:0;z-index:0}
+.star{
+  position:absolute;width:2px;height:2px;
+  background:white;border-radius:50%;
+  opacity:.6;
+  animation:twinkle 3s infinite alternate;
+}
+@keyframes twinkle{from{opacity:.2}to{opacity:.8}}
 
-    .layout {
-      flex: 1;
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 30px;
-      padding: 0 60px 30px 60px;
-      max-width: 1400px;
-      width: 100%;
-      margin: auto;
-    }
+/* Logo */
+.logo-container{
+  position:absolute;
+  top:30px;right:40px;
+  z-index:2;
+  opacity:.9;
+}
+.logo-container img{
+  width:70px;
+  filter:drop-shadow(0 0 12px rgba(61,169,252,.35));
+}
 
-    .panel {
-      background: rgba(255,255,255,0.04);
-      border-radius: 16px;
-      backdrop-filter: blur(18px);
-      border: 1px solid rgba(255,255,255,0.06);
-      padding: 25px;
-    }
+/* Header */
+header{
+  text-align:center;
+  padding:60px 20px 20px;
+  z-index:2;
+}
 
-    .panel h2 {
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #94a3b8;
-      margin-bottom: 20px;
-    }
+.live-indicator{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-size:12px;
+  color:#3da9fc;
+}
+.live-dot{
+  width:8px;height:8px;
+  background:#3da9fc;
+  border-radius:50%;
+  animation:pulse 1.5s infinite;
+}
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(61,169,252,.6)}
+  70%{box-shadow:0 0 0 8px rgba(61,169,252,0)}
+  100%{box-shadow:0 0 0 0 rgba(61,169,252,0)}
+}
 
-    /* Global Stats Grid */
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
-    }
+.hijri{margin-top:6px;font-size:13px;color:#9bbbd4}
 
-    .stat-card {
-      background: rgba(255,255,255,0.03);
-      padding: 15px;
-      border-radius: 12px;
-    }
+.main-counter{
+  font-size:64px;
+  font-weight:600;
+  margin-top:15px;
+  text-shadow:0 0 18px rgba(61,169,252,.25);
+}
 
-    .stat-card strong {
-      display: block;
-      font-size: 13px;
-      color: #cbd5e1;
-    }
+.blessing{
+  margin-top:14px;
+  font-size:14px;
+  opacity:.85;
+}
 
-    .stat-card span {
-      font-size: 18px;
-      font-weight: 600;
-      margin-top: 4px;
-      display: block;
-      color: #f1f5f9;
-    }
+/* Layout */
+.layout{
+  flex:1;
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  gap:30px;
+  padding:0 60px 40px;
+  max-width:1400px;
+  margin:auto;
+  width:100%;
+  z-index:2;
+}
 
-    /* Goal Progress */
-    .progress-bar {
-      height: 8px;
-      background: rgba(255,255,255,0.08);
-      border-radius: 10px;
-      overflow: hidden;
-      margin-top: 12px;
-    }
+/* Panels */
+.panel{
+  background:rgba(255,255,255,.04);
+  border-radius:18px;
+  backdrop-filter:blur(18px);
+  border:1px solid rgba(61,169,252,.15);
+  padding:28px;
+  opacity:0;
+  transform:translateY(20px);
+  transition:.7s ease;
+}
+.panel.visible{opacity:1;transform:translateY(0)}
 
-    .progress-fill {
-      height: 100%;
-      width: 0%;
-      background: #22c55e;
-      transition: width 0.8s ease;
-    }
+.panel h2{
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  color:#3da9fc;
+  margin-bottom:22px;
+}
 
-    /* Leaderboard */
-    .leaderboard-row {
-      display: flex;
-      justify-content: space-between;
-      padding: 10px 0;
-      font-size: 14px;
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-    }
+/* Stats */
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:16px;
+}
+.stat-card{
+  background:rgba(255,255,255,.03);
+  padding:16px;
+  border-radius:14px;
+}
+.stat-card strong{font-size:12px;color:#9bbbd4}
+.stat-card span{display:block;margin-top:6px;font-size:18px;font-weight:600}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-    }
+/* Progress */
+.progress-bar{
+  height:8px;
+  background:rgba(255,255,255,.1);
+  border-radius:10px;
+  overflow:hidden;
+  margin-top:14px;
+}
+.progress-fill{
+  height:100%;
+  width:0%;
+  background:linear-gradient(90deg,#3da9fc,#1f7ed6);
+  transition:width .8s ease;
+  box-shadow:0 0 12px rgba(61,169,252,.5);
+}
 
-    .download-badge {
-      height: 50px;
-      transition: opacity 0.2s ease;
-    }
+/* Leaderboard */
+#leaderboardContainer{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
 
-    .download-badge:hover {
-      opacity: 0.85;
-    }
+.leaderboard-row{
+  display:grid;
+  grid-template-columns:70px 1fr 120px 100px;
+  align-items:center;
+  padding:14px 18px;
+  border-radius:14px;
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(61,169,252,.08);
+  opacity:0;
+  transform:translateY(15px);
+  animation:fadeUp .5s ease forwards;
+}
+@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
 
-    @media(max-width: 1100px) {
-      .layout { grid-template-columns: 1fr; padding: 0 25px 25px 25px; }
-      .main-counter { font-size: 42px; }
-      body { overflow: auto; }
-    }
+.leaderboard-row.top1{
+  background:linear-gradient(90deg,rgba(61,169,252,.18),rgba(61,169,252,.05));
+  border:1px solid rgba(61,169,252,.45);
+}
 
-  </style>
+.rank{font-weight:600;color:#9bbbd4}
+.medal{font-size:18px}
+.streak{font-size:12px;color:#7ec8ff}
+.score{text-align:right;font-weight:600}
+
+/* Footer */
+footer{text-align:center;padding:20px;z-index:2}
+.download-badge{height:50px}
+
+@media(max-width:1100px){
+  .layout{grid-template-columns:1fr;padding:0 20px 30px}
+  body{overflow:auto}
+  .main-counter{font-size:42px}
+}
+</style>
 </head>
 
 <body>
 
+<div class="pattern"></div>
+<div class="stars" id="stars"></div>
+
+<div class="logo-container">
+  <img src="https://github.com/Ahteshamknr/zikr-live-counter/blob/main/ZikrMate_Logo.jpeg" alt="ZikrMate">
+</div>
+
 <header>
-  <h1>Global Zikr Completed</h1>
+  <div class="live-indicator">
+    <div class="live-dot"></div> Live Updating
+  </div>
+  <div class="hijri" id="hijriDate"></div>
   <div class="main-counter" id="globalCounter">0</div>
+  <div class="blessing" id="blessingText"></div>
 </header>
 
 <div class="layout">
 
-  <!-- LEFT: GLOBAL STATS -->
   <div class="panel">
     <h2>Global Tasbeh Statistics</h2>
-    <div class="stats-grid" id="statsContainer">
-      Loading...
-    </div>
+    <div class="stats-grid" id="statsContainer"></div>
   </div>
 
-  <!-- RIGHT: GOAL + LEADERBOARD -->
-  <div style="display:flex; flex-direction:column; gap:30px;">
-
+  <div style="display:flex;flex-direction:column;gap:30px">
     <div class="panel">
       <h2>Community Goal</h2>
-      <div id="goalTitle">Loading...</div>
-      <div id="goalNumbers" style="margin-top:6px; font-size:14px;"></div>
-      <div class="progress-bar">
-        <div class="progress-fill" id="goalProgress"></div>
-      </div>
+      <div id="goalTitle"></div>
+      <div id="goalNumbers" style="margin-top:8px;font-size:14px"></div>
+      <div class="progress-bar"><div class="progress-fill" id="goalProgress"></div></div>
     </div>
 
     <div class="panel">
       <h2>Top Contributors This Month</h2>
-      <div id="leaderboardContainer">Loading...</div>
+      <div id="leaderboardContainer"></div>
     </div>
-
   </div>
 
 </div>
 
 <footer>
-  <a href="https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME" target="_blank">
+  <a href="https://play.google.com/store/apps/details?id=com.ahteshamtech.zikrmate" target="_blank">
     <img class="download-badge"
-      src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg">
+     src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg">
   </a>
 </footer>
 
 <script type="module">
+import{initializeApp}from"https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import{getDatabase,ref,onValue,query,orderByChild,limitToLast}from"https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-import { getDatabase, ref, onValue, query, orderByChild, limitToLast } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
-
-const firebaseConfig = {
-  apiKey: "AIzaSyBrAE46NAujjWZz6kHGzFBlNGeEQTP48bQ",
-  authDomain: "zikrmate-a4546.firebaseapp.com",
-  databaseURL: "https://zikrmate-a4546-default-rtdb.firebaseio.com",
-  projectId: "zikrmate-a4546"
+const firebaseConfig={
+ apiKey:"AIzaSyBrAE46NAujjWZz6kHGzFBlNGeEQTP48bQ",
+ authDomain:"zikrmate-a4546.firebaseapp.com",
+ databaseURL:"https://zikrmate-a4546-default-rtdb.firebaseio.com",
+ projectId:"zikrmate-a4546"
 };
 
-const app = initializeApp(firebaseConfig);
-const db = getDatabase(app);
+const app=initializeApp(firebaseConfig);
+const db=getDatabase(app);
 
-const defaultTargets = {
-  "SubhanAllah": 33,
-  "Alhamdulillah": 33,
-  "Allahu Akbar": 33,
-  "SubhanAllahi wa bihamdihi": 100,
-  "Astaghfirullah": 100,
-  "La ilaha illallah": 100,
-  "Durood": 10
+const defaultTargets={
+ "SubhanAllah":33,"Alhamdulillah":33,"Allahu Akbar":33,
+ "SubhanAllahi wa bihamdihi":100,"Astaghfirullah":100,
+ "La ilaha illallah":100,"Durood":10
 };
 
-/* ---------- GLOBAL COUNTER + STATS ---------- */
-
-let previousValue = 0;
-const counterEl = document.getElementById("globalCounter");
-
-function animateValue(start, end, duration) {
-  let startTimestamp = null;
-  const step = (timestamp) => {
-    if (!startTimestamp) startTimestamp = timestamp;
-    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-    const value = Math.floor(progress * (end - start) + start);
-    counterEl.innerText = value.toLocaleString();
-    if (progress < 1) requestAnimationFrame(step);
-  };
-  requestAnimationFrame(step);
+/* Stars */
+for(let i=0;i<80;i++){
+ const s=document.createElement("div");
+ s.className="star";
+ s.style.left=Math.random()*100+"%";
+ s.style.top=Math.random()*100+"%";
+ s.style.animationDelay=Math.random()*3+"s";
+ document.getElementById("stars").appendChild(s);
 }
 
-onValue(ref(db, "global_stats/predefined_counts"), (snap) => {
-  const data = snap.val();
-  if (!data) return;
-
-  let total = 0;
-  const statsContainer = document.getElementById("statsContainer");
-  statsContainer.innerHTML = "";
-
-  Object.keys(data).forEach(key => {
-    const exact = data[key] * (defaultTargets[key] || 33);
-    total += exact;
-
-    statsContainer.innerHTML += `
-      <div class="stat-card">
-        <strong>${key}</strong>
-        <span>${exact.toLocaleString()}</span>
-      </div>
-    `;
-  });
-
-  animateValue(previousValue, total, 1000);
-  previousValue = total;
+/* Hijri */
+const d=new Date();
+fetch(`https://api.aladhan.com/v1/gToH?date=${d.getDate()}-${d.getMonth()+1}-${d.getFullYear()}`)
+.then(r=>r.json()).then(res=>{
+ const h=res.data.hijri;
+ document.getElementById("hijriDate").innerText=
+  `${h.day} ${h.month.en} ${h.year} AH`;
+ if(h.month.number===9) document.body.classList.add("ramadan");
 });
 
-/* ---------- COMMUNITY GOAL ---------- */
+/* Quotes */
+const blessings=[
+ "Verily, in the remembrance of Allah do hearts find rest.",
+ "Every remembrance is light upon light.",
+ "Consistency in zikr strengthens the soul."
+];
+const blessingEl=document.getElementById("blessingText");
+function rotateBlessing(){
+ blessingEl.style.opacity=0;
+ setTimeout(()=>{
+  blessingEl.innerText=blessings[Math.floor(Math.random()*blessings.length)];
+  blessingEl.style.opacity=.85;
+ },400);
+}
+rotateBlessing();
+setInterval(rotateBlessing,6000);
 
-onValue(ref(db, "community_goal"), (snap) => {
-  const goal = snap.val();
-  if (!goal) return;
+/* Global Counter */
+let prev=0;
+const counter=document.getElementById("globalCounter");
+function animate(start,end){
+ let t0=null;
+ function step(t){
+  if(!t0)t0=t;
+  const p=Math.min((t-t0)/1000,1);
+  counter.innerText=Math.floor(p*(end-start)+start).toLocaleString();
+  if(p<1)requestAnimationFrame(step);
+ }
+ requestAnimationFrame(step);
+}
 
-  const milestone = goal.milestone || 1;
-  const targetName = goal.targetName;
-  document.getElementById("goalTitle").innerText = goal.title;
-
-  onValue(ref(db, "global_stats/predefined_counts/" + targetName), (s) => {
-    const cycles = s.val() || 0;
-    const exact = cycles * (defaultTargets[targetName] || 33);
-    const percent = Math.min((exact / milestone) * 100, 100);
-
-    document.getElementById("goalNumbers").innerText =
-      `${exact.toLocaleString()} / ${milestone.toLocaleString()}`;
-
-    document.getElementById("goalProgress").style.width = percent + "%";
-  });
+onValue(ref(db,"global_stats/predefined_counts"),snap=>{
+ const data=snap.val(); if(!data)return;
+ let total=0;
+ const stats=document.getElementById("statsContainer");
+ stats.innerHTML="";
+ Object.keys(data).forEach(k=>{
+  const exact=data[k]*(defaultTargets[k]||33);
+  total+=exact;
+  stats.innerHTML+=`
+   <div class="stat-card"><strong>${k}</strong><span>${exact.toLocaleString()}</span></div>`;
+ });
+ animate(prev,total); prev=total;
 });
 
-/* ---------- LEADERBOARD ---------- */
-
-const monthKey = new Date().getFullYear() + "_" +
-                 String(new Date().getMonth()+1).padStart(2,'0');
-
-const leaderboardRef = query(
-  ref(db, "monthly_leaderboards/" + monthKey),
-  orderByChild("score"),
-  limitToLast(5)
-);
-
-onValue(leaderboardRef, (snap) => {
-  const data = snap.val();
-  const container = document.getElementById("leaderboardContainer");
-  container.innerHTML = "";
-
-  if (!data) {
-    container.innerText = "No leaderboard data yet.";
-    return;
-  }
-
-  const users = Object.values(data).reverse();
-
-  users.forEach((user, index) => {
-    container.innerHTML += `
-      <div class="leaderboard-row">
-        <span>#${index+1} ${user.name}</span>
-        <span>${user.score}</span>
-      </div>
-    `;
-  });
+/* Community Goal */
+onValue(ref(db,"community_goal"),snap=>{
+ const g=snap.val(); if(!g)return;
+ document.getElementById("goalTitle").innerText=g.title;
+ onValue(ref(db,"global_stats/predefined_counts/"+g.targetName),s=>{
+  const exact=(s.val()||0)*(defaultTargets[g.targetName]||33);
+  document.getElementById("goalNumbers").innerText=
+   `${exact.toLocaleString()} / ${g.milestone.toLocaleString()}`;
+  document.getElementById("goalProgress").style.width=
+   Math.min((exact/g.milestone)*100,100)+"%";
+ });
 });
 
+/* Leaderboard */
+const m=new Date();
+const key=m.getFullYear()+"_"+String(m.getMonth()+1).padStart(2,'0');
+const lb=query(ref(db,"monthly_leaderboards/"+key),orderByChild("score"),limitToLast(5));
+
+onValue(lb,snap=>{
+ const data=snap.val();
+ const c=document.getElementById("leaderboardContainer");
+ c.innerHTML="";
+ if(!data)return;
+ Object.values(data).reverse().forEach((u,i)=>{
+  const medal=["🥇","🥈","🥉"][i]||`#${i+1}`;
+  c.innerHTML+=`
+   <div class="leaderboard-row top${i+1}">
+    <div class="rank"><span class="medal">${medal}</span></div>
+    <div>${u.name}</div>
+    <div class="streak">${u.streak?`🔥 ${u.streak} days`:"—"}</div>
+    <div class="score">${u.score.toLocaleString()}</div>
+   </div>`;
+ });
+});
+
+/* Animate Panels */
+window.onload=()=>document.querySelectorAll(".panel").forEach(p=>p.classList.add("visible"));
 </script>
 
 </body>
