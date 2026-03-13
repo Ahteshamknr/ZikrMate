@@ -1,0 +1,2145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>ZikrMate – Counter</title>
+<meta name="description" content="ZikrMate live counter – track your spiritual progress alongside the global ummah."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Firebase SDK -->
+<script type="module">
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
+import { getAuth, signInAnonymously } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js';
+import { getDatabase, ref, onValue, set, get, runTransaction, query, orderByChild, limitToLast } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js';
+const cfg = {
+  apiKey:"AIzaSyBrAE46NAujjWZz6kHGzFBlNGeEQTP48bQ",
+  authDomain:"zikrmate-a4546.firebaseapp.com",
+  databaseURL:"https://zikrmate-a4546-default-rtdb.firebaseio.com",
+  projectId:"zikrmate-a4546",
+  storageBucket:"zikrmate-a4546.firebasestorage.app",
+  messagingSenderId:"421414480361",
+  appId:"1:421414480361:web:d67709cae28dc8303e4378",
+  measurementId:"G-V3F907GMMM"
+};
+try {
+  const app = initializeApp(cfg);
+  const db = getDatabase(app);
+  const auth = getAuth(app);
+  signInAnonymously(auth).then(cred => {
+    window.__uid = cred.user.uid;
+    window.__db = db;
+    window.__fbRef = ref;
+    window.__fbOnValue = onValue;
+    window.__fbSet = set;
+    window.__fbGet = get;
+    window.__fbTx = runTransaction;
+    window.__fbQuery = query;
+    window.__fbOrderByChild = orderByChild;
+    window.__fbLimitToLast = limitToLast;
+    window.__firebaseReady = true;
+    window.dispatchEvent(new Event('firebase-ready'));
+  }).catch(e => { window.__firebaseReady = false; console.warn('FB auth failed', e); });
+} catch(e){ window.__firebaseReady = false; }
+</script>
+
+<style>
+/* ═══════════════════════════════════════════
+   DESIGN SYSTEM — exact mirror of ZikrMate website
+═══════════════════════════════════════════ */
+:root {
+  --cyan:        #00C8F0;
+  --cyan-light:  #5DDFFF;
+  --cyan-dim:    rgba(0,200,240,0.12);
+  --cyan-glow:   rgba(0,200,240,0.4);
+  --blue-mid:    #1A7FD4;
+  --gold:        #00C8F0;
+  --gold-light:  #5DDFFF;
+  --gold-dim:    rgba(0,200,240,0.12);
+  --gold-glow:   rgba(0,200,240,0.4);
+  --emerald:     #00ff0d;
+  --emerald-dim: rgba(26,127,212,0.12);
+  --ink:         #070D1A;
+  --ink2:        #0B1220;
+  --ink3:        #0F1828;
+  --surface:     rgba(255,255,255,0.035);
+  --surface2:    rgba(255,255,255,0.06);
+  --rim:         rgba(0,200,240,0.2);
+  --rim2:        rgba(255,255,255,0.07);
+  --text:        #E4EFFF;
+  --text-dim:    rgba(228,239,255,0.52);
+  --text-faint:  rgba(228,239,255,0.26);
+  --font-display:'Cormorant Garamond',Georgia,serif;
+  --font-ui:     'Syne',sans-serif;
+  --font-mono:   'DM Mono',monospace;
+  --ease-spring: cubic-bezier(0.175,0.885,0.32,1.275);
+  --ease-out:    cubic-bezier(0.22,1,0.36,1);
+}
+
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+html { overflow-x:hidden; cursor:none; scroll-behavior:smooth; }
+body {
+  font-family:var(--font-ui);
+  background:var(--ink);
+  color:var(--text);
+  min-height:100vh;
+  overflow-x:hidden;
+  -webkit-tap-highlight-color:transparent;
+  user-select:none;
+  position:relative;
+}
+
+/* ══ CURSOR (exact from website) ══ */
+#cursor {
+  position:fixed; top:0; left:0; pointer-events:none; z-index:99999;
+  width:10px; height:10px; background:var(--gold);
+  border-radius:50%; transform:translate(-50%,-50%);
+  transition:width .2s,height .2s,background .2s;
+  mix-blend-mode:difference;
+}
+#cursor-ring {
+  position:fixed; top:0; left:0; pointer-events:none; z-index:99998;
+  width:36px; height:36px; border:1px solid var(--gold);
+  border-radius:50%; transform:translate(-50%,-50%);
+  transition:transform .12s var(--ease-out),width .3s,height .3s,opacity .3s;
+  opacity:0.6;
+}
+@media(max-width:700px){ #cursor,#cursor-ring{display:none;} html{cursor:auto;} }
+
+/* ══ ATMOSPHERE (exact from website) ══ */
+#bgCanvas { position:fixed; inset:0; z-index:0; pointer-events:none; opacity:0.7; }
+.noise-overlay {
+  position:fixed; inset:0; z-index:1; pointer-events:none; opacity:0.035;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-size:200px;
+}
+.radial-gold {
+  position:fixed; z-index:1; pointer-events:none;
+  width:900px; height:900px; border-radius:50%;
+  background:radial-gradient(circle,rgba(0,200,240,0.055) 0%,transparent 65%);
+  top:-200px; left:50%; transform:translateX(-50%);
+}
+.radial-emerald {
+  position:fixed; z-index:1; pointer-events:none;
+  width:600px; height:600px; border-radius:50%;
+  background:radial-gradient(circle,rgba(26,127,212,0.07) 0%,transparent 65%);
+  bottom:-100px; right:-100px;
+}
+
+/* ══ NAV (exact from website) ══ */
+nav {
+  position:sticky; top:0; z-index:900;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:0 6%; height:72px;
+  background:rgba(7,13,26,0.82);
+  backdrop-filter:blur(24px) saturate(180%);
+  border-bottom:1px solid var(--rim);
+}
+.logo {
+  display:flex; align-items:center; gap:12px;
+  text-decoration:none; color:inherit;
+  font-family:var(--font-display); font-weight:600; font-size:22px; letter-spacing:.5px;
+}
+.logo-crescent {
+  width:32px; height:32px; border:2px solid var(--gold);
+  border-radius:50%; position:relative; overflow:hidden; flex-shrink:0;
+}
+.logo-crescent::after {
+  content:''; position:absolute; width:28px; height:28px; border-radius:50%;
+  background:var(--ink); top:2px; left:6px;
+}
+.nav-right { display:flex; align-items:center; gap:20px; }
+.nav-link {
+  font-family:var(--font-mono); font-size:11px; font-weight:500;
+  letter-spacing:2px; text-transform:uppercase; text-decoration:none;
+  color:var(--text-dim); transition:color .2s; position:relative;
+}
+.nav-link::after {
+  content:''; position:absolute; bottom:-4px; left:0;
+  width:0; height:1px; background:var(--gold); transition:width .3s var(--ease-out);
+}
+.nav-link:hover { color:var(--gold); }
+.nav-link:hover::after { width:100%; }
+.nav-cta {
+  display:flex; align-items:center; gap:10px; padding:10px 22px;
+  border:1px solid var(--gold); border-radius:4px;
+  text-decoration:none; color:var(--gold);
+  font-family:var(--font-mono); font-size:11px; letter-spacing:2px; text-transform:uppercase;
+  transition:background .25s,color .25s;
+}
+.nav-cta:hover { background:var(--gold); color:var(--ink); }
+
+/* ══ APP SHELL ══ */
+#app {
+  position:relative; z-index:10;
+  max-width:520px; margin:0 auto;
+  padding:0 0 100px;
+  min-height:100vh;
+}
+
+/* ══ TICKER (from website) ══ */
+.ticker-wrap {
+  position:relative; z-index:10; overflow:hidden;
+  border-bottom:1px solid var(--rim);
+  background:rgba(7,13,26,0.7); padding:10px 0;
+}
+.ticker-inner {
+  display:flex; gap:80px; white-space:nowrap;
+  animation:ticker 30s linear infinite;
+  font-family:var(--font-mono); font-size:10px;
+  letter-spacing:3px; text-transform:uppercase; color:var(--text-faint);
+}
+.ticker-item { display:flex; align-items:center; gap:14px; }
+.ticker-gem { color:var(--gold); }
+@keyframes ticker { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+
+/* ══ HEADER ══ */
+.app-header {
+  padding:36px 24px 0;
+  display:flex; flex-direction:column; align-items:center;
+  animation:fadeUp .7s var(--ease-out) both;
+}
+.hero-eyebrow {
+  display:inline-flex; align-items:center; gap:12px;
+  font-family:var(--font-mono); font-size:10px; font-weight:500;
+  letter-spacing:4px; text-transform:uppercase; color:var(rgb(0, 255, 0));
+  margin-bottom:10px;
+}
+.pulse-dot {
+  width:6px; height:6px; border-radius:50%; background:var(--emerald);
+  animation:heartbeat 2.2s infinite;
+}
+@keyframes heartbeat {
+  0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(43, 255, 0, 0.7);}
+  50%{transform:scale(1.3);box-shadow:0 0 0 8px rgba(0,200,240,0);}
+}
+.hijri-display {
+  font-family:var(--font-mono); font-size:10px; letter-spacing:3px;
+  color:var(--text-faint); margin-bottom:14px; text-transform:uppercase;
+  animation:fadeUp .7s .1s var(--ease-out) both;
+}
+
+/* ══ BADGES ROW ══ */
+.badges-row {
+  display:flex; align-items:center; justify-content:center; gap:10px;
+  padding:4px 0 0; animation:fadeUp .7s .15s var(--ease-out) both;
+}
+.badge {
+  display:flex; align-items:center; gap:7px;
+  background:var(--surface); border:1px solid var(--rim2);
+  border-radius:4px; padding:6px 14px;
+  cursor:pointer; font-family:var(--font-mono);
+  font-size:11px; font-weight:500; letter-spacing:1px;
+  transition:all .25s var(--ease-spring);
+}
+.badge:hover { border-color:var(--gold); color:var(--gold); transform:translateY(-1px); }
+.badge .fi { font-size:13px; }
+.theme-btn {
+  background:none; border:1px solid var(--rim2); border-radius:4px;
+  cursor:pointer; font-size:14px; padding:6px 10px; color:var(--text-faint);
+  transition:all .2s;
+}
+.theme-btn:hover { border-color:var(--gold); color:var(--gold); }
+
+/* ══ TASBEH LABEL ══ */
+.tasbeh-label-wrap {
+  margin:20px 0 0; text-align:center;
+  animation:fadeUp .7s .2s var(--ease-out) both;
+}
+.tasbeh-label {
+  font-family:var(--font-display); font-size:clamp(18px,5vw,26px);
+  font-weight:300; font-style:italic; color:var(--gold-light);
+  letter-spacing:.5px; cursor:pointer; transition:all .3s; display:inline-block;
+}
+.tasbeh-label:hover { color:var(--cyan-light); letter-spacing:2px; }
+.tasbeh-arabic {
+  font-family:'Amiri',serif; font-size:16px;
+  color:var(--text-faint); display:block; margin-top:4px;
+  transition:color .3s;
+}
+
+/* ══ COUNTER SHRINE ══ */
+.counter-shrine {
+  position:relative; display:flex; align-items:center; justify-content:center;
+  margin:22px 0 0; animation:fadeUp .8s .3s var(--ease-out) both;
+}
+.counter-shrine::before {
+  content:''; position:absolute; inset:-30px; border-radius:50%;
+  background:radial-gradient(circle,rgba(0,200,240,.08) 0%,transparent 70%);
+  animation:breathe 4s ease-in-out infinite;
+}
+@keyframes breathe {
+  0%,100%{opacity:.5;}
+  50%{opacity:1;}
+}
+
+.counter-ring {
+  position:relative;
+  width:clamp(280px,76vw,340px);
+  height:clamp(280px,76vw,340px);
+  border-radius:50%; border:1px solid var(--rim);
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  background:radial-gradient(circle at 40% 35%,rgba(0,200,240,.1) 0%,rgba(26,127,212,.05) 40%,var(--surface) 70%);
+  backdrop-filter:blur(20px);
+  cursor:pointer; transition:border-color .4s,box-shadow .4s,transform .12s;
+  -webkit-tap-highlight-color:transparent;
+}
+.counter-ring::before {
+  content:''; position:absolute; inset:10px; border-radius:50%;
+  border:1px solid rgba(0,200,240,.07); pointer-events:none;
+}
+.counter-ring:active { filter:brightness(1.08); }
+.counter-ring.ring-pulse {
+  border-color:var(--cyan);
+  box-shadow:0 0 80px rgba(0,200,240,.25),0 0 160px rgba(0,200,240,.08),inset 0 0 60px rgba(0,200,240,.06);
+}
+.counter-ring.ring-success {
+  border-color:rgba(0,200,240,.9);
+  box-shadow:0 0 100px rgba(0,200,240,.4),0 0 220px rgba(0,200,240,.12);
+}
+
+.ring-svg {
+  position:absolute; inset:0; width:100%; height:100%;
+  transform:rotate(-90deg); pointer-events:none;
+}
+.ring-track { fill:none; stroke:rgba(0,200,240,.07); stroke-width:1.5; }
+.ring-arc {
+  fill:none; stroke:var(--gold); stroke-width:1.5; stroke-linecap:round;
+  transition:stroke-dashoffset .45s var(--ease-out),stroke .3s;
+}
+
+.orbit-dot {
+  position:absolute; top:0; left:50%;
+  width:8px; height:8px; border-radius:50%;
+  background:var(--gold);
+  transform-origin:0 clamp(140px,38vw,170px);
+  animation:orbit 8s linear infinite;
+  margin-left:-4px; pointer-events:none;
+  box-shadow:0 0 10px rgba(0,200,240,.9);
+}
+@keyframes orbit { to{transform:rotate(360deg)} }
+
+.mega-num {
+  font-family:var(--font-display);
+  font-size:clamp(64px,17vw,88px);
+  font-weight:300; color:#fff; line-height:1;
+  letter-spacing:-3px; font-variant-numeric:tabular-nums;
+  transition:color .3s;
+}
+.mega-num.pop { animation:numPop .45s var(--ease-spring); }
+.mega-num.success-num { color:var(--gold-light); }
+@keyframes numPop {
+  0%{color:#fff}50%{color:var(--gold-light)}100%{color:var(--gold-light)}
+}
+
+.ring-sublabel {
+  font-family:var(--font-mono); font-size:9px; letter-spacing:4px;
+  text-transform:uppercase; color:var(--gold); opacity:.7; margin-top:10px;
+  text-align:center; max-width:160px;
+}
+
+/* ripple on tap */
+.tap-ripple {
+  position:absolute; border-radius:50%;
+  background:rgba(0,200,240,.13); transform:scale(0);
+  pointer-events:none; animation:rippleOut .65s ease-out forwards;
+}
+@keyframes rippleOut { to{transform:scale(3.5);opacity:0;} }
+
+/* ══ PILLS ══ */
+.pills-row {
+  display:flex; gap:10px; margin:16px auto 0; justify-content:center;
+  animation:fadeUp .7s .38s var(--ease-out) both;
+}
+.pill {
+  background:var(--surface); border:1px solid var(--rim2);
+  border-radius:4px; padding:7px 20px;
+  font-family:var(--font-mono); font-size:11px; font-weight:500;
+  letter-spacing:1.5px; cursor:pointer; transition:all .25s;
+}
+.pill:hover { border-color:var(--gold); transform:translateY(-2px); }
+.pill.cyan { color:var(--cyan); }
+.pill.gold { color:var(--gold-light); }
+
+/* ══ DOCK ══ */
+.dock {
+  display:flex; align-items:center; justify-content:space-around;
+  margin:20px 18px 0;
+  background:var(--surface);
+  border:1px solid var(--rim2); border-radius:20px;
+  padding:14px 6px; backdrop-filter:blur(16px);
+  animation:fadeUp .7s .44s var(--ease-out) both;
+}
+.dock-item {
+  display:flex; flex-direction:column; align-items:center; gap:6px;
+  padding:8px 14px; border-radius:12px; cursor:pointer;
+  font-family:var(--font-mono); font-size:9px; letter-spacing:1.5px;
+  text-transform:uppercase; color:var(--text-faint); transition:all .25s;
+}
+.dock-item:hover { background:var(--surface2); color:var(--text-dim); }
+.dock-item:active { transform:scale(.92); }
+.di { font-size:20px; transition:transform .2s; }
+.dock-item:hover .di { transform:translateY(-2px); }
+
+/* ══ QUICK FEATURES BAR ══ */
+.feature-bar {
+  display:flex; gap:8px; padding:16px 18px 0;
+  animation:fadeUp .7s .5s var(--ease-out) both; overflow-x:auto;
+  -ms-overflow-style:none; scrollbar-width:none;
+}
+.feature-bar::-webkit-scrollbar { display:none; }
+.feat-pill {
+  flex-shrink:0; display:flex; align-items:center; gap:7px;
+  background:var(--surface); border:1px solid var(--rim2); border-radius:10px;
+  padding:8px 14px; cursor:pointer; transition:all .25s;
+  font-family:var(--font-mono); font-size:9px; letter-spacing:2px; text-transform:uppercase;
+  color:var(--text-faint);
+}
+.feat-pill:hover { border-color:var(--gold); color:var(--gold); }
+.feat-pill .fp-icon { font-size:14px; }
+
+/* ══ BOTTOM NAV ══ */
+.bottom-nav {
+  display:none; position:fixed; bottom:0; left:0; right:0;
+  background:rgba(7,13,26,0.94); backdrop-filter:blur(24px);
+  border-top:1px solid var(--rim);
+  justify-content:space-around;
+  padding:10px 0 calc(10px + env(safe-area-inset-bottom));
+  z-index:100;
+}
+.bn-item {
+  display:flex; flex-direction:column; align-items:center; gap:4px;
+  font-family:var(--font-mono); font-size:9px; letter-spacing:1.5px; text-transform:uppercase;
+  color:var(--text-faint); cursor:pointer; padding:4px 14px; transition:color .2s;
+}
+.bn-item.active,.bn-item:hover { color:var(--gold); }
+.bn-icon { font-size:18px; }
+@media(max-width:600px) {
+  .bottom-nav { display:flex; }
+  #app { padding-bottom:100px; }
+}
+
+/* ══ OVERLAYS ══ */
+.overlay {
+  display:none; position:fixed; inset:0;
+  background:rgba(4,8,18,.82); z-index:200;
+  align-items:flex-end; justify-content:center;
+  backdrop-filter:blur(16px);
+}
+.overlay.show { display:flex; animation:overlayFadeIn .22s ease; }
+.overlay.center-overlay { align-items:center; }
+@keyframes overlayFadeIn { from{opacity:0} to{opacity:1} }
+
+.sheet {
+  background:linear-gradient(180deg,var(--ink3) 0%,var(--ink2) 100%);
+  border-radius:24px 24px 0 0;
+  border-top:1px solid var(--rim);
+  width:100%; max-width:520px;
+  max-height:84vh; overflow-y:auto;
+  padding:0 0 40px;
+  animation:sheetSlideUp .34s var(--ease-spring);
+}
+@keyframes sheetSlideUp { from{transform:translateY(100%);opacity:0} to{transform:translateY(0);opacity:1} }
+
+.dialog-card {
+  background:linear-gradient(160deg,var(--ink3),var(--ink2));
+  border:1px solid var(--rim); border-radius:20px;
+  width:92%; max-width:420px; padding:30px 26px;
+  animation:dialogPop .3s var(--ease-spring);
+  max-height:88vh; overflow-y:auto;
+}
+@keyframes dialogPop { from{transform:scale(.88);opacity:0} to{transform:scale(1);opacity:1} }
+
+.sheet-handle {
+  width:36px; height:3px; background:var(--rim2);
+  border-radius:2px; margin:14px auto 0;
+}
+.sheet-eyebrow {
+  font-family:var(--font-mono); font-size:9px; letter-spacing:4px;
+  text-transform:uppercase; color:var(--gold); opacity:.8;
+  display:block; padding:0 24px 12px;
+}
+.sheet-title {
+  font-family:var(--font-display); font-size:26px; font-weight:600;
+  padding:18px 24px 4px; color:var(--text);
+}
+.sec-label {
+  font-family:var(--font-mono); font-size:9px; letter-spacing:4px;
+  text-transform:uppercase; color:var(--text-faint); padding:4px 24px 10px; display:block;
+}
+.divider-line { height:1px; background:var(--rim2); margin:6px 18px 10px; }
+
+/* ══ CARDS (from website) ══ */
+.card {
+  background:var(--surface); border:1px solid var(--rim);
+  border-radius:20px; padding:30px;
+  position:relative; overflow:hidden;
+  transition:border-color .3s,transform .3s var(--ease-out),box-shadow .3s;
+}
+.card::before {
+  content:''; position:absolute; inset:0;
+  background:radial-gradient(circle at 70% 20%,rgba(0,200,240,.04) 0%,transparent 60%);
+  pointer-events:none;
+}
+.card:hover {
+  border-color:rgba(0,200,240,.4);
+  transform:translateY(-3px);
+  box-shadow:0 20px 60px rgba(0,0,0,.4);
+}
+.card-eyebrow {
+  font-family:var(--font-mono); font-size:9px; font-weight:500;
+  letter-spacing:4px; text-transform:uppercase; color:var(--gold);
+  margin-bottom:22px; display:block; opacity:.8;
+}
+
+/* ══ HISTORY ══ */
+.history-entry {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:16px 20px; margin:0 16px 6px;
+  background:rgba(255,255,255,.02);
+  border:1px solid var(--rim2); border-radius:14px;
+  transition:all .25s;
+}
+.history-entry:hover { border-color:rgba(0,200,240,.3); background:var(--cyan-dim); }
+.h-date { font-size:14px; font-weight:600; color:var(--text); }
+.h-time { font-family:var(--font-mono); font-size:10px; color:var(--text-faint); margin-top:3px; letter-spacing:1px; }
+.h-tasbeh { font-family:var(--font-mono); font-size:9px; color:var(--cyan); letter-spacing:1px; margin-top:2px; }
+.h-count { font-family:var(--font-display); font-size:26px; font-weight:600; color:var(--gold-light); }
+
+/* ══ LEADERBOARD TABS ══ */
+.lb-tabs {
+  display:flex; gap:4px; margin:0 18px 16px;
+  background:rgba(255,255,255,.02);
+  border:1px solid var(--rim2); border-radius:12px; padding:4px;
+}
+.lb-tab {
+  flex:1; padding:10px; border-radius:9px;
+  border:none; background:transparent;
+  color:var(--text-faint); font-family:var(--font-mono);
+  font-size:10px; font-weight:500; letter-spacing:2px; text-transform:uppercase;
+  cursor:pointer; transition:all .25s;
+}
+.lb-tab.active { background:var(--cyan-dim); color:var(--gold); border:1px solid rgba(0,200,240,.2); }
+
+.lb-entry {
+  display:flex; align-items:center; gap:16px;
+  padding:16px 22px; margin:0 16px 6px;
+  background:rgba(255,255,255,.02);
+  border:1px solid var(--rim2); border-radius:14px;
+  transition:all .25s var(--ease-spring);
+}
+.lb-entry:hover {
+  background:rgba(0,200,240,.05);
+  border-color:rgba(0,200,240,.3);
+  transform:translateX(6px);
+}
+.lb-entry.is-me { background:var(--cyan-dim); border-color:rgba(0,200,240,.35); }
+.lb-rank { font-family:var(--font-mono); font-size:11px; color:var(--text-faint); width:26px; text-align:center; flex-shrink:0; }
+.lb-rank.top { color:var(--gold); font-weight:500; }
+.lb-avatar {
+  width:34px; height:34px; border-radius:50%;
+  background:var(--gold-dim); border:1px solid var(--rim);
+  display:flex; align-items:center; justify-content:center;
+  font-family:var(--font-display); font-size:15px; color:var(--gold); flex-shrink:0;
+}
+.lb-name { flex:1; font-size:14px; font-weight:600; }
+.lb-loc { font-family:var(--font-mono); font-size:9px; color:var(--text-faint); margin-top:2px; letter-spacing:1px; }
+.lb-score { font-family:var(--font-display); font-size:24px; font-weight:600; color:var(--gold-light); }
+.lb-entry.is-me .lb-score { color:var(--cyan-light); }
+
+/* ══ MILESTONE CARD (from website) ══ */
+.milestone-card {
+  margin:8px 16px 14px; padding:26px;
+  background:linear-gradient(135deg,rgba(26,127,212,.1) 0%,var(--surface) 100%);
+  border:1px solid rgba(0,200,240,.25); border-radius:18px;
+  position:relative; overflow:hidden;
+}
+.milestone-card::before {
+  content:''; position:absolute; top:-40%; right:-20%;
+  width:240px; height:240px; border-radius:50%;
+  background:radial-gradient(circle,rgba(0,200,240,.06) 0%,transparent 70%);
+  pointer-events:none;
+}
+.milestone-card.done { border-color:rgba(0,200,240,.5); }
+.ms-header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:16px; }
+.ms-eyebrow { font-family:var(--font-mono); font-size:9px; letter-spacing:4px; text-transform:uppercase; color:var(--gold); opacity:.8; }
+.ms-title { font-family:var(--font-display); font-size:22px; font-weight:600; color:var(--text); margin-top:4px; }
+.ms-pct { font-family:var(--font-display); font-size:32px; font-weight:600; color:var(--gold); }
+.ms-pct.done { color:var(--cyan-light); }
+.progress-track {
+  height:3px; background:rgba(255,255,255,.08);
+  border-radius:100px; overflow:visible; position:relative;
+}
+.progress-fill-bar {
+  height:100%; width:0%; border-radius:100px;
+  background:linear-gradient(90deg,var(--blue-mid),var(--cyan));
+  transition:width 2.5s var(--ease-out);
+  box-shadow:0 0 20px rgba(0,200,240,.5);
+  position:relative;
+}
+.progress-fill-bar::after {
+  content:''; position:absolute; right:-4px; top:50%;
+  width:10px; height:10px; border-radius:50%; background:var(--cyan);
+  transform:translateY(-50%); box-shadow:0 0 14px rgba(0,200,240,.8);
+}
+.ms-footer { display:flex; justify-content:space-between; margin-top:16px; }
+.ms-sub { font-family:var(--font-mono); font-size:10px; color:var(--text-faint); letter-spacing:1px; }
+
+/* ══ ZIKR STAT TILES (from website) ══ */
+.zikr-tile {
+  background:rgba(255,255,255,.02); border:1px solid var(--rim2);
+  border-radius:14px; padding:18px; margin:0 16px 6px;
+  transition:border-color .3s,background .3s;
+}
+.zikr-tile:hover { border-color:rgba(0,200,240,.3); background:rgba(0,200,240,.04); }
+.zikr-tile-row { display:flex; align-items:center; justify-content:space-between; }
+.zikr-name { font-family:var(--font-mono); font-size:9px; letter-spacing:2px; text-transform:uppercase; color:var(--text-dim); margin-bottom:6px; display:block; }
+.zikr-count { font-family:var(--font-display); font-size:24px; font-weight:600; color:#fff; }
+.zikr-unit { font-family:var(--font-mono); font-size:9px; color:var(--gold); letter-spacing:2px; margin-left:5px; }
+.zikr-arabic-sm { font-family:'Amiri',serif; font-size:14px; color:var(--text-faint); }
+
+/* ══ TASBEH LIST ══ */
+.tasbeh-item {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:16px 22px; margin:0 16px 6px;
+  background:rgba(255,255,255,.02); border:1px solid var(--rim2);
+  border-radius:14px; cursor:pointer; transition:all .25s;
+}
+.tasbeh-item:hover { background:var(--cyan-dim); border-color:rgba(0,200,240,.3); }
+.tasbeh-item.active { background:var(--cyan-dim); border-color:rgba(0,200,240,.4); }
+.ti-name { font-size:14px; font-weight:600; color:var(--text); }
+.ti-arabic { font-family:'Amiri',serif; font-size:14px; color:var(--text-faint); margin-top:4px; }
+.ti-target { font-family:var(--font-display); font-size:22px; font-weight:600; color:var(--gold-light); }
+
+.custom-item {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:13px 20px; margin:0 16px 5px;
+  background:rgba(255,255,255,.015); border:1px solid rgba(255,255,255,.04);
+  border-radius:12px; cursor:pointer; transition:all .25s;
+}
+.custom-item:hover { border-color:rgba(0,200,240,.22); }
+.custom-item.active { border-color:rgba(0,200,240,.35); background:var(--cyan-dim); }
+.ci-name { font-size:13px; font-weight:600; }
+.ci-right { display:flex; align-items:center; gap:10px; }
+.ci-target { font-family:var(--font-mono); font-size:11px; color:var(--cyan); letter-spacing:1px; }
+.ci-del { font-size:15px; cursor:pointer; color:rgba(255,80,80,.4); transition:color .2s; }
+.ci-del:hover { color:#EF5350; }
+
+/* ══ STREAK DISPLAY ══ */
+.streak-inner { display:flex; flex-direction:column; align-items:center; padding:22px 24px 0; }
+.streak-ring-wrap {
+  position:relative; width:110px; height:110px;
+  border-radius:50%; display:flex; align-items:center; justify-content:center;
+  font-size:44px; margin-bottom:16px;
+}
+.streak-ring-wrap::before {
+  content:''; position:absolute; inset:-8px; border-radius:50%;
+  border:1px solid rgba(255,87,34,.15);
+  animation:spinRing 8s linear infinite;
+}
+@keyframes spinRing { to{transform:rotate(360deg)} }
+.streak-days { font-family:var(--font-display); font-size:36px; font-weight:300; color:var(--text); }
+.streak-rank-label { font-family:var(--font-mono); font-size:11px; letter-spacing:3px; text-transform:uppercase; font-weight:500; }
+.rank-info { font-family:var(--font-mono); font-size:10px; color:var(--text-faint); text-align:center; margin-top:6px; letter-spacing:1px; }
+.pb-wrap { width:100%; margin-top:28px; }
+.pb-labels { display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:10px; color:var(--text-faint); margin-bottom:8px; letter-spacing:1px; }
+.pb-track { background:rgba(255,255,255,.07); border-radius:100px; height:3px; position:relative; }
+.pb-fill { height:100%; border-radius:100px; transition:width .9s var(--ease-out); }
+.pb-fill::after { content:''; position:absolute; right:-4px; top:50%; width:9px; height:9px; border-radius:50%; transform:translateY(-50%); }
+
+/* ══ FORMS ══ */
+.form-group { margin-bottom:14px; }
+.form-label {
+  font-family:var(--font-mono); font-size:9px; letter-spacing:3px;
+  text-transform:uppercase; color:var(--gold); margin-bottom:7px; display:block; opacity:.8;
+}
+.form-field {
+  width:100%; padding:14px 18px;
+  background:rgba(255,255,255,.03); border:1px solid var(--rim2);
+  border-radius:12px; color:var(--text); outline:none;
+  font-family:var(--font-ui); font-size:14px;
+  transition:border-color .25s,background .25s;
+}
+.form-field:focus { border-color:var(--gold); background:rgba(0,200,240,.04); }
+.form-field::placeholder { color:var(--text-faint); }
+
+/* ══ CHIPS ══ */
+.chips-row { display:flex; gap:8px; flex-wrap:wrap; margin:10px 0; }
+.chip {
+  padding:7px 16px; border-radius:4px;
+  border:1px solid rgba(0,200,240,.3); background:var(--gold-dim);
+  color:rgba(0,200,240,.75); font-family:var(--font-mono);
+  font-size:11px; font-weight:500; letter-spacing:1px; cursor:pointer; transition:all .2s;
+}
+.chip:hover,.chip.active { background:rgba(0,200,240,.15); border-color:var(--cyan); color:var(--cyan); }
+
+/* ══ BUTTONS ══ */
+.btn {
+  width:100%; padding:15px;
+  border:none; border-radius:12px;
+  font-family:var(--font-mono); font-size:11px; font-weight:500;
+  letter-spacing:2px; text-transform:uppercase;
+  cursor:pointer; transition:all .25s var(--ease-spring);
+}
+.btn-primary-gold { background:var(--gold); color:var(--ink); }
+.btn-primary-gold:hover { transform:translateY(-2px); box-shadow:0 14px 36px rgba(0,200,240,.4); }
+.btn-outline-gold { background:transparent; border:1px solid var(--gold); color:var(--gold); }
+.btn-outline-gold:hover { background:var(--gold-dim); }
+.btn-ghost-ui { background:transparent; color:var(--text-faint); border:1px solid var(--rim2); }
+.btn-ghost-ui:hover { color:var(--text); border-color:var(--text-faint); }
+.btn-danger-ui { background:rgba(239,83,80,.1); color:#EF5350; border:1px solid rgba(239,83,80,.3); }
+.btn-sm { width:auto; padding:10px 20px; font-size:10px; border-radius:8px; }
+.btn:active { transform:scale(.97); }
+
+/* ══ PRAYER TIMES STRIP ══ */
+.prayer-row {
+  display:flex; gap:6px; padding:14px 18px 0; overflow-x:auto;
+  -ms-overflow-style:none; scrollbar-width:none;
+  animation:fadeUp .7s .55s var(--ease-out) both;
+}
+.prayer-row::-webkit-scrollbar { display:none; }
+.prayer-pill {
+  flex-shrink:0; display:flex; flex-direction:column; align-items:center;
+  background:var(--surface); border:1px solid var(--rim2); border-radius:12px;
+  padding:10px 14px; min-width:70px; transition:all .25s;
+}
+.prayer-pill.next-prayer { border-color:rgba(0,200,240,.4); background:var(--cyan-dim); }
+.prayer-name { font-family:var(--font-mono); font-size:9px; letter-spacing:2px; text-transform:uppercase; color:var(--text-faint); }
+.prayer-pill.next-prayer .prayer-name { color:var(--gold); }
+.prayer-time { font-family:var(--font-display); font-size:16px; font-weight:600; color:var(--text); margin-top:4px; }
+
+/* ══ QIBLA ══ */
+.qibla-wrap {
+  display:flex; flex-direction:column; align-items:center; padding:24px;
+}
+.compass {
+  width:160px; height:160px; border-radius:50%;
+  border:1px solid var(--rim); position:relative;
+  background:radial-gradient(circle,rgba(0,200,240,.06) 0%,var(--surface) 70%);
+  display:flex; align-items:center; justify-content:center;
+  margin-bottom:20px;
+}
+.compass::before {
+  content:''; position:absolute; inset:10px; border-radius:50%;
+  border:1px solid rgba(0,200,240,.07);
+}
+.compass-needle {
+  width:4px; height:70px; border-radius:2px;
+  background:linear-gradient(to bottom,var(--cyan),rgba(0,200,240,.3));
+  transform-origin:bottom center;
+  position:absolute; bottom:50%;
+  box-shadow:0 0 10px rgba(0,200,240,.5);
+  transition:transform 1.5s var(--ease-out);
+}
+.compass-center {
+  width:10px; height:10px; border-radius:50%;
+  background:var(--gold); position:absolute;
+  box-shadow:0 0 12px rgba(0,200,240,.8);
+}
+.kaaba-icon { font-size:22px; position:absolute; top:6px; left:50%; transform:translateX(-50%); }
+
+/* ══ SOUND ══ */
+.sound-toggle {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:18px 22px; margin:0 16px 8px;
+  background:rgba(255,255,255,.02); border:1px solid var(--rim2); border-radius:14px;
+  cursor:pointer; transition:all .25s;
+}
+.sound-toggle:hover { border-color:rgba(0,200,240,.3); }
+.st-left { display:flex; align-items:center; gap:12px; }
+.st-icon { font-size:20px; }
+.st-label { font-size:14px; font-weight:600; }
+.st-desc { font-family:var(--font-mono); font-size:10px; color:var(--text-faint); margin-top:2px; letter-spacing:1px; }
+.toggle-sw {
+  width:44px; height:24px; border-radius:100px;
+  background:rgba(255,255,255,.1); position:relative; flex-shrink:0;
+  transition:background .25s;
+}
+.toggle-sw.on { background:rgba(0,200,240,.35); }
+.toggle-sw::after {
+  content:''; position:absolute; top:3px; left:3px;
+  width:18px; height:18px; border-radius:50%;
+  background:var(--text-faint); transition:transform .25s,background .25s;
+}
+.toggle-sw.on::after { transform:translateX(20px); background:var(--cyan); }
+
+/* ══ GOAL POPUP ══ */
+.goal-popup {
+  background:linear-gradient(160deg,var(--ink3),var(--ink2));
+  border:1px solid rgba(0,200,240,.3); border-radius:22px;
+  padding:34px 28px; width:90%; max-width:390px;
+  display:flex; flex-direction:column; align-items:center;
+  animation:dialogPop .34s var(--ease-spring); position:relative; overflow:hidden;
+}
+.goal-popup::before {
+  content:''; position:absolute; top:-30%; left:-10%;
+  width:260px; height:260px; border-radius:50%;
+  background:radial-gradient(circle,rgba(0,200,240,.06) 0%,transparent 65%);
+  pointer-events:none;
+}
+.popup-icon { font-size:54px; animation:floatIcon 1.5s ease-in-out infinite alternate; margin-bottom:16px; }
+@keyframes floatIcon { from{transform:scale(1) translateY(0)} to{transform:scale(1.15) translateY(-6px)} }
+
+/* ══ ANNOUNCEMENT ══ */
+.announce-card {
+  background:linear-gradient(160deg,var(--ink3),var(--ink2));
+  border:1px solid var(--rim); border-radius:20px;
+  padding:28px 24px; width:92%; max-width:400px;
+  position:relative; animation:dialogPop .28s var(--ease-spring);
+}
+.announce-img { width:100%; height:156px; object-fit:cover; border-radius:12px; margin-bottom:16px; }
+.announce-title { font-family:var(--font-display); font-size:22px; font-weight:600; color:var(--gold-light); margin-bottom:10px; }
+.announce-msg { font-size:14px; color:var(--text-dim); line-height:1.75; }
+.announce-close { position:absolute; top:16px; right:18px; font-size:16px; cursor:pointer; color:var(--text-faint); transition:color .2s; }
+.announce-close:hover { color:var(--text); }
+
+/* ══ EID ══ */
+#eid-overlay {
+  display:none; position:fixed; inset:0;
+  background:rgba(4,8,18,.97); z-index:999;
+  align-items:center; justify-content:center; flex-direction:column; text-align:center;
+}
+#eid-overlay.show { display:flex; animation:fadeInAnim .7s ease; }
+.eid-moon { font-size:64px; margin-bottom:14px; animation:moonDrift 2.8s ease-in-out infinite alternate; }
+@keyframes moonDrift { from{transform:translateY(0)} to{transform:translateY(-14px)} }
+.eid-title { font-family:var(--font-display); font-size:clamp(30px,8vw,52px); font-weight:300; color:var(--gold-light); letter-spacing:2px; font-style:italic; }
+.eid-sub { font-family:var(--font-mono); font-size:11px; color:var(--text-faint); margin-top:12px; letter-spacing:3px; text-transform:uppercase; }
+
+/* ══ SHARE CARD ══ */
+.share-canvas-wrap { display:flex; flex-direction:column; align-items:center; padding:20px; }
+#shareCanvas { border-radius:14px; border:1px solid var(--rim); max-width:100%; }
+
+/* ══ TOAST ══ */
+#toast {
+  position:fixed; bottom:96px; left:50%; transform:translateX(-50%) translateY(8px);
+  background:rgba(7,13,26,.95); border:1px solid rgba(0,200,240,.3);
+  color:var(--cyan); padding:11px 24px; border-radius:4px;
+  font-family:var(--font-mono); font-size:10px; letter-spacing:2.5px; text-transform:uppercase;
+  z-index:1000; opacity:0; transition:opacity .28s,transform .28s;
+  pointer-events:none; white-space:nowrap; backdrop-filter:blur(16px);
+}
+#toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
+
+/* ══ TIMER ══ */
+.timer-line {
+  font-family:var(--font-mono); font-size:10px; text-align:center;
+  padding:4px 0 10px; color:var(--text-faint); letter-spacing:2px; text-transform:uppercase;
+}
+.timer-line.refresh-avail { color:var(--gold); }
+
+/* ══ CONFETTI CANVAS ══ */
+#confettiCanvas { position:fixed; inset:0; z-index:500; pointer-events:none; }
+
+/* ══ INFO LINKS ══ */
+.info-link {
+  display:flex; align-items:center; gap:14px; padding:16px 20px;
+  border-radius:12px; font-weight:600; font-size:14px; color:var(--text);
+  text-decoration:none; transition:all .25s; border:1px solid transparent;
+}
+.info-link:hover { transform:translateX(5px); }
+
+/* ══ KEYFRAMES ══ */
+@keyframes fadeUp { from{opacity:0;transform:translateY(26px)} to{opacity:1;transform:translateY(0)} }
+@keyframes fadeInAnim { from{opacity:0} to{opacity:1} }
+
+/* ══ SCROLLBAR ══ */
+::-webkit-scrollbar { width:3px; }
+::-webkit-scrollbar-thumb { background:rgba(0,200,240,.25); border-radius:3px; }
+
+/* ══ AMOLED ══ */
+body.amoled { background:#000; }
+body.amoled .sheet { background:#050505; }
+body.amoled .dialog-card { background:#050505; }
+
+/* ══ FOOTER (exact from website) ══ */
+footer {
+  position:relative; z-index:10;
+  border-top:1px solid var(--rim);
+  padding:80px 6% 60px;
+  background:rgba(4,8,18,0.97);
+  margin-top:60px;
+}
+.footer-inner {
+  max-width:1340px; margin:0 auto;
+  display:grid; grid-template-columns:1.5fr 1fr 1fr 1fr;
+  gap:60px; margin-bottom:80px;
+}
+.footer-logo {
+  font-family:var(--font-display); font-size:28px; font-weight:600;
+  color:var(--gold-light); margin-bottom:16px; display:block;
+}
+.footer-tagline {
+  font-size:13px; color:var(--text-faint); line-height:1.7; max-width:260px;
+}
+.footer-col-title {
+  font-family:var(--font-mono); font-size:9px; letter-spacing:4px;
+  text-transform:uppercase; color:var(--gold); margin-bottom:24px;
+}
+.footer-links { list-style:none; display:flex; flex-direction:column; gap:14px; }
+.footer-links a {
+  text-decoration:none; color:var(--text-faint); font-size:13px; transition:color .2s;
+}
+.footer-links a:hover { color:var(--gold-light); }
+.footer-bottom {
+  text-align: center;
+  max-width:1340px;
+  margin:0 auto;
+  padding-top:32px;
+  border-top:1px solid var(--rim2);
+
+  display:flex;
+  justify-content:center;   /* changed */
+  align-items:center;
+
+  flex-wrap:wrap;
+  gap:16px;
+}
+.footer-copy {
+  font-family:var(--font-mono); font-size:14px; letter-spacing:2px; color:var(--text-faint);
+}
+.footer-geo {
+  font-family:var(--font-mono); font-size:9px;
+  letter-spacing:4px; color:rgba(0,200,240,.3); text-transform:uppercase;
+}
+@media(max-width:1100px){ .footer-inner { grid-template-columns:1fr 1fr; gap:40px; } }
+@media(max-width:700px){
+  .footer-inner { grid-template-columns:1fr; }
+  .footer-bottom { flex-direction:column; text-align:center; }
+}
+</style>
+</head>
+<body>
+
+<!-- CURSORS -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- ATMOSPHERE -->
+<canvas id="bgCanvas"></canvas>
+<div class="noise-overlay"></div>
+<div class="radial-gold"></div>
+<div class="radial-emerald"></div>
+
+<!-- CONFETTI -->
+<canvas id="confettiCanvas"></canvas>
+
+<!-- ══ NAV ══ -->
+<nav>
+  <a href="index.html" class="logo">
+    <div class="logo-crescent"></div>
+    ZikrMate
+  </a>
+  <div class="nav-right">
+    <a href="index.html" class="nav-link">← Home</a>
+    <a href="https://play.google.com/store/apps/details?id=com.ahteshamtech.zikrmate" target="_blank" class="nav-cta">Download ↗</a>
+  </div>
+</nav>
+
+<!-- ══ TICKER ══ -->
+<div class="ticker-wrap">
+  <div class="ticker-inner">
+    <span class="ticker-item"><span class="ticker-gem">◆</span> SubhanAllah</span>
+    <span class="ticker-item"><span class="ticker-gem">◆</span> Alhamdulillah</span>
+    <span class="ticker-item"><span class="ticker-gem">◆</span> Allahu Akbar</span>
+    <span class="ticker-item"><span class="ticker-gem">◆</span> Astaghfirullah</span>
+    <span class="ticker-item"><span class="ticker-gem">◆</span> La ilaha illallah</span>
+    <span class="ticker-item"><span class="ticker-gem">◆</span> SubhanAllahi wa bihamdihi</span>
+    <span class="ticker-item"><span class="ticker-gem">◆</span> Durood Ibrahim</span>
+    <span class="ticker-item"><span class="ticker-gem">◆</span> SubhanAllah</span>
+    <span class="ticker-item"><span class="ticker-gem">◆</span> Alhamdulillah</span>
+    <span class="ticker-item"><span class="ticker-gem">◆</span> Allahu Akbar</span>
+    <span class="ticker-item"><span class="ticker-gem">◆</span> Astaghfirullah</span>
+    <span class="ticker-item"><span class="ticker-gem">◆</span> La ilaha illallah</span>
+    <span class="ticker-item"><span class="ticker-gem">◆</span> SubhanAllahi wa bihamdihi</span>
+    <span class="ticker-item"><span class="ticker-gem">◆</span> Durood Ibrahim</span>
+  </div>
+</div>
+
+<!-- ══ APP ══ -->
+<div id="app">
+
+  <!-- HEADER -->
+  <div class="app-header">
+    <div class="hero-eyebrow">
+      <div class="pulse-dot"></div>
+      Counter — Live
+    </div>
+    <div class="hijri-display" id="hijri-display">Loading Islamic date…</div>
+    <div class="badges-row">
+      <div class="badge" onclick="openStreakSheet()" id="streak-badge">
+        <span class="fi" id="streak-emoji">🔥</span>
+        <span id="streak-val">0</span>
+      </div>
+      <div class="badge" id="grace-badge" style="display:none">
+        <span class="fi">🛡️</span>
+        <span id="grace-val" style="color:var(--cyan)">2</span>
+      </div>
+      <button class="theme-btn" onclick="toggleTheme()" id="theme-btn" title="Toggle theme">🌙</button>
+    </div>
+  </div>
+
+  <!-- TASBEH LABEL -->
+  <div class="tasbeh-label-wrap" onclick="openTasbehSelector()">
+    <span class="tasbeh-label" id="tasbeh-label">Mamool Zikr</span>
+    <span class="tasbeh-arabic" id="tasbeh-arabic"></span>
+  </div>
+
+  <!-- COUNTER SHRINE -->
+  <div class="counter-shrine">
+    <div class="counter-ring" id="counter-ring" onclick="handleIncrement(event)">
+      <svg class="ring-svg" viewBox="0 0 340 340">
+        <circle class="ring-track" cx="170" cy="170" r="160"/>
+        <circle class="ring-arc" id="ring-arc" cx="170" cy="170" r="160"
+          stroke-dasharray="1005" stroke-dashoffset="1005"/>
+      </svg>
+      <div class="orbit-dot"></div>
+      <div class="mega-num" id="counter">0000</div>
+      <div class="ring-sublabel" id="ring-sublabel">Tap to Count</div>
+    </div>
+  </div>
+
+  <!-- PILLS -->
+  <div class="pills-row">
+    <div class="pill cyan" id="target-pill" onclick="openTargetDialog()">Target: 33</div>
+    <div class="pill gold" id="cycles-pill">Cycles: 0</div>
+    <div class="pill" style="color:var(--text-faint)" id="monthly-pill">Monthly: 0</div>
+  </div>
+
+  <!-- DOCK -->
+  <div class="dock">
+    <div class="dock-item" onclick="confirmReset()"><span class="di">🔄</span><span>Reset</span></div>
+    <div class="dock-item" onclick="handleDecrement()"><span class="di">➖</span><span>Undo</span></div>
+    <div class="dock-item" onclick="toggleVibrate()"><span class="di" id="vibrate-icon">📳</span><span>Haptics</span></div>
+    <div class="dock-item" onclick="openLeaderboard()"><span class="di">🌍</span><span>Global</span></div>
+    <div class="dock-item" onclick="openHistorySheet()"><span class="di">📋</span><span>History</span></div>
+  </div>
+
+  <!-- FEATURE BAR -->
+  <div class="feature-bar">
+    <div class="feat-pill" onclick="openPrayerTimes()"><span class="fp-icon">🕌</span>Prayer Times</div>
+    <div class="feat-pill" onclick="openQibla()"><span class="fp-icon">🧭</span>Qibla</div>
+    <div class="feat-pill" onclick="openSoundSettings()"><span class="fp-icon">🔔</span>Sound</div>
+    <div class="feat-pill" onclick="openShareCard()"><span class="fp-icon">✦</span>Share Streak</div>
+    <div class="feat-pill" onclick="openInfoSheet()"><span class="fp-icon">🔗</span>Developer</div>
+  </div>
+
+  <!-- PRAYER TIMES ROW -->
+  <div class="prayer-row" id="prayer-row" style="display:none"></div>
+
+</div><!-- #app -->
+
+<!-- BOTTOM NAV -->
+<div class="bottom-nav">
+  <div class="bn-item active"><span class="bn-icon">📿</span><span>Counter</span></div>
+  <div class="bn-item" onclick="openTasbehSelector()"><span class="bn-icon">☪️</span><span>Tasbeh</span></div>
+  <div class="bn-item" onclick="openHistorySheet()"><span class="bn-icon">📋</span><span>History</span></div>
+  <div class="bn-item" onclick="openLeaderboard()"><span class="bn-icon">🌍</span><span>Global</span></div>
+  <div class="bn-item" onclick="openStreakSheet()"><span class="bn-icon">🔥</span><span>Streak</span></div>
+</div>
+
+<div id="toast"></div>
+
+<!-- EID OVERLAY -->
+<div id="eid-overlay">
+  <div class="eid-moon">🌙</div>
+  <div class="eid-title">Eid Mubarak</div>
+  <div class="eid-sub">May your Zikr be accepted</div>
+</div>
+
+<!-- ══════════════════════════════════════
+     OVERLAYS / SHEETS
+══════════════════════════════════════ -->
+
+<!-- HISTORY -->
+<div class="overlay" id="history-overlay" onclick="closeOnBg(event,'history-overlay')">
+  <div class="sheet">
+    <div class="sheet-handle"></div>
+    <div style="display:flex;justify-content:space-between;align-items:center;padding:18px 24px 4px">
+      <div class="sheet-title" style="padding:0">History</div>
+      <button class="btn btn-ghost-ui btn-sm" style="color:#EF5350;border-color:rgba(239,83,80,.3)" onclick="clearHistory()">Clear All</button>
+    </div>
+    <span class="sheet-eyebrow">Session Log</span>
+    <div id="history-list" style="padding:4px 0 10px"></div>
+  </div>
+</div>
+
+<!-- STREAK -->
+<div class="overlay" id="streak-overlay" onclick="closeOnBg(event,'streak-overlay')">
+  <div class="sheet">
+    <div class="sheet-handle"></div>
+    <div id="streak-body" class="streak-inner"></div>
+  </div>
+</div>
+
+<!-- TASBEH SELECTOR -->
+<div class="overlay" id="tasbeh-overlay" onclick="closeOnBg(event,'tasbeh-overlay')">
+  <div class="sheet">
+    <div class="sheet-handle"></div>
+    <div class="sheet-title">Select Tasbeh</div>
+    <span class="sheet-eyebrow">Recommended Dhikr</span>
+    <div id="predefined-list"></div>
+    <div class="divider-line"></div>
+    <span class="sec-label" id="custom-sec-label" style="display:none">Your Custom Tasbehs</span>
+    <div id="custom-list"></div>
+    <div style="padding:14px 16px 0">
+      <button class="btn btn-outline-gold" onclick="openTargetDialog();closeOverlay('tasbeh-overlay')">+ Create Custom Tasbeh</button>
+    </div>
+  </div>
+</div>
+
+<!-- TARGET / CUSTOM TASBEH DIALOG -->
+<div class="overlay center-overlay" id="target-overlay" onclick="closeOnBg(event,'target-overlay')">
+  <div class="dialog-card">
+    <div style="font-family:var(--font-display);font-size:24px;font-weight:600;color:var(--gold-light);margin-bottom:6px;font-style:italic">Create Tasbeh</div>
+    <p style="font-family:var(--font-mono);font-size:10px;letter-spacing:1.5px;color:var(--text-faint);margin-bottom:22px;line-height:1.6">Name your tasbeh and set a target count.</p>
+    <div class="form-group"><label class="form-label">Tasbeh Name</label><input class="form-field" id="new-tasbeh-name" placeholder="e.g. My Morning Dhikr"></div>
+    <div class="chips-row" id="target-chips"></div>
+    <div class="form-group" style="margin-top:6px"><label class="form-label">Custom Number</label><input class="form-field" id="target-num-input" type="number" min="0" placeholder="33"></div>
+    <div style="display:flex;gap:8px;margin-top:20px">
+      <button class="btn btn-ghost-ui btn-sm" onclick="closeOverlay('target-overlay')">Cancel</button>
+      <button class="btn btn-primary-gold btn-sm" onclick="confirmNewTasbeh()" style="flex:1">Start Counting →</button>
+    </div>
+  </div>
+</div>
+
+<!-- RESET CONFIRM -->
+<div class="overlay center-overlay" id="reset-overlay" onclick="closeOnBg(event,'reset-overlay')">
+  <div class="dialog-card">
+    <div style="font-family:var(--font-display);font-size:28px;font-weight:300;color:var(--text);margin-bottom:10px;font-style:italic">Reset Counter?</div>
+    <p style="font-family:var(--font-mono);font-size:11px;letter-spacing:1px;color:var(--text-faint);margin-bottom:24px;line-height:1.65">This will reset your current count and cycle progress.</p>
+    <div style="display:flex;gap:8px">
+      <button class="btn btn-ghost-ui btn-sm" onclick="closeOverlay('reset-overlay')">Cancel</button>
+      <button class="btn btn-danger-ui btn-sm" onclick="doReset()" style="flex:1">Reset</button>
+    </div>
+  </div>
+</div>
+
+<!-- PROFILE SETUP -->
+<div class="overlay center-overlay" id="profile-overlay">
+  <div class="dialog-card">
+    <div style="font-family:var(--font-display);font-size:24px;font-weight:600;color:var(--gold-light);margin-bottom:6px;font-style:italic">Join Global Ranking</div>
+    <p style="font-family:var(--font-mono);font-size:10px;letter-spacing:1.5px;color:var(--text-faint);margin-bottom:20px;line-height:1.6">Your name and city appear on the monthly leaderboard.</p>
+    <div class="form-group"><label class="form-label">Display Name</label><input class="form-field" id="pf-name" placeholder="Your name"></div>
+    <div class="form-group"><label class="form-label">City</label><input class="form-field" id="pf-city" placeholder="City"></div>
+    <div class="form-group"><label class="form-label">State / Province</label><input class="form-field" id="pf-state" placeholder="State or Province"></div>
+    <div class="form-group"><label class="form-label">Country</label><input class="form-field" id="pf-country" placeholder="Country"></div>
+    <div style="display:flex;gap:8px;margin-top:20px">
+      <button class="btn btn-ghost-ui btn-sm" onclick="closeOverlay('profile-overlay')">Skip</button>
+      <button class="btn btn-primary-gold btn-sm" onclick="saveProfile()" style="flex:1">Join Now →</button>
+    </div>
+  </div>
+</div>
+
+<!-- LEADERBOARD -->
+<div class="overlay" id="lb-overlay" onclick="closeOnBg(event,'lb-overlay')">
+  <div class="sheet">
+    <div class="sheet-handle"></div>
+    <div style="text-align:center;padding:20px 20px 6px">
+      <div style="font-family:var(--font-mono);font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);opacity:.7;margin-bottom:8px">Global Community</div>
+      <div id="lb-title" style="font-family:var(--font-display);font-size:28px;font-weight:300;color:var(--text);font-style:italic">Leaderboard</div>
+      <div id="lb-timer" class="timer-line">Loading…</div>
+    </div>
+    <div class="lb-tabs">
+      <button class="lb-tab active" id="tab-rank" onclick="switchLbTab(0)">This Month</button>
+      <button class="lb-tab" id="tab-global" onclick="switchLbTab(1)">Global Stats</button>
+    </div>
+    <div id="lb-content"></div>
+    <div style="padding:14px 16px 0">
+      <button class="btn btn-outline-gold" onclick="openProfile()" style="font-size:10px">Edit My Profile →</button>
+    </div>
+  </div>
+</div>
+
+<!-- GOAL POPUP -->
+<div class="overlay center-overlay" id="goal-overlay">
+  <div class="goal-popup">
+    <div class="popup-icon">✨</div>
+    <div style="font-family:var(--font-display);font-size:30px;font-weight:600;color:var(--gold-light);margin-bottom:12px;font-style:italic">Masha-Allah!</div>
+    <p id="goal-popup-msg" style="font-size:15px;color:var(--text);text-align:center;margin-bottom:8px;line-height:1.65"></p>
+    <p id="goal-contrib" style="font-family:var(--font-mono);font-size:11px;color:var(--cyan);letter-spacing:1px;text-align:center;margin-bottom:4px"></p>
+    <p id="goal-pct-txt" style="font-family:var(--font-mono);font-size:10px;color:var(--text-faint);text-align:center;margin-bottom:6px;letter-spacing:1px"></p>
+    <p id="goal-ameen-count" style="font-family:var(--font-mono);font-size:10px;color:var(--text-faint);margin-bottom:24px;letter-spacing:1px"></p>
+    <button class="btn btn-primary-gold" onclick="handleAmeenClick()">Alhamdulillah →</button>
+  </div>
+</div>
+
+<!-- ANNOUNCEMENT -->
+<div class="overlay center-overlay" id="announce-overlay">
+  <div class="announce-card">
+    <span class="announce-close" onclick="closeOverlay('announce-overlay')">✕</span>
+    <img id="announce-img" class="announce-img" style="display:none" src="" alt="">
+    <div class="announce-title" id="announce-title"></div>
+    <div class="announce-msg" id="announce-msg"></div>
+    <button class="btn btn-primary-gold" style="margin-top:22px" onclick="handleAnnounceBtn()">OK →</button>
+  </div>
+</div>
+
+<!-- PRAYER TIMES SHEET -->
+<div class="overlay" id="prayer-overlay" onclick="closeOnBg(event,'prayer-overlay')">
+  <div class="sheet">
+    <div class="sheet-handle"></div>
+    <div class="sheet-title">Prayer Times</div>
+    <span class="sheet-eyebrow" id="prayer-city-label">Detecting location…</span>
+    <div id="prayer-list" style="padding:0 0 10px"></div>
+  </div>
+</div>
+
+<!-- QIBLA SHEET -->
+<div class="overlay" id="qibla-overlay" onclick="closeOnBg(event,'qibla-overlay')">
+  <div class="sheet">
+    <div class="sheet-handle"></div>
+    <div class="sheet-title">Qibla Direction</div>
+    <span class="sheet-eyebrow" id="qibla-city-label">Detecting location…</span>
+    <div class="qibla-wrap">
+      <div class="compass">
+        <div class="kaaba-icon">🕋</div>
+        <div class="compass-needle" id="compass-needle"></div>
+        <div class="compass-center"></div>
+      </div>
+      <div style="font-family:var(--font-display);font-size:32px;font-weight:300;color:var(--gold-light);margin-bottom:6px" id="qibla-degrees">—°</div>
+      <div style="font-family:var(--font-mono);font-size:10px;letter-spacing:3px;color:var(--text-faint);text-align:center;text-transform:uppercase" id="qibla-direction">Finding direction…</div>
+    </div>
+  </div>
+</div>
+
+<!-- SOUND SETTINGS -->
+<div class="overlay" id="sound-overlay" onclick="closeOnBg(event,'sound-overlay')">
+  <div class="sheet">
+    <div class="sheet-handle"></div>
+    <div class="sheet-title">Sound & Haptics</div>
+    <span class="sheet-eyebrow">Sensory Feedback</span>
+    <div style="padding:0 0 10px">
+      <div class="sound-toggle" onclick="toggleSoundOpt('click')" id="st-click">
+        <div class="st-left"><span class="st-icon">🔔</span><div><div class="st-label">Bead Click</div><div class="st-desc">Soft click on each count</div></div></div>
+        <div class="toggle-sw" id="sw-click"></div>
+      </div>
+      <div class="sound-toggle" onclick="toggleSoundOpt('complete')" id="st-complete">
+        <div class="st-left"><span class="st-icon">✨</span><div><div class="st-label">Completion Tone</div><div class="st-desc">Chime when target is reached</div></div></div>
+        <div class="toggle-sw" id="sw-complete"></div>
+      </div>
+      <div class="sound-toggle" onclick="toggleSoundOpt('vibrate')" id="st-vib">
+        <div class="st-left"><span class="st-icon">📳</span><div><div class="st-label">Haptic Feedback</div><div class="st-desc">Vibration on tap (mobile)</div></div></div>
+        <div class="toggle-sw" id="sw-vibrate"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SHARE CARD -->
+<div class="overlay center-overlay" id="share-overlay" onclick="closeOnBg(event,'share-overlay')">
+  <div class="dialog-card">
+    <div style="font-family:var(--font-display);font-size:22px;font-weight:600;color:var(--gold-light);margin-bottom:16px;font-style:italic">Share Your Streak</div>
+    <div class="share-canvas-wrap">
+      <canvas id="shareCanvas" width="360" height="200"></canvas>
+    </div>
+    <div style="display:flex;gap:8px;margin-top:20px">
+      <button class="btn btn-ghost-ui btn-sm" onclick="closeOverlay('share-overlay')">Close</button>
+      <button class="btn btn-primary-gold btn-sm" onclick="downloadShareCard()" style="flex:1">Download →</button>
+    </div>
+  </div>
+</div>
+
+<!-- INFO / DEVELOPER -->
+<div class="overlay" id="info-overlay" onclick="closeOnBg(event,'info-overlay')">
+  <div class="sheet">
+    <div class="sheet-handle"></div>
+    <div class="sheet-title">Ahtesham Tech</div>
+    <span class="sheet-eyebrow">Connect With Us</span>
+    <div style="padding:0 16px 40px;display:flex;flex-direction:column;gap:8px">
+      <a href="https://www.youtube.com/@Ahtesham_Tech" target="_blank" class="info-link" style="background:rgba(255,0,0,.06);border-color:rgba(255,0,0,.2)">▶ YouTube – Ahtesham Tech</a>
+      <a href="https://www.instagram.com/ahtesham.tech/" target="_blank" class="info-link" style="background:rgba(225,48,108,.06);border-color:rgba(225,48,108,.2)">◉ Instagram – @ahtesham.tech</a>
+      <a href="https://www.youtube.com/@naatheshifa" target="_blank" class="info-link" style="background:rgba(255,0,0,.06);border-color:rgba(255,0,0,.2)">▶ YouTube – Naat E Shifa</a>
+      <a href="https://www.facebook.com/syedahmedewc" target="_blank" class="info-link" style="background:rgba(24,119,242,.06);border-color:rgba(24,119,242,.2)">◈ Facebook – Electrical Work</a>
+      <a href="/cdn-cgi/l/email-protection#9cefe9ececf3eee8dce6f5f7eef1fde8f9b2fff3f1" class="info-link" style="background:rgba(0,200,240,.04);border-color:rgba(0,200,240,.15)">✉ <span class="__cf_email__" data-cfemail="186b6d6868776a6c586271736a75796c7d367b7775">[email&#160;protected]</span></a>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     JAVASCRIPT
+══════════════════════════════════════ -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+/* ─── CURSOR (exact from website) ─── */
+const $cursor = document.getElementById('cursor');
+const $ring   = document.getElementById('cursor-ring');
+let mx=-100,my=-100,rx=-100,ry=-100;
+document.addEventListener('mousemove', e=>{mx=e.clientX;my=e.clientY;});
+(function loop(){
+  rx+=(mx-rx)*0.14; ry+=(my-ry)*0.14;
+  if($cursor){$cursor.style.left=mx+'px';$cursor.style.top=my+'px';}
+  if($ring){$ring.style.left=rx+'px';$ring.style.top=ry+'px';}
+  requestAnimationFrame(loop);
+})();
+function bindCursor(el){
+  el.addEventListener('mouseenter',()=>{
+    if($cursor){$cursor.style.width='16px';$cursor.style.height='16px';}
+    if($ring){$ring.style.width='56px';$ring.style.height='56px';}
+  });
+  el.addEventListener('mouseleave',()=>{
+    if($cursor){$cursor.style.width='10px';$cursor.style.height='10px';}
+    if($ring){$ring.style.width='36px';$ring.style.height='36px';}
+  });
+}
+document.querySelectorAll('a,button,.badge,.pill,.dock-item,.tasbeh-item,.lb-entry,.feat-pill,.custom-item').forEach(bindCursor);
+
+/* ─── STAR BACKGROUND (exact from website) ─── */
+(function(){
+  const cvs=document.getElementById('bgCanvas');
+  const ctx=cvs.getContext('2d');
+  let W,H,pts=[];
+  class P{
+    constructor(){this.reset(true);}
+    reset(r){
+      this.x=Math.random()*W; this.y=r?Math.random()*H:H+10;
+      this.r=Math.random()*1.4+.2; this.vx=(Math.random()-.5)*.12; this.vy=-(Math.random()*.25+.05);
+      this.a=Math.random()*.6+.1; this.tw=Math.random()*Math.PI*2; this.ts=Math.random()*.02+.005;
+    }
+    update(){this.x+=this.vx;this.y+=this.vy;this.tw+=this.ts;if(this.y<-10)this.reset(false);}
+    draw(){
+      const a=this.a*(.7+.3*Math.sin(this.tw));
+      ctx.beginPath();ctx.arc(this.x,this.y,this.r,0,Math.PI*2);
+      ctx.fillStyle=`rgba(180,220,255,${Math.max(0,a)})`;ctx.fill();
+    }
+  }
+  function init(){W=cvs.width=window.innerWidth;H=cvs.height=window.innerHeight;pts=Array.from({length:200},()=>new P());}
+  function render(){ctx.clearRect(0,0,W,H);pts.forEach(p=>{p.update();p.draw();});requestAnimationFrame(render);}
+  init();render();window.addEventListener('resize',init);
+})();
+
+/* ─── CONFETTI ─── */
+const confettiCvs=document.getElementById('confettiCanvas');
+const cCtx=confettiCvs.getContext('2d');
+let confettiPts=[];
+function burstConfetti(){
+  confettiCvs.width=window.innerWidth;confettiCvs.height=window.innerHeight;
+  const colors=['#00C8F0','#5DDFFF','#1A7FD4','#fff','#FFD700'];
+  for(let i=0;i<120;i++){
+    confettiPts.push({
+      x:window.innerWidth/2,y:window.innerHeight/2,
+      vx:(Math.random()-0.5)*14,vy:(Math.random()-1.2)*14,
+      r:Math.random()*5+2,color:colors[Math.floor(Math.random()*colors.length)],
+      rot:Math.random()*360,rotV:(Math.random()-0.5)*12,life:1,w:Math.random()*8+4,h:Math.random()*4+2
+    });
+  }
+  requestAnimationFrame(animConfetti);
+}
+function animConfetti(){
+  cCtx.clearRect(0,0,confettiCvs.width,confettiCvs.height);
+  confettiPts=confettiPts.filter(p=>p.life>0);
+  if(!confettiPts.length)return;
+  confettiPts.forEach(p=>{
+    p.x+=p.vx;p.y+=p.vy;p.vy+=0.35;p.rot+=p.rotV;p.life-=0.018;
+    cCtx.save();cCtx.translate(p.x,p.y);cCtx.rotate(p.rot*Math.PI/180);
+    cCtx.globalAlpha=Math.max(0,p.life);cCtx.fillStyle=p.color;
+    cCtx.fillRect(-p.w/2,-p.h/2,p.w,p.h);cCtx.restore();
+  });
+  requestAnimationFrame(animConfetti);
+}
+
+/* ─── WEB AUDIO (beads) ─── */
+const AudioCtx=window.AudioContext||window.webkitAudioContext;
+let audioCtx=null;
+function getAudio(){if(!audioCtx)audioCtx=new AudioCtx();return audioCtx;}
+function playBead(){
+  if(!S.soundClick)return;
+  try{
+    const a=getAudio();const o=a.createOscillator();const g=a.createGain();
+    o.connect(g);g.connect(a.destination);
+    o.type='sine';o.frequency.setValueAtTime(800,a.currentTime);
+    o.frequency.exponentialRampToValueAtTime(400,a.currentTime+.08);
+    g.gain.setValueAtTime(.15,a.currentTime);g.gain.exponentialRampToValueAtTime(.001,a.currentTime+.1);
+    o.start(a.currentTime);o.stop(a.currentTime+.1);
+  }catch(e){}
+}
+function playComplete(){
+  if(!S.soundComplete)return;
+  try{
+    const a=getAudio();
+    [[0,523],[0.12,659],[0.24,784],[0.36,1047]].forEach(([t,f])=>{
+      const o=a.createOscillator();const g=a.createGain();
+      o.connect(g);g.connect(a.destination);
+      o.type='sine';o.frequency.value=f;
+      g.gain.setValueAtTime(0,.001);g.gain.linearRampToValueAtTime(.2,a.currentTime+t+.05);
+      g.gain.exponentialRampToValueAtTime(.001,a.currentTime+t+.3);
+      o.start(a.currentTime+t);o.stop(a.currentTime+t+.35);
+    });
+  }catch(e){}
+}
+
+/* ─── STATE ─── */
+const DEFAULTS={
+  count:0,target:33,cycles:0,monthlyCycles:0,
+  streak:0,lastDate:'',currentMonthId:'',
+  vibrateOn:true,soundClick:false,soundComplete:true,isAmoled:false,
+  historySet:[],
+  userName:'',userCity:'',userState:'',userCountry:'',isProfileSet:false,
+  monthlyGraceTotal:2,monthlyGraceUsed:0,earnedGrace:0,
+  currentTasbehName:'',savedTasbehs:[],
+  isRamadan:false,eidShownYear:'',
+  lastAnnouncementId:'',lastSeenGoal:''
+};
+let S=Object.assign({},DEFAULTS);
+
+const PREDEFINED=[
+  {name:'SubhanAllah',arabic:'سُبْحَانَ ٱللَّٰهِ',defaultTarget:33},
+  {name:'Alhamdulillah',arabic:'ٱلْحَمْدُ لِلَّٰهِ',defaultTarget:33},
+  {name:'Allahu Akbar',arabic:'ٱللَّٰهُ أَكْبَرُ',defaultTarget:33},
+  {name:'SubhanAllahi wa bihamdihi',arabic:'سُبْحَانَ ٱللَّٰهِ وَبِحَمْدِهِ',defaultTarget:100},
+  {name:'Astaghfirullah',arabic:'أَسْتَغْفِرُ ٱللَّٰهَ',defaultTarget:100},
+  {name:'La ilaha illallah',arabic:'لَا إِلَٰهَ إِلَّا ٱللَّٰهُ',defaultTarget:100},
+  {name:'Durood',arabic:'اللهم صل على محمد',defaultTarget:10}
+];
+
+const CIRC=2*Math.PI*160;
+let globalCounts={},communityGoal={},leaderboardData=[],myContribs={};
+let isLoadingLB=false,lbTab=0,lastFetchSlot=0,nextRefreshTime=0;
+let lbTimerInterval=null,chipTarget=null,successTO=null;
+let prayerTimes=null,userLat=null,userLon=null,userCityName='';
+
+/* ─── PERSIST ─── */
+function save(){try{localStorage.setItem('zm_v3',JSON.stringify(S));}catch(e){}}
+function load(){
+  try{
+    const raw=localStorage.getItem('zm_v3');
+    if(raw){const p=JSON.parse(raw);Object.assign(S,p);}
+    if(!Array.isArray(S.historySet))S.historySet=[];
+    if(!Array.isArray(S.savedTasbehs))S.savedTasbehs=[];
+    if(S.target===undefined||S.target<0)S.target=33;
+  }catch(e){}
+}
+
+/* ─── RENDER ─── */
+function renderAll(){
+  document.getElementById('counter').textContent=String(S.count).padStart(4,'0');
+  document.getElementById('target-pill').textContent=S.target===0?'∞ Mode':`Target: ${S.target}`;
+  document.getElementById('cycles-pill').textContent=`Cycles: ${S.cycles}`;
+  document.getElementById('monthly-pill').textContent=`Monthly: ${S.monthlyCycles}`;
+  const pre=PREDEFINED.find(p=>p.name===S.currentTasbehName);
+  document.getElementById('tasbeh-label').textContent=S.currentTasbehName||'Mamool Zikr';
+  document.getElementById('tasbeh-arabic').textContent=pre?pre.arabic:'';
+  document.getElementById('ring-sublabel').textContent=S.currentTasbehName||'Tap to Count';
+  updateRingArc();
+  document.getElementById('streak-val').textContent=S.streak;
+  document.getElementById('streak-emoji').textContent=streakEmoji(S.streak);
+  const gl=S.monthlyGraceTotal-S.monthlyGraceUsed;
+  const gb=document.getElementById('grace-badge');
+  gb.style.display=(S.streak>0&&gl>0)?'flex':'none';
+  document.getElementById('grace-val').textContent=gl;
+  document.getElementById('vibrate-icon').textContent=S.vibrateOn?'📳':'🔇';
+  updateSoundToggles();
+}
+function updateRingArc(){
+  const arc=document.getElementById('ring-arc');
+  const ring=document.getElementById('counter-ring');
+  let prog=S.target>0?Math.min(S.count/S.target,1):0;
+  arc.style.strokeDasharray=CIRC;
+  arc.style.strokeDashoffset=CIRC*(1-prog);
+  arc.setAttribute('stroke',prog>=1?'var(--cyan-light)':'var(--gold)');
+  if(prog>=1){ring.classList.add('ring-success');ring.classList.remove('ring-pulse');}
+  else ring.classList.remove('ring-success');
+}
+function updateSoundToggles(){
+  document.getElementById('sw-click').classList.toggle('on',S.soundClick);
+  document.getElementById('sw-complete').classList.toggle('on',S.soundComplete);
+  document.getElementById('sw-vibrate').classList.toggle('on',S.vibrateOn);
+}
+
+/* ─── SUCCESS FLASH ─── */
+function triggerSuccess(){
+  const num=document.getElementById('counter');
+  const ring=document.getElementById('counter-ring');
+  num.classList.add('pop','success-num');
+  ring.classList.add('ring-pulse');
+  playComplete();
+  burstConfetti();
+  clearTimeout(successTO);
+  successTO=setTimeout(()=>{
+    num.classList.remove('pop','success-num');
+    ring.classList.remove('ring-pulse');
+    renderAll();
+  },900);
+}
+
+/* ─── RIPPLE ─── */
+function spawnRipple(e,target){
+  const rp=document.createElement('span');rp.className='tap-ripple';
+  const rc=target.getBoundingClientRect();
+  const sz=target.offsetWidth;
+  rp.style.cssText=`width:${sz}px;height:${sz}px;left:${(rc.width-sz)/2}px;top:${(rc.height-sz)/2}px`;
+  target.appendChild(rp);
+  rp.addEventListener('animationend',()=>rp.remove());
+}
+
+/* ─── DATES ─── */
+function today(){const d=new Date();return`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;}
+function pad(n){return String(n).padStart(2,'0');}
+function daysDiff(d1,d2){try{return Math.round((new Date(d2)-new Date(d1))/86400000);}catch{return 0;}}
+
+/* ─── STREAK ─── */
+function updateStreak(){
+  const td=today();
+  if(S.lastDate===td)return;
+  const diff=S.lastDate?daysDiff(S.lastDate,td):1;
+  const gl=S.monthlyGraceTotal-S.monthlyGraceUsed;
+  if(diff===1){S.streak++;}
+  else if(diff>1&&gl>0){S.monthlyGraceUsed++;S.streak++;showToast('🛡 Grace Used — Streak Saved');}
+  else if(diff>1){S.streak=1;showToast('Streak Reset — New Cycle Begins');}
+  else if(S.streak===0){S.streak=1;}
+  S.lastDate=td;
+}
+function checkStreakOnLoad(){
+  if(!S.lastDate)return;
+  const diff=daysDiff(S.lastDate,today());
+  const gl=S.monthlyGraceTotal-S.monthlyGraceUsed;
+  if(diff===2&&gl>0){S.monthlyGraceUsed++;S.lastDate=today();showToast('Grace Auto-Applied');save();}
+  else if(diff>1){S.streak=0;save();}
+}
+function checkMonthlyReset(){
+  const d=new Date();
+  const mid=`${d.getFullYear()}_${pad(d.getMonth()+1)}`;
+  if(S.currentMonthId!==mid){
+    S.monthlyCycles=0;S.currentMonthId=mid;
+    let g=2;if(S.isRamadan)g++;if(S.earnedGrace>0)g+=S.earnedGrace;
+    S.monthlyGraceTotal=g;S.monthlyGraceUsed=0;save();
+  }
+}
+
+/* ─── INCREMENT / DECREMENT ─── */
+function handleIncrement(e){
+  if(e)spawnRipple(e,document.getElementById('counter-ring'));
+  updateStreak();playBead();doVibrate('light');
+  const t=S.target;
+  if(t===0){S.count++;updateTasbehProgress();save();renderAll();return;}
+  if(S.count<t)S.count++;
+  updateTasbehProgress();
+  if(S.count===t){
+    S.cycles++;S.monthlyCycles++;
+    const pre=PREDEFINED.find(p=>p.name===S.currentTasbehName);
+    if(pre&&t===pre.defaultTarget){fbUpdateMyScore();fbUpdateGlobalCount(S.currentTasbehName);fbUpdateMyContrib(S.currentTasbehName,pre.defaultTarget);}
+    addHistory();triggerSuccess();
+    S.count=0;updateTasbehProgress();
+  }
+  if(S.cycles>=1000&&S.earnedGrace===0){S.earnedGrace=1;S.monthlyGraceTotal++;showToast('⭐ Bonus Grace Unlocked');}
+  save();renderAll();
+}
+function handleDecrement(){
+  if(S.count>0){S.count--;updateTasbehProgress();doVibrate('light');save();renderAll();}
+}
+function confirmReset(){openOverlay('reset-overlay');}
+function doReset(){
+  S.count=0;S.cycles=0;S.monthlyCycles=0;
+  updateTasbehProgress();doVibrate('light');save();renderAll();closeOverlay('reset-overlay');
+}
+
+/* ─── TASBEH PROGRESS ─── */
+function updateTasbehProgress(){
+  if(!S.currentTasbehName)return;
+  S.savedTasbehs=S.savedTasbehs.map(t=>t.name===S.currentTasbehName?{...t,currentCount:S.count}:t);
+}
+
+/* ─── HISTORY ─── */
+function addHistory(){
+  S.historySet.unshift({ts:Date.now(),target:S.target,name:S.currentTasbehName||''});
+  if(S.historySet.length>200)S.historySet.pop();
+}
+function clearHistory(){S.historySet=[];save();renderHistory();}
+function renderHistory(){
+  const el=document.getElementById('history-list');
+  if(!S.historySet.length){
+    el.innerHTML=`<p style="text-align:center;font-family:var(--font-mono);font-size:10px;letter-spacing:2px;color:var(--text-faint);padding:50px 20px;text-transform:uppercase">No sessions yet.</p>`;return;
+  }
+  el.innerHTML=S.historySet.map(it=>{
+    const d=new Date(it.ts);
+    const date=d.toLocaleDateString('en-US',{month:'short',day:'numeric'});
+    const time=d.toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit'});
+    return`<div class="history-entry">
+      <div><div class="h-date">${date}</div><div class="h-time">${time}</div>${it.name?`<div class="h-tasbeh">${it.name}</div>`:''}
+      </div><div class="h-count">${it.target===0?'∞':it.target}</div></div>`;
+  }).join('');
+}
+
+/* ─── VIBRATE ─── */
+function doVibrate(t){
+  if(!S.vibrateOn)return;
+  try{if(t==='success')navigator.vibrate?.([50,40,50]);else navigator.vibrate?.(16);}catch(e){}
+}
+function toggleVibrate(){S.vibrateOn=!S.vibrateOn;save();renderAll();showToast(S.vibrateOn?'Haptics On':'Haptics Off');}
+
+/* ─── SOUND SETTINGS ─── */
+function openSoundSettings(){openOverlay('sound-overlay');}
+function toggleSoundOpt(opt){
+  if(opt==='click')S.soundClick=!S.soundClick;
+  if(opt==='complete')S.soundComplete=!S.soundComplete;
+  if(opt==='vibrate')S.vibrateOn=!S.vibrateOn;
+  save();updateSoundToggles();
+}
+
+/* ─── THEME ─── */
+function toggleTheme(){S.isAmoled=!S.isAmoled;applyTheme();save();}
+function applyTheme(){
+  document.body.classList.toggle('amoled',S.isAmoled);
+  document.getElementById('theme-btn').textContent=S.isAmoled?'☀️':'🌙';
+}
+
+/* ─── OVERLAYS ─── */
+function openOverlay(id){document.getElementById(id).classList.add('show');}
+function closeOverlay(id){document.getElementById(id).classList.remove('show');}
+function closeOnBg(e,id){if(e.target.id===id)closeOverlay(id);}
+function openHistorySheet(){renderHistory();openOverlay('history-overlay');}
+function openStreakSheet(){renderStreakSheet();openOverlay('streak-overlay');}
+function openTasbehSelector(){renderTasbehSelector();openOverlay('tasbeh-overlay');}
+function openInfoSheet(){openOverlay('info-overlay');}
+function openProfile(){openOverlay('profile-overlay');}
+
+/* ─── TARGET DIALOG ─── */
+function openTargetDialog(){
+  document.getElementById('new-tasbeh-name').value='';
+  document.getElementById('target-num-input').value='';
+  chipTarget=null;renderChips();openOverlay('target-overlay');
+}
+function renderChips(){
+  document.getElementById('target-chips').innerHTML=
+    [11,33,99,100,0].map(v=>`<div class="chip ${chipTarget===v?'active':''}" onclick="selectChip(${v})">${v===0?'∞':v}</div>`).join('');
+}
+function selectChip(v){chipTarget=v;document.getElementById('target-num-input').value=v===0?'0':v;renderChips();}
+document.getElementById('target-num-input').addEventListener('input',function(){chipTarget=this.value?parseInt(this.value):null;renderChips();});
+function confirmNewTasbeh(){
+  const name=document.getElementById('new-tasbeh-name').value.trim();
+  const val=parseInt(document.getElementById('target-num-input').value);
+  const target=isNaN(val)?33:(val<0?0:val);
+  if(target!==0&&target<11){showToast('Minimum target is 11');return;}
+  const finalName=name||(target===0?'Be Hisaab Zikr':'Custom Zikr');
+  closeOverlay('target-overlay');
+  switchToTasbeh(finalName,target,true);
+}
+
+/* ─── TASBEH SELECTOR ─── */
+function renderTasbehSelector(){
+  document.getElementById('predefined-list').innerHTML=PREDEFINED.map(it=>{
+    const ia=it.name===S.currentTasbehName;
+    return`<div class="tasbeh-item${ia?' active':''}" onclick="selectPredefined('${esc(it.name)}',${it.defaultTarget})">
+      <div><div class="ti-name">${it.name}</div><div class="ti-arabic">${it.arabic}</div></div>
+      <div class="ti-target">${it.defaultTarget}</div></div>`;
+  }).join('');
+  const cl=document.getElementById('custom-list');
+  const csl=document.getElementById('custom-sec-label');
+  const customs=S.savedTasbehs.filter(t=>!PREDEFINED.find(p=>p.name===t.name));
+  if(customs.length){
+    csl.style.display='block';
+    cl.innerHTML=customs.map(t=>{
+      const ia=t.name===S.currentTasbehName;
+      const pct=t.target>0?Math.round(t.currentCount/t.target*100):0;
+      return`<div class="custom-item${ia?' active':''}" onclick="selectCustom('${esc(t.name)}')">
+        <div class="ci-name">${t.name}</div>
+        <div class="ci-right">
+          <span class="ci-target">${t.target===0?'∞':t.target}${t.target>0?` · ${pct}%`:''}</span>
+          <span class="ci-del" onclick="event.stopPropagation();deleteTasbeh('${esc(t.name)}')">🗑</span>
+        </div></div>`;
+    }).join('');
+  }else{csl.style.display='none';cl.innerHTML='';}
+}
+function esc(s){return String(s).replace(/'/g,"\\'");}
+function selectPredefined(name,target){switchToTasbeh(name,target,false);closeOverlay('tasbeh-overlay');}
+function selectCustom(name){
+  const t=S.savedTasbehs.find(x=>x.name===name);
+  if(t){S.currentTasbehName=t.name;S.target=t.target;S.count=t.currentCount;save();renderAll();}
+  closeOverlay('tasbeh-overlay');
+}
+function deleteTasbeh(name){
+  S.savedTasbehs=S.savedTasbehs.filter(t=>t.name!==name);
+  if(S.currentTasbehName===name){S.currentTasbehName='';S.target=33;S.count=0;}
+  save();renderAll();renderTasbehSelector();
+}
+function switchToTasbeh(name,target,isNew){
+  const ex=S.savedTasbehs.find(t=>t.name===name);
+  if(ex){S.currentTasbehName=ex.name;S.target=target;S.count=ex.currentCount;}
+  else{S.savedTasbehs.push({name,target,currentCount:0});S.currentTasbehName=name;S.target=target;S.count=0;}
+  save();renderAll();
+}
+
+/* ─── STREAK SHEET ─── */
+function renderStreakSheet(){
+  const cd=S.streak===0?0:((S.streak-1)%30)+1;
+  const prog=cd/30;
+  const fc=fireColor(cd,S.streak);
+  const gl=S.monthlyGraceTotal-S.monthlyGraceUsed;
+  const rank=streakRank(S.streak);
+  document.getElementById('streak-body').innerHTML=`
+    <div class="streak-ring-wrap" style="border-color:${fc}22;background:${fc}0D">
+      <span style="font-size:44px">${streakEmoji(S.streak)}</span>
+    </div>
+    <div class="streak-days">${S.streak} Day${S.streak!==1?'s':''}</div>
+    <div class="streak-rank-label" style="color:${fc}">${rank.name}</div>
+    <div class="rank-info">${rank.desc}</div>
+    ${S.streak>0&&gl>0?`<div style="display:flex;align-items:center;gap:8px;margin-top:12px;font-family:var(--font-mono);font-size:11px;letter-spacing:2px;color:var(--cyan)">${S.isRamadan?'🌙':'🛡'} ${gl} Grace Remaining</div>`:''}
+    <div class="pb-wrap">
+      <div class="pb-labels"><span>Level Progress</span><span>${cd} / 30 Days</span></div>
+      <div class="pb-track">
+        <div class="pb-fill" id="pb-fill-bar" style="width:${prog*100}%;background:${fc}"></div>
+      </div>
+      <div style="font-family:var(--font-mono);font-size:10px;color:var(--text-faint);text-align:center;margin-top:12px;letter-spacing:1px">Reach 30 days for Zikr-Ka-Ameen</div>
+    </div>
+    <div style="width:100%;margin-top:22px;padding:18px;background:rgba(255,255,255,.02);border:1px solid var(--rim2);border-radius:14px">
+      <div style="font-family:var(--font-mono);font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;opacity:.8">This Month</div>
+      <div style="font-family:var(--font-display);font-size:36px;font-weight:300;color:#fff">${S.monthlyCycles.toLocaleString()}</div>
+      <div style="font-family:var(--font-mono);font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--text-faint);margin-top:4px">Total Cycles Completed</div>
+    </div>
+    <div style="height:28px"></div>`;
+}
+
+/* ─── PROFILE ─── */
+function saveProfile(){
+  const n=document.getElementById('pf-name').value.trim();
+  const c=document.getElementById('pf-city').value.trim();
+  const st=document.getElementById('pf-state').value.trim();
+  const co=document.getElementById('pf-country').value.trim();
+  if(!n||!c||!st||!co){showToast('Please fill all fields');return;}
+  S.userName=n;S.userCity=c;S.userState=st;S.userCountry=co;S.isProfileSet=true;
+  save();closeOverlay('profile-overlay');fbUpdateMyScore();
+  showToast('Profile Saved — You\'re on the board');
+  fetchLeaderboard();openOverlay('lb-overlay');startLbTimer();
+}
+
+/* ─── LEADERBOARD ─── */
+function openLeaderboard(){
+  if(!S.isProfileSet){openOverlay('profile-overlay');return;}
+  fetchLeaderboard();openOverlay('lb-overlay');startLbTimer();
+}
+function switchLbTab(t){
+  lbTab=t;
+  document.getElementById('tab-rank').classList.toggle('active',t===0);
+  document.getElementById('tab-global').classList.toggle('active',t===1);
+  document.getElementById('lb-title').textContent=t===0?`${getMonthName()} Leaderboard`:'Community Impact';
+  renderLbContent();
+}
+function renderLbContent(){
+  const el=document.getElementById('lb-content');
+  if(lbTab===0){
+    if(isLoadingLB){
+      el.innerHTML=`<div style="display:flex;justify-content:center;padding:60px"><div style="width:30px;height:30px;border:1.5px solid rgba(0,200,240,.2);border-top-color:var(--cyan);border-radius:50%;animation:spin .8s linear infinite"></div></div><style>@keyframes spin{to{transform:rotate(360deg)}}</style>`;return;
+    }
+    if(!leaderboardData.length){
+      el.innerHTML=`<p style="text-align:center;font-family:var(--font-mono);font-size:10px;letter-spacing:2px;color:var(--text-faint);padding:50px 20px;text-transform:uppercase">No entries this month yet.</p>`;return;
+    }
+    el.innerHTML=leaderboardData.map((u,i)=>`
+      <div class="lb-entry${u.isMe?' is-me':''}">
+        <span class="lb-rank${i<3?' top':''}">${i<3?['🥇','🥈','🥉'][i]:'#'+(i+1)}</span>
+        <div class="lb-avatar">${u.name?u.name[0].toUpperCase():'?'}</div>
+        <div style="flex:1"><div class="lb-name">${u.name}${u.streak>0?` <span style="font-size:12px;color:var(--text-faint)">🔥${u.streak}</span>`:''}</div><div class="lb-loc">${u.city} · ${u.country}</div></div>
+        <div class="lb-score">${u.score.toLocaleString()}</div>
+      </div>`).join('');
+  }else{
+    const tn=communityGoal.targetName||'SubhanAllah';
+    const ms=parseInt(communityGoal.milestone)||1000;
+    const pre=PREDEFINED.find(p=>p.name===tn);
+    const ec=(globalCounts[tn]||0)*(pre?.defaultTarget||33);
+    const pct=Math.min((ec/ms)*100,100);
+    const done=pct>=100;
+    let html=`<div class="milestone-card${done?' done':''}">
+      <div class="ms-header">
+        <div><div class="ms-eyebrow">${done?'Goal Achieved ✦':'Community Milestone'}</div><div class="ms-title">${tn}</div></div>
+        <div class="ms-pct${done?' done':''}">${Math.round(pct)}%</div>
+      </div>
+      <div class="progress-track"><div class="progress-fill-bar" style="width:${pct}%"></div></div>
+      <div class="ms-footer">
+        <span class="ms-sub">${done?'Alhamdulillah':ec.toLocaleString()+' done'}</span>
+        <span class="ms-sub">Goal: ${ms.toLocaleString()}</span>
+      </div></div>
+      <span class="sec-label" style="padding-top:8px">Worldwide Totals</span>`;
+    html+=PREDEFINED.map(p=>{
+      const cy=globalCounts[p.name]||0;const ex=cy*p.defaultTarget;
+      return`<div class="zikr-tile">
+        <div class="zikr-tile-row">
+          <div><span class="zikr-name">${p.name}</span><span class="zikr-count">${ex.toLocaleString()}<span class="zikr-unit">dhikr</span></span></div>
+          <div class="zikr-arabic-sm">${p.arabic}</div>
+        </div></div>`;
+    }).join('');
+    el.innerHTML=html;
+  }
+}
+function startLbTimer(){
+  clearInterval(lbTimerInterval);
+  lbTimerInterval=setInterval(()=>{
+    const rem=nextRefreshTime-Date.now();
+    const el=document.getElementById('lb-timer');
+    if(!el)return;
+    if(rem<=0){el.textContent='Update available';el.classList.add('refresh-avail');}
+    else{const m=Math.floor(rem/60000),sc=Math.floor((rem%60000)/1000);el.textContent=`Refreshes in ${pad(m)}:${pad(sc)}`;el.classList.remove('refresh-avail');}
+  },1000);
+}
+
+/* ─── FIREBASE HELPERS ─── */
+function getMonthKey(){const d=new Date();return`${d.getFullYear()}_${pad(d.getMonth()+1)}`;}
+function getMonthName(){return new Date().toLocaleString('en-US',{month:'long'});}
+
+function fetchLeaderboard(){
+  const slot=Date.now()-Date.now()%3600000;
+  nextRefreshTime=slot+3600000;
+  if(lastFetchSlot===slot&&leaderboardData.length){renderLbContent();return;}
+  isLoadingLB=true;renderLbContent();
+
+  function doFetch(){
+    const db=window.__db,ref=window.__fbRef,q=window.__fbQuery,ob=window.__fbOrderByChild,ll=window.__fbLimitToLast,get=window.__fbGet;
+    try{
+      get(q(ref(db,`monthly_leaderboards/${getMonthKey()}`),ob('score'),ll(50))).then(snap=>{
+        const list=[];
+        snap.forEach(c=>{
+          const v=c.val();if(!v)return;
+          list.push({name:v.name||v.displayName||'Anonymous',country:v.country||'\u{1F30D}',city:v.city||'',score:v.score||0,streak:v.streak||0,isMe:c.key===window.__uid});
+        });
+        leaderboardData=list.reverse();lastFetchSlot=slot;isLoadingLB=false;renderLbContent();
+      }).catch(()=>{isLoadingLB=false;showMockLB();});
+    }catch(e){isLoadingLB=false;showMockLB();}
+  }
+
+  if(window.__firebaseReady){
+    doFetch();
+  } else {
+    let waited=0;
+    const poll=setInterval(()=>{
+      waited+=200;
+      if(window.__firebaseReady){clearInterval(poll);doFetch();}
+      else if(waited>=6000){clearInterval(poll);isLoadingLB=false;showMockLB();}
+    },200);
+  }
+}
+function showMockLB(){
+  isLoadingLB=false;
+  leaderboardData=[
+    {name:'Ahmad',city:'Karachi',country:'🇵🇰',score:342,streak:15,isMe:false},
+    {name:'Fatima',city:'Istanbul',country:'🇹🇷',score:280,streak:22,isMe:false},
+    {name:S.userName||'You',city:S.userCity||'Your City',country:S.userCountry||'🌍',score:S.monthlyCycles,streak:S.streak,isMe:true}
+  ];
+  renderLbContent();
+}
+function fbUpdateMyScore(){
+  if(!window.__firebaseReady||!S.isProfileSet)return;
+  const db=window.__db,uid=window.__uid;if(!db||!uid)return;
+  try{window.__fbSet(window.__fbRef(db,`monthly_leaderboards/${getMonthKey()}/${uid}`),{name:S.userName,city:S.userCity,state:S.userState,country:S.userCountry,score:S.monthlyCycles,streak:S.streak});}catch(e){}
+}
+function fbUpdateGlobalCount(name){
+  if(!window.__firebaseReady)return;const db=window.__db;if(!db)return;
+  try{window.__fbTx(window.__fbRef(db,`global_stats/predefined_counts/${name}`),c=>(c||0)+1);}catch(e){}
+}
+function fbUpdateMyContrib(name,amt){
+  if(!window.__firebaseReady)return;const db=window.__db,uid=window.__uid;if(!db||!uid)return;
+  try{window.__fbTx(window.__fbRef(db,`user_contributions/${uid}/${name}`),c=>(c||0)+amt);}catch(e){}
+}
+function fetchGlobalStats(){
+  if(!window.__firebaseReady)return;const db=window.__db;if(!db)return;
+  try{
+    window.__fbOnValue(window.__fbRef(db,'global_stats/predefined_counts'),snap=>{
+      const c={};snap.forEach(ch=>{c[ch.key]=ch.val()||0;});globalCounts=c;
+    });
+    window.__fbOnValue(window.__fbRef(db,'community_goal'),snap=>{
+      const d={};snap.forEach(ch=>{d[ch.key]=ch.val();});communityGoal=d;checkGoalMilestone();
+    });
+    window.__fbOnValue(window.__fbRef(db,`user_contributions/${window.__uid}`),snap=>{
+      const mp={};snap.forEach(c=>{mp[c.key]=c.val()||0;});myContribs=mp;
+    });
+  }catch(e){}
+}
+function checkAnnouncement(){
+  if(!window.__firebaseReady)return;const db=window.__db;if(!db)return;
+  try{
+    window.__fbGet(window.__fbRef(db,'announcements')).then(snap=>{
+      if(!snap.child('active').val())return;
+      const id=snap.child('id').val();if(!id||id===S.lastAnnouncementId)return;
+      const td=today();
+      const sd=snap.child('startDate').val(),ed=snap.child('endDate').val();
+      if(sd&&td<sd)return;if(ed&&td>ed)return;
+      document.getElementById('announce-title').textContent=snap.child('title').val()||'';
+      document.getElementById('announce-msg').textContent=snap.child('message').val()||'';
+      const img=snap.child('imageUrl').val();const imgEl=document.getElementById('announce-img');
+      if(img){imgEl.src=img;imgEl.style.display='block';}
+      window.__announceLink=snap.child('link').val()||'';
+      document.querySelector('#announce-overlay .btn').textContent=(snap.child('buttonText').val()||'OK')+' →';
+      S.lastAnnouncementId=id;save();
+      setTimeout(()=>openOverlay('announce-overlay'),1600);
+    });
+  }catch(e){}
+}
+function handleAnnounceBtn(){if(window.__announceLink)window.open(window.__announceLink,'_blank');closeOverlay('announce-overlay');}
+function checkGoalMilestone(){
+  const tn=communityGoal.targetName||'';const ms=parseInt(communityGoal.milestone)||0;
+  if(!tn||!ms||!S.isProfileSet)return;
+  const pre=PREDEFINED.find(p=>p.name===tn);
+  const ec=(globalCounts[tn]||0)*(pre?.defaultTarget||33);
+  const gid=`${tn}_${ms}`;
+  if(ec>=ms&&S.lastSeenGoal!==gid){S.lastSeenGoal=gid;save();showGoalPopup(tn,ms,ec);}
+}
+function showGoalPopup(tn,ms,ec){
+  document.getElementById('goal-popup-msg').textContent=`The community reached ${ms.toLocaleString()} ${tn}!`;
+  const contrib=myContribs[tn]||0;const pct=((contrib/ms)*100).toFixed(2);
+  document.getElementById('goal-contrib').textContent=contrib>0?`Your contribution: ${contrib.toLocaleString()} recitations`:'';
+  document.getElementById('goal-pct-txt').textContent=contrib>0?`${pct}% of this goal`:'';
+  document.getElementById('goal-ameen-count').textContent=`${(communityGoal.ameenCount||0).toLocaleString()} people said Alhamdulillah`;
+  openOverlay('goal-overlay');
+}
+function handleAmeenClick(){
+  closeOverlay('goal-overlay');
+  if(!window.__firebaseReady)return;const db=window.__db;if(!db)return;
+  try{window.__fbTx(window.__fbRef(db,'community_goal/ameenCount'),c=>(c||0)+1);}catch(e){}
+}
+
+/* ─── HIJRI DATE ─── */
+async function loadHijriDate(){
+  try{
+    const d=new Date();
+    const res=await fetch(`https://api.aladhan.com/v1/gToH?date=${d.getDate()}-${d.getMonth()+1}-${d.getFullYear()}`);
+    const json=await res.json();const h=json.data.hijri;
+    document.getElementById('hijri-display').textContent=`${h.day} ${h.month.en} ${h.year} AH`;
+    if(h.holidays&&h.holidays.length>0&&h.holidays.some(hd=>hd.toLowerCase().includes('eid'))){
+      const yr=new Date().getFullYear();
+      if(S.eidShownYear!==String(yr)){S.eidShownYear=String(yr);save();showEid();}
+    }
+  }catch(e){document.getElementById('hijri-display').textContent='';}
+}
+function showEid(){
+  const el=document.getElementById('eid-overlay');
+  el.classList.add('show');setTimeout(()=>el.classList.remove('show'),3000);
+}
+
+/* ─── PRAYER TIMES ─── */
+async function openPrayerTimes(){
+  openOverlay('prayer-overlay');
+  if(prayerTimes){renderPrayerTimes();return;}
+  document.getElementById('prayer-city-label').textContent='Detecting location…';
+  document.getElementById('prayer-list').innerHTML=`<p style="text-align:center;padding:40px;font-family:var(--font-mono);font-size:10px;color:var(--text-faint);letter-spacing:2px">Getting prayer times…</p>`;
+  try{
+    const pos=await new Promise((res,rej)=>navigator.geolocation.getCurrentPosition(res,rej,{timeout:8000}));
+    userLat=pos.coords.latitude;userLon=pos.coords.longitude;
+    const d=new Date();
+    const res=await fetch(`https://api.aladhan.com/v1/timings/${d.getDate()}-${d.getMonth()+1}-${d.getFullYear()}?latitude=${userLat}&longitude=${userLon}&method=2`);
+    const json=await res.json();
+    prayerTimes=json.data.timings;
+    userCityName=json.data.meta?.timezone||'Your Location';
+    document.getElementById('prayer-city-label').textContent=userCityName.replace('_',' ');
+    renderPrayerTimes();
+    renderPrayerRow();
+  }catch(e){
+    document.getElementById('prayer-city-label').textContent='Location unavailable';
+    document.getElementById('prayer-list').innerHTML=`<p style="text-align:center;padding:40px;font-family:var(--font-mono);font-size:10px;color:var(--text-faint);letter-spacing:2px;text-transform:uppercase">Enable location to see prayer times.</p>`;
+  }
+}
+function renderPrayerTimes(){
+  const prayers=['Fajr','Sunrise','Dhuhr','Asr','Maghrib','Isha'];
+  const icons=['🌟','🌅','☀️','🌤','🌆','🌙'];
+  const now=new Date();
+  const nowMin=now.getHours()*60+now.getMinutes();
+  let nextIdx=-1;
+  const times=prayers.map((p,i)=>{
+    const t=prayerTimes[p]||'--:--';
+    const [h,m]=t.split(':').map(Number);const total=h*60+m;
+    return{name:p,time:t,icon:icons[i],totalMin:total};
+  });
+  nextIdx=times.findIndex(t=>t.totalMin>nowMin);
+  document.getElementById('prayer-list').innerHTML=times.map((t,i)=>`
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 22px;margin:0 16px 6px;background:${nextIdx===i?'var(--cyan-dim)':'rgba(255,255,255,.02)'};border:1px solid ${nextIdx===i?'rgba(0,200,240,.35)':'var(--rim2)'};border-radius:14px;transition:all .25s">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="font-size:20px">${t.icon}</span>
+        <div>
+          <div style="font-size:14px;font-weight:600${nextIdx===i?';color:var(--gold)':''}">${t.name}${nextIdx===i?` <span style="font-family:var(--font-mono);font-size:9px;color:var(--cyan);letter-spacing:2px">NEXT</span>`:''}</div>
+        </div>
+      </div>
+      <div style="font-family:var(--font-display);font-size:22px;font-weight:600;color:${nextIdx===i?'var(--gold-light)':'var(--text)'}">${t.time}</div>
+    </div>`).join('');
+}
+function renderPrayerRow(){
+  const prayers=['Fajr','Dhuhr','Asr','Maghrib','Isha'];
+  const now=new Date();const nowMin=now.getHours()*60+now.getMinutes();
+  let nextP='';
+  const row=document.getElementById('prayer-row');
+  row.style.display='flex';
+  row.innerHTML=prayers.map(p=>{
+    const t=prayerTimes[p]||'';
+    const [h,m]=(t||'0:0').split(':').map(Number);
+    const isNext=h*60+m>nowMin&&!nextP&&(nextP=p);
+    return`<div class="prayer-pill${isNext?' next-prayer':''}">
+      <div class="prayer-name">${p}</div><div class="prayer-time">${t||'--'}</div>
+    </div>`;
+  }).join('');
+}
+
+/* ─── QIBLA ─── */
+async function openQibla(){
+  openOverlay('qibla-overlay');
+  try{
+    if(!userLat){
+      const pos=await new Promise((res,rej)=>navigator.geolocation.getCurrentPosition(res,rej,{timeout:8000}));
+      userLat=pos.coords.latitude;userLon=pos.coords.longitude;
+    }
+    const MAKKAH_LAT=21.4225,MAKKAH_LON=39.8262;
+    const dLon=(MAKKAH_LON-userLon)*Math.PI/180;
+    const lat1=userLat*Math.PI/180,lat2=MAKKAH_LAT*Math.PI/180;
+    const y=Math.sin(dLon)*Math.cos(lat2);
+    const x=Math.cos(lat1)*Math.sin(lat2)-Math.sin(lat1)*Math.cos(lat2)*Math.cos(dLon);
+    const bearing=(Math.atan2(y,x)*180/Math.PI+360)%360;
+    document.getElementById('compass-needle').style.transform=`rotate(${bearing}deg)`;
+    document.getElementById('qibla-degrees').textContent=`${Math.round(bearing)}°`;
+    const dirs=['N','NE','E','SE','S','SW','W','NW','N'];
+    const dir=dirs[Math.round(bearing/45)%8];
+    document.getElementById('qibla-direction').textContent=`${dir} · Face this direction for Qibla`;
+    document.getElementById('qibla-city-label').textContent=`From your current location`;
+  }catch(e){
+    document.getElementById('qibla-city-label').textContent='Location unavailable';
+    document.getElementById('qibla-direction').textContent='Enable location access';
+  }
+}
+
+/* ─── SHARE CARD ─── */
+function openShareCard(){
+  openOverlay('share-overlay');
+  setTimeout(drawShareCard,100);
+}
+function drawShareCard(){
+  const cvs=document.getElementById('shareCanvas');
+  const ctx=cvs.getContext('2d');
+  const W=360,H=200;
+  ctx.clearRect(0,0,W,H);
+  // bg
+  const bg=ctx.createLinearGradient(0,0,W,H);
+  bg.addColorStop(0,'#070D1A');bg.addColorStop(1,'#0F1828');
+  ctx.fillStyle=bg;ctx.fillRect(0,0,W,H);
+  // glow
+  const grd=ctx.createRadialGradient(W/2,H/2,10,W/2,H/2,120);
+  grd.addColorStop(0,'rgba(0,200,240,.08)');grd.addColorStop(1,'transparent');
+  ctx.fillStyle=grd;ctx.fillRect(0,0,W,H);
+  // border
+  ctx.strokeStyle='rgba(0,200,240,.3)';ctx.lineWidth=1;
+  roundRect(ctx,4,4,W-8,H-8,14);ctx.stroke();
+  // emoji
+  ctx.font='44px serif';ctx.textAlign='left';ctx.fillText(streakEmoji(S.streak),24,72);
+  // streak number
+  ctx.fillStyle='#E4EFFF';ctx.font='bold 52px "Cormorant Garamond",Georgia,serif';
+  ctx.fillText(`${S.streak}`,80,76);
+  ctx.fillStyle='rgba(228,239,255,.5)';ctx.font='500 12px "DM Mono",monospace';
+  ctx.fillText('DAY STREAK',82,96);
+  // rank
+  const rank=streakRank(S.streak);
+  ctx.fillStyle='#00C8F0';ctx.font='500 11px "DM Mono",monospace';
+  ctx.fillText(rank.name.toUpperCase(),24,130);
+  // divider
+  ctx.strokeStyle='rgba(0,200,240,.2)';ctx.lineWidth=1;
+  ctx.beginPath();ctx.moveTo(24,140);ctx.lineTo(W-24,140);ctx.stroke();
+  // bottom
+  ctx.fillStyle='rgba(228,239,255,.4)';ctx.font='500 10px "DM Mono",monospace';
+  ctx.fillText('🌙 ZIKRMATE',24,162);
+  ctx.textAlign='right';
+  ctx.fillText(`${S.monthlyCycles} cycles this month`,W-24,162);
+  // watermark
+  ctx.textAlign='center';
+  ctx.fillStyle='rgba(0,200,240,.15)';ctx.font='italic 60px "Cormorant Garamond",Georgia,serif';
+  ctx.fillText('ذكر',W-40,H-10);
+}
+function roundRect(ctx,x,y,w,h,r){
+  ctx.beginPath();ctx.moveTo(x+r,y);ctx.lineTo(x+w-r,y);
+  ctx.quadraticCurveTo(x+w,y,x+w,y+r);ctx.lineTo(x+w,y+h-r);
+  ctx.quadraticCurveTo(x+w,y+h,x+w-r,y+h);ctx.lineTo(x+r,y+h);
+  ctx.quadraticCurveTo(x,y+h,x,y+h-r);ctx.lineTo(x,y+r);
+  ctx.quadraticCurveTo(x,y,x+r,y);ctx.closePath();
+}
+function downloadShareCard(){
+  const cvs=document.getElementById('shareCanvas');
+  const a=document.createElement('a');
+  a.download='zikrmate-streak.png';
+  a.href=cvs.toDataURL('image/png');a.click();
+}
+
+/* ─── HELPERS ─── */
+function streakEmoji(s){const c=s===0?0:((s-1)%30)+1;if(c===30)return'✦';if(c>=25)return'◆';if(c>=20)return'◈';if(c>=15)return'🌙';return s>0?'🔥':'◇';}
+function fireColor(c,s){if(c===30)return'#00C8F0';if(c>=25)return'#00BFA5';if(c>=20)return'#5DDFFF';if(c>=15)return'#AB47BC';if(c>=10)return'#EC407A';if(c>=5)return'#EF5350';return s>0?'#FF5722':'#555';}
+function streakRank(s){
+  if(s===0)return{name:'Intezaar-Mein',desc:'Awaiting your first dhikr'};
+  const c=((s-1)%30)+1;
+  if(c>=30)return{name:'Zikr-Ka-Ameen',desc:'Pinnacle of devotion'};
+  if(c>=25)return{name:'Tasbih-Ka-Rakhwala',desc:'Guardian of the Tasbih'};
+  if(c>=15)return{name:'Yaad-e-Ilahi',desc:'In constant remembrance of Allah'};
+  if(c>=5)return{name:'Zikr-Barhta-Hua',desc:'Growing in remembrance'};
+  return{name:'Pehla-Zikr',desc:'The first step, the most blessed'};
+}
+function showToast(msg,dur=2600){
+  const el=document.getElementById('toast');el.textContent=msg;el.classList.add('show');
+  setTimeout(()=>el.classList.remove('show'),dur);
+}
+
+/* ─── KEYBOARD ─── */
+document.addEventListener('keydown',e=>{
+  if(['Space','ArrowUp','Equal','NumpadAdd'].includes(e.code)){e.preventDefault();handleIncrement(null);}
+  if(['ArrowDown','Minus','NumpadSubtract'].includes(e.code)){e.preventDefault();handleDecrement();}
+  if(e.code==='KeyR'&&!e.target.matches('input'))confirmReset();
+  if(e.code==='Escape')document.querySelectorAll('.overlay.show').forEach(x=>x.classList.remove('show'));
+  if(e.code==='Slash')openTasbehSelector();
+});
+
+/* ─── SWIPE-TO-COUNT ─── */
+let touchY=null;
+document.getElementById('counter-ring').addEventListener('touchstart',e=>{touchY=e.touches[0].clientY;},{passive:true});
+document.getElementById('counter-ring').addEventListener('touchend',e=>{
+  if(touchY===null)return;
+  const dy=touchY-e.changedTouches[0].clientY;
+  if(Math.abs(dy)>30){e.preventDefault();handleIncrement(null);}
+  touchY=null;
+},{passive:false});
+
+/* ─── INIT ─── */
+function init(){
+  load();
+  checkMonthlyReset();
+  checkStreakOnLoad();
+  applyTheme();
+  renderChips();
+  renderAll();
+  loadHijriDate();
+  const tryFB=()=>{
+    if(window.__firebaseReady){
+      fetchGlobalStats();
+      checkAnnouncement();
+    }
+  };
+  window.addEventListener('firebase-ready',tryFB);
+  setTimeout(tryFB,3500);
+}
+
+window.addEventListener('DOMContentLoaded',init);
+</script>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">Zikr Mate</span>
+      <p class="footer-tagline">The most elegant community-driven tasbeeh. Crafted with heart for the global Muslim ummah.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">App</div>
+      <ul class="footer-links">
+        <li><a href="https://play.google.com/store/apps/details?id=com.ahteshamtech.zikrmate" target="_blank">Google Play ↗</a></li>
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="index.html#stats">Live Stats</a></li>
+        <li><a href="index.html#leaderboard">Leaderboard</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Support</div>
+      <ul class="footer-links">
+        <li><a href="index.html#support">Contact</a></li>
+        <li><a href="index.html#support">FAQ</a></li>
+        <li><a href="mailto:zikrmate@gmail.com">Email Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Developer</div>
+      <ul class="footer-links">
+        <li><a>Syed Ahtesham Ullah Quadri</a></li>
+        <li><a>Karimnagar, Telangana, India</a></li>
+        <li><a href = "https://www.instagram.com/ahtesham.tech" target="_blank">Follow on Insta </a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 ZikrMate — All rights reserved. Crafted by Syed Ahtesham Ullah Quadri.</span>
+   
+    </div>
