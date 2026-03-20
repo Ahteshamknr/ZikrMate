@@ -2,11 +2,27 @@
 <html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8">
-<title>ZikrMate – Track Your Dhikr. Elevate Your Soul.</title>
+<title>ZikrMate – Free Tasbeeh Counter & Dhikr Tracker for Muslims</title>
+
+<meta name="keywords" content="
+tasbeeh counter online,
+zikr counter app,
+dhikr tracker,
+islamic tasbeeh counter,
+free tasbeeh app,
+digital tasbeeh online,
+zikr mate app
+">
+
+<meta name="robots" content="index, follow">
+<meta name="author" content="ZikrMate Team">
 <link rel="icon" type="image/jpeg" href="ZikrMate_Logo.jpeg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="ZikrMate – The most elegant community-driven tasbeeh. Track your spiritual journey alongside a global Muslim community in real-time."/>
-
+<meta name="description" content="
+ZikrMate is a free online Tasbeeh counter and Dhikr tracker for Muslims. 
+Track your zikr, join global leaderboard, and stay consistent in remembrance of Allah. 
+Works on mobile, fast, and easy to use.
+">
 <!-- PWA / Open Graph -->
 <meta property="og:title" content="ZikrMate – Soul Progress. Synchronized."/>
 <meta property="og:description" content="The most elegant community-driven tasbeeh. Track your spiritual journey alongside a global Muslim community in real-time."/>
@@ -558,6 +574,221 @@ footer{position:relative;z-index:10;border-top:1px solid var(--rim);padding:80px
 @media(max-width:700px){
   .why-grid{grid-template-columns:1fr 1fr;}
 }
+
+/*----- Our Team----*/
+
+/* team section */
+.team-section{
+  position:relative;
+  z-index:10;
+  padding:120px 6%;
+  background:linear-gradient(to bottom, var(--ink2), var(--ink));
+  border-top:1px solid var(--rim);
+}
+
+/* founder */
+.founder-hero{
+  text-align:center;
+  margin-bottom:120px;
+  position:relative;
+  padding:60px 20px;
+}
+.founder-hero::before{
+  content:'';
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:800px;
+  height:800px;
+  background:radial-gradient(circle, rgba(0,200,240,0.06), transparent 70%);
+  transform:translate(-50%, -50%);
+  z-index:0;
+}
+.founder-glow{
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:600px;
+  height:600px;
+  background:radial-gradient(circle, rgba(0,200,240,0.18), transparent 70%);
+  transform:translate(-50%, -50%);
+  filter:blur(80px);
+  z-index:0;
+  animation:pulseGlow 6s ease-in-out infinite;
+}
+@keyframes pulseGlow{
+  0%,100%{opacity:.6;transform:translate(-50%,-50%) scale(1);}
+  50%{opacity:1;transform:translate(-50%,-50%) scale(1.1);}
+}
+.founder-avatar{
+  width:400px;
+  height:400px;
+  border-radius:50%;
+  border:2px solid var(--cyan);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:44px;
+  margin:auto;
+  position:relative;
+  z-index:2;
+  background:radial-gradient(circle, rgba(0,200,240,0.1), transparent);
+  box-shadow:0 0 40px rgba(0,200,240,0.25);
+}
+.founder-name{
+  font-family:var(--font-display);
+  font-size:42px;
+  margin-top:24px;
+  position:relative;
+  z-index:2;
+}
+.founder-role{
+  font-family:var(--font-mono);
+  font-size:16px;
+  letter-spacing:3px;
+  color:var(--cyan);
+  position:relative;
+  z-index:2;
+}
+.founder-bio{
+  margin-top:18px;
+  color:var(--text-dim);
+  max-width:520px;
+  margin-left:auto;
+  margin-right:auto;
+  position:relative;
+  z-index:2;
+}
+.founder-hero::after{
+  content:'';
+  display:block;
+  width:2px;
+  height:80px;
+  margin:30px auto;
+  background:linear-gradient(var(--cyan), transparent);
+  position:relative;
+  z-index:2;
+}
+
+/* team grid */
+.team-grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:28px;
+}
+.team-card{
+  background:var(--surface);
+  border:1px solid var(--rim2);
+  border-radius:20px;
+  padding:32px;
+  text-align:center;
+  transition:all 0.4s var(--ease-out);
+  position:relative;
+  overflow:hidden;
+  cursor:pointer;
+}
+.team-card::before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:-120%;
+  width:120%;
+  height:100%;
+  background:linear-gradient(120deg, transparent, rgba(0,200,240,0.15), transparent);
+  opacity:0;
+  transition:all 0.6s ease;
+}
+.team-card:hover::before{
+  left:120%;
+  opacity:1;
+}
+.team-card:hover{
+  transform:translateY(-10px) scale(1.02);
+  border-color:var(--cyan);
+  box-shadow:0 0 30px rgba(0,200,240,0.2),0 0 80px rgba(0,200,240,0.1),0 20px 40px rgba(0,0,0,0.4);
+}
+.team-card:active{
+  transform:scale(0.97);
+}
+.team-avatar{
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  margin:auto;
+  margin-bottom:16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid var(--rim);
+  font-family:var(--font-display);
+  font-size:26px;
+  color:var(--gold);
+  background:linear-gradient(135deg, var(--ink3), var(--ink2));
+  position:relative;
+  z-index:1;
+  transition:border-color .3s, box-shadow .3s;
+}
+.team-avatar img,
+.founder-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.team-card:hover .team-avatar{
+  border-color:var(--cyan);
+  box-shadow:0 0 30px rgba(0,200,240,0.2);
+}
+.team-name{
+  font-family:var(--font-display);
+  font-size:18px;
+  margin-bottom:6px;
+  position:relative;
+  z-index:1;
+}
+.team-role{
+  font-family:var(--font-mono);
+  font-size:10px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  position:relative;
+  z-index:1;
+}
+.team-bio{
+  font-size:13px;
+  color:var(--text-dim);
+  line-height:1.6;
+  margin-top:16px;
+  position:relative;
+  z-index:1;
+}
+.role-advisor { color:#00ff6a; }
+.role-ops { color:var(--cyan); }
+.role-product { color:#9433bb; }
+.role-global { color:#1A7FD4; }
+
+.team-bottom-text{
+  text-align:center;
+  margin-top:60px;
+  font-family:var(--font-display);
+  font-size:22px;
+  color:var(--gold-light);
+  opacity:.85;
+}
+
+.team-avatar img {
+  filter: contrast(1.05) brightness(1.05);
+  transition: transform 0.4s ease;
+}
+.team-avatar,
+.founder-avatar {
+  overflow: hidden;
+}
+.team-card:hover .team-avatar img {
+  transform: scale(1.08);
+}
+
+
 </style>
 </head>
 <body>
@@ -569,15 +800,7 @@ footer{position:relative;z-index:10;border-top:1px solid var(--rim);padding:80px
 <div class="radial-gold"></div>
 <div class="radial-emerald"></div>
 
-</div>
 
-</div>
-
-</div>
-
-</div>
-
-</div>
 
 <!-- PWA Install Banner -->
 <div id="pwa-banner">
@@ -597,6 +820,7 @@ footer{position:relative;z-index:10;border-top:1px solid var(--rim);padding:80px
   </a>
   <ul class="nav-links">
     <li><a href="zikrmate_counter.html">Counter</a></li>
+    <li><a href="#team">Team</a></li>
     <li><a href="#stats">Stats</a></li>
     <li><a href="#leaderboard">Leaderboard</a></li>
     <li><a href="#features">Features</a></li>
@@ -673,6 +897,88 @@ footer{position:relative;z-index:10;border-top:1px solid var(--rim);padding:80px
     <span class="ticker-item"><span class="ticker-gem">◆</span> Durood Ibrahim</span>
   </div>
 </div>
+<section class="team-section" id="team">
+
+  <span class="section-label reveal">Built With Purpose</span>
+  <h2 class="section-title reveal reveal-delay-1">
+    The Visionaries Behind <em>ZikrMate</em>
+  </h2>
+
+<div class="founder-hero reveal reveal-delay-2">
+  <div class="founder-glow"></div>
+
+<div class="founder-avatar">
+  <img src="images/ahtesham.jpg" alt="Founder Syed Ahtesham Ullah Quadri">
+</div>
+
+  <h3 class="founder-name">Syed Ahtesham Ullah Quadri</h3>
+  <span class="founder-role">Founder · Developer of ZikrMate</span>
+
+  <p class="founder-bio">
+    Engineering a digital bridge between the modern world and the eternal heart. ZikrMate is more than an application—it is a sanctuary built to ensure that in an age of distraction, the soul never loses its rhythm of remembrance.
+  </p>
+</div>
+
+<div class="team-grid">
+
+  <!-- FATHER (SUPERIOR ROLE) -->
+  <div class="team-card reveal reveal-delay-1">
+  <div class="team-avatar">
+  <img src="images/ahmed.jpg" alt="Syed Ahmed Ullah Quadri">
+</div>
+  <h3 class="team-name">Syed Ahmed Ullah Quadri</h3>
+  <span class="team-role role-advisor">Co-Founder & Spiritual Guidance</span>
+  <p class="team-bio">
+    Providing the spiritual foundation and core vision that guides every aspect of our mission
+  </p>
+</div>
+
+  <!-- UNCLE -->
+  <div class="team-card reveal reveal-delay-2">
+    <div class="team-avatar">
+  <img src="images/akram.jpg" alt="Syed Akram Ullah Quadri">
+</div>
+    <h3 class="team-name">Syed Akram Ullah Quadri</h3>
+    <span class="team-role role-ops">Advisor</span>
+    <p class="team-bio">
+      Building trust and authentic connections to help our community grow with sincerity
+    </p>
+  </div>
+
+  <!-- BROTHER -->
+  <div class="team-card reveal reveal-delay-3">
+    <div class="team-avatar">
+  <img src="images/karim.jpg" alt="Syed Karim Ullah Quadri">
+</div>
+    <h3 class="team-name">Syed Karim Ullah Quadri</h3>
+    <span class="team-role role-product">Support</span>
+    <p class="team-bio">
+      Assisting in refining user experience,
+      ensuring a seamless, intuitive journey for every user.
+    </p>
+  </div>
+
+  <!-- COUSIN -->
+  <div class="team-card reveal reveal-delay-4">
+   <div class="team-avatar">
+  <img src="images/adnan.jpg" alt="Syed Adnan Hussaini">
+</div>
+    <h3 class="team-name">Syed Adnan Hussaini</h3>
+    <span class="team-role role-global">Support</span>
+    <p class="team-bio">
+     Supporting outreach and representation to make ZikrMate accessible to everyone, everywhere.
+    </p>
+</div>
+
+
+</div>
+<p class="team-bottom-text reveal">
+  Built with sincerity. Designed for remembrance. United for the Ummah.
+</p>
+</section>
+
+
+
 
 <!-- ═══════ STATS GRID ═══════ -->
 <div class="section" id="stats">
@@ -1750,7 +2056,7 @@ if(scrollRow){
 
 /* ─── Nav active on scroll ─── */
 window.addEventListener('scroll',()=>{
-  const sections=['stats','leaderboard','features','screenshots','support'];
+  const sections=['team','stats','leaderboard','features','screenshots','support'];
   const navLinks=document.querySelectorAll('.nav-links a');
   sections.forEach((id,i)=>{
     const el=document.getElementById(id);
@@ -1830,6 +2136,22 @@ document.querySelectorAll('.why-card').forEach(c=>whyObserver.observe(c));
   },{threshold:0.5});
   dlObserver.observe(el);
 })();
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebApplication",
+ "name": "ZikrMate",
+ "url": "https://zikrmate.com",
+ "applicationCategory": "LifestyleApplication",
+ "operatingSystem": "All",
+ "description": "Free Tasbeeh Counter and Dhikr Tracker for Muslims",
+ "offers": {
+   "@type": "Offer",
+   "price": "0",
+   "priceCurrency": "USD"
+ }
+}
 </script>
 </body>
 </html>
