@@ -564,11 +564,29 @@ footer{position:relative;z-index:10;border-top:1px solid var(--rim);padding:70px
   z-index:2;
 }
 
-/* team grid */
-.team-grid{
-  display:grid;
-  grid-template-columns:repeat(4, 1fr);
-  gap:24px;
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Keeps the bottom row centered */
+  gap: 32px;               /* Increased gap for the larger cards */
+  max-width: 1400px;       /* Increased container width */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.team-card {
+  /* This makes cards roughly 30% wider than before */
+  /* If you want only 2 per row, change 33% to 45% */
+  flex: 0 1 calc(33.333% - 32px); 
+  
+  min-width: 320px;        /* Prevents them from getting too small */
+  max-width: 400px;        /* Limits how big they can get on desktop */
+  
+  padding: 40px 24px;      /* Increased internal padding for a "bigger" feel */
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* Ensures content stays centered inside the card */
+  text-align: center;
 }
 .team-card{
   background:var(--surface);
@@ -648,10 +666,10 @@ footer{position:relative;z-index:10;border-top:1px solid var(--rim);padding:70px
   margin-top:12px;
   position:relative;z-index:1;
 }
-.role-advisor{color:#00ff6a;}
-.role-ops{color:var(--cyan);}
-.role-product{color:#9433bb;}
-.role-global{color:#1A7FD4;}
+.role-advisor { color:#00ff6a; }
+.role-ops { color:var(--cyan); }
+.role-product { color:#b700ff; }
+.role-global { color:#1A7FD4; }
 
 .team-bottom-text{
   text-align:center;
@@ -966,52 +984,61 @@ footer{position:relative;z-index:10;border-top:1px solid var(--rim);padding:70px
   </div>
 
   <div class="team-grid">
-
-    <div class="team-card reveal reveal-delay-1">
-      <div class="team-avatar">
-        <img src="images/ahmed.jpg" alt="Syed Ahmed Ullah Quadri">
-      </div>
-      <!-- Mobile: wrap text in a div for flex layout -->
-      <div class="team-card-text">
-        <h3 class="team-name">Syed Ahmed Ullah Quadri</h3>
-        <span class="team-role role-advisor">Co-Founder & Spiritual Guidance</span>
-        <p class="team-bio">Providing the spiritual foundation and core vision that guides every aspect of our mission</p>
-      </div>
+  <div class="team-card reveal reveal-delay-1">
+    <div class="team-avatar">
+      <img src="images/syedahmed.jpg" alt="Syed Ahmed Ullah Quadri">
     </div>
-
-    <div class="team-card reveal reveal-delay-2">
-      <div class="team-avatar">
-        <img src="images/akram.jpg" alt="Syed Akram Ullah Quadri">
-      </div>
-      <div class="team-card-text">
-        <h3 class="team-name">Syed Akram Ullah Quadri</h3>
-        <span class="team-role role-ops">Advisor</span>
-        <p class="team-bio">Building trust and authentic connections to help our community grow with sincerity</p>
-      </div>
+    <div class="team-card-text">
+      <h3 class="team-name">Syed Ahmed Ullah Quadri</h3>
+      <span class="team-role role-advisor">Co-Founder</span>
+      <p class="team-bio">Providing the spiritual foundation and core vision that guides every aspect of our mission</p>
     </div>
+  </div>
 
-    <div class="team-card reveal reveal-delay-3">
-      <div class="team-avatar">
-        <img src="images/karim.jpg" alt="Syed Karim Ullah Quadri">
-      </div>
-      <div class="team-card-text">
-        <h3 class="team-name">Syed Karim Ullah Quadri</h3>
-        <span class="team-role role-product">Support</span>
-        <p class="team-bio">Assisting in refining user experience, ensuring a seamless, intuitive journey for every user.</p>
-      </div>
+  <div class="team-card reveal reveal-delay-2">
+    <div class="team-avatar">
+      <img src="images/akram.jpg" alt="Syed Akram Ullah Quadri">
     </div>
-
-    <div class="team-card reveal reveal-delay-4">
-      <div class="team-avatar">
-        <img src="images/adnan.jpg" alt="Syed Adnan Hussaini">
-      </div>
-      <div class="team-card-text">
-        <h3 class="team-name">Syed Adnan Hussaini</h3>
-        <span class="team-role role-global">Support</span>
-        <p class="team-bio">Supporting outreach and representation to make ZikrMate accessible to everyone, everywhere.</p>
-      </div>
+    <div class="team-card-text">
+      <h3 class="team-name">Syed Akram Ullah Quadri</h3>
+      <span class="team-role role-ops">Advisor</span>
+      <p class="team-bio">Building trust and authentic connections to help our community grow with sincerity</p>
     </div>
+  </div>
 
+  <div class="team-card reveal reveal-delay-3">
+    <div class="team-avatar">
+      <img src="images/Syed_Shah_Muhammed_Qadri.png" alt="Syed Shah Muhammed Quadri">
+    </div>
+    <div class="team-card-text">
+      <h3 class="team-name">Syed Shah Muhammed Quadri</h3>
+      <span class="team-role role-product">Hafiz-e-Qur’an & Lead Recitation Voice</span>
+      <p class="team-bio">A Hafiz-e-Qur’an contributing authentic recitations for the app, ensuring a clear and spiritually meaningful experience for users.</p>
+    </div>
+  </div>
+
+  <div class="team-card reveal reveal-delay-4">
+    <div class="team-avatar">
+      <img src="images/karim.jpg" alt="Syed Karim Ullah Quadri">
+    </div>
+    <div class="team-card-text">
+      <h3 class="team-name">Syed Karim Ullah Quadri</h3>
+      <span class="team-role role-global">Support</span>
+      <p class="team-bio">Assisting in refining user experience, ensuring a seamless, intuitive journey for every user.</p>
+    </div>
+  </div>
+
+  <div class="team-card reveal reveal-delay-5">
+    <div class="team-avatar">
+      <img src="images/adnan.jpg" alt="Syed Adnan Hussaini">
+    </div>
+    <div class="team-card-text">
+      <h3 class="team-name">Syed Adnan Hussaini</h3>
+      <span class="team-role role-global">Support</span>
+      <p class="team-bio">Supporting outreach and representation to make ZikrMate accessible to everyone, everywhere.</p>
+    </div>
+  </div>
+</div>
   </div>
 
   <p class="team-bottom-text reveal">Built with sincerity. Designed for remembrance. United for the Ummah.</p>
