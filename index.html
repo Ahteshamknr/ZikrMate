@@ -1410,6 +1410,19 @@ footer{position:relative;z-index:10;border-top:1px solid var(--rim);padding:70px
           </div>
         </div>
       </div>
+      <div class="testimonial-card reveal reveal-delay-4">
+        <div class="testimonial-stars">★★★★★</div>
+        <div class="testimonial-quote">"</div>
+        <p class="testimonial-text">Subhan'Allah, what a wonderful app for Zikr. Very simple to use and extremely helpful for daily remembrance. Highly recommended for every Muslim brother and sister. 5 Stars</p>
+        <div class="testimonial-author">
+          <div class="author-dot">S</div>
+          <div>
+            <div class="author-name">Maheen Naaz</div>
+            <div class="author-loc">Karimnagar, Telangana</div>
+            <div class="play-store-badge">★ Google Play Review</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -1853,16 +1866,41 @@ document.getElementById('pwaInstallBtn').addEventListener('click',async()=>{
   }
 });
 
-window.playZikr=function(text){
-  if('speechSynthesis' in window){
-    window.speechSynthesis.cancel();
-    const utt=new SpeechSynthesisUtterance(text);
-    utt.lang="ar-SA";utt.rate=0.75;utt.pitch=1;
-    const voices=speechSynthesis.getVoices();
-    const arabicVoice=voices.find(v=>v.lang.startsWith("ar"));
-    if(arabicVoice)utt.voice=arabicVoice;
-    speechSynthesis.speak(utt);
+const zikrAudioMap={
+  'SubhanAllah':'https://zikrmate.com/assets/audio/subhanallah.mp3',
+  'Alhamdulillah':'https://zikrmate.com/assets/audio/alhamdulillah.mp3',
+  'Allahu Akbar':'https://zikrmate.com/assets/audio/allahu-akbar.mp3',
+  'Astaghfirullah':'https://zikrmate.com/assets/audio/astaghfirullah.mp3',
+  'La ilaha illallah':'https://zikrmate.com/assets/audio/la-ilaha-illallah.mp3',
+  'SubhanAllahi wa bihamdihi':'https://zikrmate.com/assets/audio/subhanallahi-wa-bihamdihi.mp3',
+  'Durood Ibrahim':'https://zikrmate.com/assets/audio/durood-ibrahim.mp3',
+};
+let currentAudio=null,currentZikrName=null;
+window.playZikr=function(name){
+  const url=zikrAudioMap[name];
+  if(!url)return;
+  const allBtns=document.querySelectorAll('.zikr-audio-btn');
+  if(currentAudio&&!currentAudio.paused&&currentZikrName===name){
+    currentAudio.pause();currentAudio.currentTime=0;
+    currentAudio=null;currentZikrName=null;
+    allBtns.forEach(b=>b.textContent='▶ Pronunciation');
+    return;
   }
+  if(currentAudio){
+    currentAudio.pause();currentAudio.currentTime=0;
+    allBtns.forEach(b=>b.textContent='▶ Pronunciation');
+  }
+  currentAudio=new Audio(url);currentZikrName=name;
+  currentAudio.play();
+  allBtns.forEach(b=>{
+    if(b.getAttribute('onclick')===`playZikr('${name}')`)b.textContent='⏹ Stop';
+  });
+  currentAudio.addEventListener('ended',()=>{
+    allBtns.forEach(b=>{
+      if(b.getAttribute('onclick')===`playZikr('${name}')`)b.textContent='▶ Pronunciation';
+    });
+    currentAudio=null;currentZikrName=null;
+  });
 };
 
 /* ─── Scroll Reveal ─── */
