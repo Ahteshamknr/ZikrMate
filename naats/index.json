@@ -1,36 +1,5516 @@
 {
   "naats": [
     {
-      "id": "aaqa-ka-milad-aaya",
-      "title": "Aaqa Ka Milad Aaya",
-      "category": "A",
-      "author": "Traditional",
-      "lyricsUrl": "lyrics/aaqa-ka-milad-aaya.txt",
-      "mediaUrl": "https://www.youtube.com/watch?v=..."
-    },
-    {
-      "id": "Main-Madine-Chala",
-      "title": "Main Madine Chala",
-      "category": "M",
-      "author": "Syed Ahtesham",
-      "lyricsUrl": "lyrics/Main-Madine-Chala.txt",
-      "mediaUrl": "https://youtu.be/HpLG64z2qT0?si=TF_waROzk-6Pw8lR"
-    },
-    {
-      "id": "tajdar-e-haram",
-      "title": "Tajdar-e-Haram",
-      "category": "T",
-      "author": "Traditional",
-      "lyricsUrl": "lyrics/tajdar-e-haram.txt",
-      "mediaUrl": "https://www.youtube.com/watch?v=..."
-    },
-    {
-      "id": "ya-nabi-salam-alaika",
-      "title": "Ya Nabi Salam Alaika",
+      "id": "ya-nabi-nazre-karam-farmana-aye-hasnain-ke-nana",
+      "title": "Ya Nabi Nazre Karam Farmana Aye Hasnain Ke Nana",
       "category": "Y",
       "author": "Traditional",
-      "lyricsUrl": "lyrics/ya-nabi-salam-alaika.txt",
-      "mediaUrl": "https://www.youtube.com/watch?v=..."
+      "lyricsUrl": "lyrics/ya-nabi-nazre-karam-farmana-aye-hasnain-ke-nana.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "a-alam-e-islam-ko-eid-e-meelad-un-nabi",
+      "title": "A'alam E Islam Ko Eid-E-Meelad-Un-Nabi",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/a-alam-e-islam-ko-eid-e-meelad-un-nabi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aa-dil-main-tujhe-rakh-loun",
+      "title": "Aa Dil Main Tujhe Rakh Loun",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aa-dil-main-tujhe-rakh-loun.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aa-gaye-aa-gaye-mustafa-aa-gaye",
+      "title": "Aa Gaye Aa Gaye Mustafa Aa Gaye",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aa-gaye-aa-gaye-mustafa-aa-gaye.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aa-gaye-maidan-main-wafadar-e-sahaba",
+      "title": "AA GAYE MAIDAN MAIN WAFADAR E SAHABA",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aa-gaye-maidan-main-wafadar-e-sahaba.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aa-gayi-jag-de-vich-bahaar",
+      "title": "Aa Gayi Jag De Vich Bahaar",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aa-gayi-jag-de-vich-bahaar.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aa-jaye-bulawa-mujhe-aqa-tere-dar-se",
+      "title": "Aa Jaye Bulawa Mujhe Aqa Tere Dar Se",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aa-jaye-bulawa-mujhe-aqa-tere-dar-se.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aadha-idhar-aadha-udhar",
+      "title": "Aadha Idhar Aadha Udhar",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aadha-idhar-aadha-udhar.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aaj-ashk-mere-naat-sunain-to-ajab-kya",
+      "title": "Aaj Ashk Mere Naat Sunain To Ajab Kya",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aaj-ashk-mere-naat-sunain-to-ajab-kya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aaj-dulha-bana-shahe-ahmad-raza",
+      "title": "Aaj Dulha Bana Shahe Ahmad Raza",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aaj-dulha-bana-shahe-ahmad-raza.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aaj-muhammad-aye-moray-ghar",
+      "title": "Aaj Muhammad Aye Moray Ghar",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aaj-muhammad-aye-moray-ghar.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aaj-muslim-tera-mehmaan-chal-diya",
+      "title": "AAJ MUSLIM TERA MEHMAAN CHAL DIYA",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aaj-muslim-tera-mehmaan-chal-diya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aaka-ko-pukar-bande-aaka-ko-pukar",
+      "title": "Aaka Ko Pukar Bande Aaka Ko Pukar",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aaka-ko-pukar-bande-aaka-ko-pukar.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aakhri-lamhon-mein-kya-shehr-o-biyabaan-dekhun",
+      "title": "Aakhri Lamhon Mein Kya Shehr O Biyabaan Dekhun",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aakhri-lamhon-mein-kya-shehr-o-biyabaan-dekhun.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aalahazrat-ka-danka-bajega",
+      "title": "Aalahazrat Ka Danka Bajega",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aalahazrat-ka-danka-bajega.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aale-nabi-khune-khaatune-jannat-gulzar-e-millat",
+      "title": "Aale Nabi Khune Khaatune Jannat Gulzar E Millat",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aale-nabi-khune-khaatune-jannat-gulzar-e-millat.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aamad-e-mustafa-se-hai-phoola-phala-chaman-chaman",
+      "title": "Aamad E Mustafa Se Hai Phoola Phala Chaman Chaman",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aamad-e-mustafa-se-hai-phoola-phala-chaman-chaman.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aamal-nahin-kuch-bhi-yeh-haal-hamara-hai",
+      "title": "Aamal Nahin Kuch Bhi Yeh Haal Hamara Hai",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aamal-nahin-kuch-bhi-yeh-haal-hamara-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aamena-ka-jaya-hai-god-mein-halima-ke",
+      "title": "Aamena Ka Jaya Hai God Mein Halima Ke",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aamena-ka-jaya-hai-god-mein-halima-ke.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aamina-ke-dil-baron-dil-daar-par-lakho-salam",
+      "title": "Aamina Ke Dil Baron Dil Daar Par Lakho Salam",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aamina-ke-dil-baron-dil-daar-par-lakho-salam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aane-walon-yeh-to-batao",
+      "title": "Aane Walon Yeh To Batao",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aane-walon-yeh-to-batao.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aankhen-purnoor-karu-dekh-ke-chehra-unka",
+      "title": "Aankhen Purnoor Karu Dekh Ke Chehra Unka",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aankhen-purnoor-karu-dekh-ke-chehra-unka.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aao-aao-sar-ko-jhukayen-aaqa-ka-rauza-nazar-aagaya",
+      "title": "Aao Aao Sar Ko Jhukayen Aaqa Ka Rauza Nazar Aagaya",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aao-aao-sar-ko-jhukayen-aaqa-ka-rauza-nazar-aagaya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aao-ahle-shariat-pardhaye-tumhe",
+      "title": "Aao Ahle Shariat Pardhaye Tumhe",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aao-ahle-shariat-pardhaye-tumhe.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aao-ke-kare-baate-sarkar-e-do-aalam-ki",
+      "title": "Aao Ke Kare Baate Sarkar E Do Aalam Ki",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aao-ke-kare-baate-sarkar-e-do-aalam-ki.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aao-mere-nabi-ki-shaan-suno",
+      "title": "Aao Mere Nabi Ki Shaan Suno",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aao-mere-nabi-ki-shaan-suno.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aap-aye-duniya-vich-door-hoye-gham",
+      "title": "Aap Aye Duniya Vich Door Hoye Gham",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aap-aye-duniya-vich-door-hoye-gham.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aap-shamme-risalat-hain-parwaney-hum-ab-hum-akhir-yahan-se-kidhar-jayenge",
+      "title": "Aap Shamme Risalat Hain Parwaney Hum Ab Hum Akhir Yahan Se Kidhar Jayenge",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aap-shamme-risalat-hain-parwaney-hum-ab-hum-akhir-yahan-se-kidhar-jayenge.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aaqa-ka-meelaad-aaya",
+      "title": "Aaqa Ka Meelaad Aaya",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aaqa-ka-meelaad-aaya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aaqa-ke-ghulamo-ko-ab-eid-manane-do",
+      "title": "Aaqa Ke Ghulamo Ko Ab Eid Manane Do",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aaqa-ke-ghulamo-ko-ab-eid-manane-do.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aaqa-le-lo-salaam-ab-hamara-salaam",
+      "title": "Aaqa Le Lo Salaam Ab Hamara (Salaam)",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aaqa-le-lo-salaam-ab-hamara-salaam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aaqa-salam-lo-mere-moula-salam-lo",
+      "title": "Aaqa Salam Lo Mere Moula Salam Lo",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aaqa-salam-lo-mere-moula-salam-lo.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aasiyo-ko-dar-tumhara-mil-gaya",
+      "title": "Aasiyo Ko Dar Tumhara Mil Gaya",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aasiyo-ko-dar-tumhara-mil-gaya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aate-hain-aate-hain-sarkar-e-madina",
+      "title": "Aate Hain Aate Hain Sarkar E Madina",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aate-hain-aate-hain-sarkar-e-madina.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aawaz-panch-waqt-lagati-hai-momino",
+      "title": "Aawaz Panch Waqt Lagati Hai Momino",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aawaz-panch-waqt-lagati-hai-momino.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aaya-hai-ye-tera-deewana",
+      "title": "Aaya Hai Ye Tera Deewana",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aaya-hai-ye-tera-deewana.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aaya-na-hoga-iss-tarha-rang-o-shabab-rait-par",
+      "title": "Aaya Na Hoga Iss Tarha, Rang O Shabab Rait Par",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aaya-na-hoga-iss-tarha-rang-o-shabab-rait-par.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aaya-ramzaan-ka-mahina-khafila-chala-soo-e-madina",
+      "title": "Aaya Ramzaan Ka Mahina Khafila Chala Soo-e-Madina",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aaya-ramzaan-ka-mahina-khafila-chala-soo-e-madina.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aaye-aaqa-madni-aaqa",
+      "title": "Aaye Aaqa Madni Aaqa",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aaye-aaqa-madni-aaqa.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aayi-shabe-baraat-yeh-qismat-ki-bat-he",
+      "title": "Aayi Shabe Baraat, Yeh Qismat Ki Bat He",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aayi-shabe-baraat-yeh-qismat-ki-bat-he.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ab-mere-nigahoon-mein-jachta-nahi-koi",
+      "title": "Ab Mere Nigahoon Mein, Jachta Nahi Koi",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ab-mere-nigahoon-mein-jachta-nahi-koi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "abbas-tere-dar-sa-duniya-mai-dar-kaha",
+      "title": "Abbas Tere Dar Sa Duniya Mai Dar Kaha",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/abbas-tere-dar-sa-duniya-mai-dar-kaha.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "abr-e-karam-gesoo-e-muhammad",
+      "title": "Abr E Karam Gesoo E Muhammad",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/abr-e-karam-gesoo-e-muhammad.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ae-ishq-e-nabi-meray-dil-mein-bhi-sama-jana",
+      "title": "Ae Ishq-E-Nabi Meray Dil Mein Bhi Sama Jana",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ae-ishq-e-nabi-meray-dil-mein-bhi-sama-jana.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ae-mowla-ik-baar-dikhadey",
+      "title": "Ae Mowla Ik Baar Dikhadey",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ae-mowla-ik-baar-dikhadey.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ae-sabz-gumbad-wale",
+      "title": "Ae Sabz Gumbad Wale",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ae-sabz-gumbad-wale.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ae-sakhi-sahabahaz-kalandar",
+      "title": "Ae Sakhi Sahabahaz Kalandar",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ae-sakhi-sahabahaz-kalandar.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ahle-sirat-rooh-e-amin-ko-khabar-karen",
+      "title": "Ahle Sirat Rooh E Amin Ko Khabar Karen",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ahle-sirat-rooh-e-amin-ko-khabar-karen.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ahmed-raza-ka-taza-gulistan-hai-aaj-bhi",
+      "title": "Ahmed Raza Ka Taza Gulistan Hai Aaj Bhi",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ahmed-raza-ka-taza-gulistan-hai-aaj-bhi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aise-gaye-ke-sabko-rulakar-chale-gaye",
+      "title": "Aise Gaye Ke Sabko Rulakar Chale Gaye",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aise-gaye-ke-sabko-rulakar-chale-gaye.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aise-kaha-the-hamare-naseeb-humko-mila-allah-ka-habib",
+      "title": "Aise Kaha The Hamare Naseeb Humko Mila Allah Ka Habib",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aise-kaha-the-hamare-naseeb-humko-mila-allah-ka-habib.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aj-sik-mitraan-dee-vadheeri-ay-with-english-translation",
+      "title": "Aj Sik MitraaN Dee Vadheeri Ay (with English Translation)",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aj-sik-mitraan-dee-vadheeri-ay-with-english-translation.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aj-sik-mitran-di-wadheriye-aye",
+      "title": "Aj Sik Mitran Di Wadheriye Aye",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aj-sik-mitran-di-wadheriye-aye.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ajmer-ka-safar-ab-mujko-ata-ho-khwaja",
+      "title": "Ajmer Ka Safar Ab Mujko Ata Ho Khwaja",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ajmer-ka-safar-ab-mujko-ata-ho-khwaja.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "al-amaan-qeher-he-ghaus-woh-tikha-tera",
+      "title": "Al Amaan Qeher He Ghaus Woh Tikha Tera",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/al-amaan-qeher-he-ghaus-woh-tikha-tera.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "al-madad-al-madad-al-madad-ya-khuda",
+      "title": "Al Madad Al Madad Al Madad Ya Khuda",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/al-madad-al-madad-al-madad-ya-khuda.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ali-haidar-ka-gharana",
+      "title": "Ali Haidar Ka Gharana",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ali-haidar-ka-gharana.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ali-ke-saath-hai-zehra-ki-shaadi",
+      "title": "Ali Ke Saath Hai Zehra Ki Shaadi",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ali-ke-saath-hai-zehra-ki-shaadi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ali-walay-jahan-bethe-wahi-jannat-bana-bethe",
+      "title": "Ali Walay Jahan Bethe Wahi Jannat Bana Bethe",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ali-walay-jahan-bethe-wahi-jannat-bana-bethe.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "allah-allah-allahu-allah-allah-allahu",
+      "title": "Allah Allah Allahu,Allah Allah Allahu",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/allah-allah-allahu-allah-allah-allahu.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "allah-allah-shah-e-konain-jala-lat-teri",
+      "title": "Allah Allah Shah-E-Konain Jala'lat Teri",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/allah-allah-shah-e-konain-jala-lat-teri.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "allah-allah-unka-karam-dekhna",
+      "title": "Allah Allah Unka Karam Dekhna",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/allah-allah-unka-karam-dekhna.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "allah-ki-sar-ta-ba-qadam-shan-hai-ye",
+      "title": "Allah Ki Sar Ta Ba Qadam Shan Hai Ye",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/allah-ki-sar-ta-ba-qadam-shan-hai-ye.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "allah-mera-deher-mein-aala-maqaam-ho",
+      "title": "Allah Mera Deher Mein Aala Maqaam Ho",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/allah-mera-deher-mein-aala-maqaam-ho.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "allah-ne-pohnchaya-sarkar-ke-qadmon-mein",
+      "title": "Allah Ne Pohnchaya Sarkar Ke Qadmon Mein",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/allah-ne-pohnchaya-sarkar-ke-qadmon-mein.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "almah-kahar-hain-ae-ghous-wo-tikha-tera",
+      "title": "Almah Kahar Hain Ae Ghous Wo Tikha Tera",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/almah-kahar-hain-ae-ghous-wo-tikha-tera.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "alwada-ramzan",
+      "title": "Alwada Ramzan",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/alwada-ramzan.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ambiya-ko-bhi-ajal-aani-hai",
+      "title": "Ambiya Ko Bhi Ajal Aani Hai",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ambiya-ko-bhi-ajal-aani-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "amina-bibi-kay-gulshan-main",
+      "title": "Amina Bibi Kay Gulshan Main",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/amina-bibi-kay-gulshan-main.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aminah-bibi-ke-gulshan-mein",
+      "title": "Aminah Bibi Ke Gulshan Mein",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aminah-bibi-ke-gulshan-mein.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "an-nabi-sallo-alaih",
+      "title": "An Nabi Sallo Alaih",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/an-nabi-sallo-alaih.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "apne-dar-pe-jo-bulaa-o-to-bahot-ach-cha-ho",
+      "title": "Apne Dar Pe Jo Bulaa-o To Bahot Ach’cha Ho",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/apne-dar-pe-jo-bulaa-o-to-bahot-ach-cha-ho.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "apne-maa-baap-ka-tu-dil-na-dukha-dil-na-dukha",
+      "title": "Apne Maa Baap Ka Tu Dil Na Dukha Dil Na Dukha",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/apne-maa-baap-ka-tu-dil-na-dukha-dil-na-dukha.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "apni-ata-ka-haq-ne-ye-manzar-dekha-diya",
+      "title": "Apni Ata Ka Haq Ne Ye Manzar Dekha Diya",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/apni-ata-ka-haq-ne-ye-manzar-dekha-diya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aqa-aqa-bol-banday-aqa-aqa-bol",
+      "title": "Aqa Aqa Bol Banday Aqa Aqa Bol",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aqa-aqa-bol-banday-aqa-aqa-bol.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aqa-mere-qarar-hain-har-beqarar-ke",
+      "title": "Aqa Mere Qarar Hain Har Beqarar Ke",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aqa-mere-qarar-hain-har-beqarar-ke.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "arsh-e-aazam-kyu-na-phade-fhir-khutba-fazley-rahma-ka",
+      "title": "Arsh E Aazam Kyu Na Phade Fhir Khutba Fazley Rahma Ka",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/arsh-e-aazam-kyu-na-phade-fhir-khutba-fazley-rahma-ka.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "arsh-ka-dulha-aaya-hain",
+      "title": "Arsh Ka Dulha Aaya Hain",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/arsh-ka-dulha-aaya-hain.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "arsh-ki-aql-dang-hai-charkh-pe-asmaan-hai",
+      "title": "Arsh Ki Aql Dang Hai Charkh Pe Asmaan Hai",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/arsh-ki-aql-dang-hai-charkh-pe-asmaan-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "arshe-haq-hai-masnade-rifat-rasoolullah-ki",
+      "title": "Arshe Haq Hai Masnade Rifat Rasoolullah Ki",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/arshe-haq-hai-masnade-rifat-rasoolullah-ki.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "arzo-samaa-banay-hain",
+      "title": "Arzo-samaa Banay Hain",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/arzo-samaa-banay-hain.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "as-suubhu-badaa-miun-thoola-atihi",
+      "title": "As-suubhu Badaa Miun Thoola'atihi",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/as-suubhu-badaa-miun-thoola-atihi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aseero-ke-mushkil-kusha-gaus-e-aazam",
+      "title": "Aseero Ke Mushkil Kusha Gaus E Aazam",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aseero-ke-mushkil-kusha-gaus-e-aazam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ashraf-ka-karam-hai-mujhpe-mere",
+      "title": "Ashraf Ka Karam Hai Mujhpe Mere",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ashraf-ka-karam-hai-mujhpe-mere.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "asma-ul-husna-99-names-of-allah",
+      "title": "Asma-ul-Husna (99 Names Of Allah)",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/asma-ul-husna-99-names-of-allah.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "assalamu-alaika-ya-rasoolallah-by-maher-zain",
+      "title": "ASSALAMU ALAIKA YA RASOOLALLAH By Maher Zain",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/assalamu-alaika-ya-rasoolallah-by-maher-zain.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ata-ka-aisa-samandar-kaha-se-laoge",
+      "title": "Ata Ka Aisa Samandar Kaha Se Laoge",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ata-ka-aisa-samandar-kaha-se-laoge.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ay-habib-e-ahmed-e-mujtaba-dil-e-mubtala-ka-salam-lo",
+      "title": "Ay Habib E Ahmed E Mujtaba Dil E Mubtala Ka Salam Lo",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ay-habib-e-ahmed-e-mujtaba-dil-e-mubtala-ka-salam-lo.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ay-mustafa-ke-phool-dilo-jaan-ya-hussain",
+      "title": "Ay Mustafa Ke Phool Dilo Jaan Ya Hussain",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ay-mustafa-ke-phool-dilo-jaan-ya-hussain.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ay-saba-mustafa-se-kehdena-gham-ke-maare-salam-kehte-hein",
+      "title": "Ay Saba Mustafa Se Kehdena Gham Ke Maare Salam Kehte Hein",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ay-saba-mustafa-se-kehdena-gham-ke-maare-salam-kehte-hein.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ay-shafa-e-umam-shahe-zee-jah-le-khabar",
+      "title": "Ay Shafa E Umam Shahe Zee Jah Le Khabar",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ay-shafa-e-umam-shahe-zee-jah-le-khabar.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aye-bayabaan-e-arab-teri-baharo-ko-salam",
+      "title": "Aye Bayabaan E Arab Teri Baharo Ko Salam",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aye-bayabaan-e-arab-teri-baharo-ko-salam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aye-dil-bata-kaisa-laga-mera-raza",
+      "title": "Aye Dil Bata Kaisa Laga Mera Raza",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aye-dil-bata-kaisa-laga-mera-raza.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aye-hind-ke-raja-khwaja-piya-ek-baar-to-aisa-ho-jaaye",
+      "title": "Aye Hind Ke Raja Khwaja Piya Ek Baar To Aisa Ho Jaaye",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aye-hind-ke-raja-khwaja-piya-ek-baar-to-aisa-ho-jaaye.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aye-ishq-e-nabi-mere-dil-me-bhi-sama-jana",
+      "title": "Aye Ishq E Nabi Mere Dil Me Bhi Sama Jana",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aye-ishq-e-nabi-mere-dil-me-bhi-sama-jana.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aye-kaash-unke-dar-par-yun-maut-meri-aaye",
+      "title": "Aye Kaash Unke Dar Par Yun Maut Meri Aaye",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aye-kaash-unke-dar-par-yun-maut-meri-aaye.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "aye-mere-maula",
+      "title": "Aye Mere Maula",
+      "category": "A",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/aye-mere-maula.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "baarwein-ka-chaan-aaya",
+      "title": "Baarwein Ka Chaan Aaya",
+      "category": "B",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/baarwein-ka-chaan-aaya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "bagh-e-jannat-mein-nirali-chaman-arai-hai",
+      "title": "Bagh E Jannat Mein Nirali Chaman Arai Hai",
+      "category": "B",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/bagh-e-jannat-mein-nirali-chaman-arai-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "bahar-e-jan-fiza-tum-ho-nasim-e-gulsitan-tum-ho",
+      "title": "Bahar-e Jan Fiza Tum Ho, Nasim-e Gulsitan Tum Ho",
+      "category": "B",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/bahar-e-jan-fiza-tum-ho-nasim-e-gulsitan-tum-ho.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "bakht-e-khufta-ne-mujhe-rauzay-pe-jaanay-na-diya",
+      "title": "Bakht-E-Khufta Ne Mujhe Rauzay Pe Jaanay Na Diya",
+      "category": "B",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/bakht-e-khufta-ne-mujhe-rauzay-pe-jaanay-na-diya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "balaghal-ula-be-kamalehi-sallu-alaihe-waalehi",
+      "title": "Balaghal Ula Be Kamalehi Sallu Alaihe Waalehi",
+      "category": "B",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/balaghal-ula-be-kamalehi-sallu-alaihe-waalehi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ban-ke-noor-e-khuda-mustafa-agaye",
+      "title": "Ban Ke Noor E Khuda, Mustafa Agaye",
+      "category": "B",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ban-ke-noor-e-khuda-mustafa-agaye.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "banda-milne-ko-kareeb-hazrat-e-qadir-gaya",
+      "title": "Banda Milne Ko Kareeb Hazrat E Qadir Gaya",
+      "category": "B",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/banda-milne-ko-kareeb-hazrat-e-qadir-gaya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "bandah-milne-ko-qareeb-e-hazrat-e-qaadir-gaya",
+      "title": "Bandah Milne Ko Qareeb E Hazrat E Qaadir Gaya",
+      "category": "B",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/bandah-milne-ko-qareeb-e-hazrat-e-qaadir-gaya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "banke-rahmat-koi-aata-hai-chala-jata-hai",
+      "title": "Banke Rahmat Koi Aata Hai Chala Jata Hai",
+      "category": "B",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/banke-rahmat-koi-aata-hai-chala-jata-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "bari-umeed-hai-sarkar-qadmon-mein-bulayenge",
+      "title": "Bari Umeed Hai Sarkar Qadmon Mein Bulayenge",
+      "category": "B",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/bari-umeed-hai-sarkar-qadmon-mein-bulayenge.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "baroze-hashr-jo-hoga-wo-baat-baaki-hai",
+      "title": "Baroze Hashr Jo Hoga Wo Baat Baaki Hai",
+      "category": "B",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/baroze-hashr-jo-hoga-wo-baat-baaki-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "batil-ke-jab-jab-badle-hai-tevar",
+      "title": "Batil Ke Jab Jab Badle Hai Tevar",
+      "category": "B",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/batil-ke-jab-jab-badle-hai-tevar.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "batkhe-khufata-ne-muje-roze-pe-jane",
+      "title": "Batkhe Khufata Ne Muje Roze Pe Jane",
+      "category": "B",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/batkhe-khufata-ne-muje-roze-pe-jane.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "bekhud-kiye-dete-hain-andaaz-e-hijabana",
+      "title": "Bekhud Kiye Dete Hain Andaaz E Hijabana",
+      "category": "B",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/bekhud-kiye-dete-hain-andaaz-e-hijabana.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "beqaraari-thi-neend-aa-gayi",
+      "title": "Beqaraari Thi Neend Aa Gayi",
+      "category": "B",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/beqaraari-thi-neend-aa-gayi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "beti-to-rahmat-hai",
+      "title": "Beti To Rahmat Hai",
+      "category": "B",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/beti-to-rahmat-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "bhar-do-jholi-meri-ya-muhammad",
+      "title": "Bhar Do Jholi Meri Ya Muhammad",
+      "category": "B",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/bhar-do-jholi-meri-ya-muhammad.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "bheek-ata-ae-nabi-saw-muhatasham-ho",
+      "title": "Bheek Ata Ae Nabi (SAW) Muhatasham Ho",
+      "category": "B",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/bheek-ata-ae-nabi-saw-muhatasham-ho.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "bheeni-suhani-subh-mein-thandak-jigar-ki-hai",
+      "title": "Bheeni Suhani Subh Mein Thandak Jigar Ki Hai",
+      "category": "B",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/bheeni-suhani-subh-mein-thandak-jigar-ki-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "bigare-huwe-bante-hain-kam-madine-me",
+      "title": "Bigare Huwe Bante Hain Kam Madine Me",
+      "category": "B",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/bigare-huwe-bante-hain-kam-madine-me.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "bigdi-bhi-banayenge",
+      "title": "Bigdi Bhi Banayenge",
+      "category": "B",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/bigdi-bhi-banayenge.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "bighari-banaao-makki-madani",
+      "title": "Bighari Banaao Makki Madani",
+      "category": "B",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/bighari-banaao-makki-madani.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "bigri-bhe-banain-ge-jalwy-bhe-dekhain-ge",
+      "title": "Bigri Bhe Banain Ge Jalwy Bhe Dekhain Ge",
+      "category": "B",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/bigri-bhe-banain-ge-jalwy-bhe-dekhain-ge.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "bolte-hain-sangreze-aapke-saw-ishare-se",
+      "title": "Bolte Hain Sangreze Aapke (saw) Ishare Se",
+      "category": "B",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/bolte-hain-sangreze-aapke-saw-ishare-se.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "bul-hawas-sun-simo-zar-ki-bandagi-acchhi-nahin",
+      "title": "Bul Hawas Sun Simo Zar Ki Bandagi Acchhi Nahin",
+      "category": "B",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/bul-hawas-sun-simo-zar-ki-bandagi-acchhi-nahin.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "bulalo-phir-mujhay-ey-shahe-bahrobar-madinay-main",
+      "title": "Bulalo Phir Mujhay Ey Shahe Bahrobar, Madinay Main",
+      "category": "B",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/bulalo-phir-mujhay-ey-shahe-bahrobar-madinay-main.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "chal-diye-tum-aankh-mein-ashkon-ka-dariya-chhor-kar",
+      "title": "Chal Diye Tum Aankh Mein Ashkon Ka Dariya Chhor Kar",
+      "category": "C",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/chal-diye-tum-aankh-mein-ashkon-ka-dariya-chhor-kar.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "chal-qalam-ab-hamd-e-rabb-maqsood-hai",
+      "title": "Chal Qalam Ab Hamd E Rabb Maqsood Hai",
+      "category": "C",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/chal-qalam-ab-hamd-e-rabb-maqsood-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "chale-aashiqane-mohammad-madina",
+      "title": "Chale Aashiqane Mohammad Madina",
+      "category": "C",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/chale-aashiqane-mohammad-madina.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "chalo-diyaar-e-nabi-ki-jaanib",
+      "title": "Chalo Diyaar-E-Nabi Ki Jaanib",
+      "category": "C",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/chalo-diyaar-e-nabi-ki-jaanib.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "chamak-ne-laga-sunniyat-ka-sitaara",
+      "title": "Chamak Ne Laga Sunniyat Ka Sitaara",
+      "category": "C",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/chamak-ne-laga-sunniyat-ka-sitaara.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "chand-se-unke-chehre-par-ghesue-mushk-faam-do",
+      "title": "Chand Se Unke Chehre Par Ghesue Mushk Faam Do",
+      "category": "C",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/chand-se-unke-chehre-par-ghesue-mushk-faam-do.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "chand-taare-hi-kya-dekte-reh-gaye",
+      "title": "Chand Taare Hi Kya Dekte Reh Gaye",
+      "category": "C",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/chand-taare-hi-kya-dekte-reh-gaye.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "charagar-hai-dil-to-ghayal-ishq-ki-talwar-ka",
+      "title": "CHARAGAR HAI DIL TO GHAYAL ISHQ KI TALWAR KA",
+      "category": "C",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/charagar-hai-dil-to-ghayal-ishq-ki-talwar-ka.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "chaudhvin-ke-chand-sa-chehra-mere-akhtar-ka-hai",
+      "title": "Chaudhvin Ke Chand Sa Chehra Mere Akhtar Ka Hai",
+      "category": "C",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/chaudhvin-ke-chand-sa-chehra-mere-akhtar-ka-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "chhuk-chhuk-rail-chali-hai-ummat-ki-ahle-sunnat-ki",
+      "title": "Chhuk Chhuk Rail Chali Hai Ummat Ki Ahle Sunnat Ki",
+      "category": "C",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/chhuk-chhuk-rail-chali-hai-ummat-ki-ahle-sunnat-ki.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "chiran-ae-vichri-da-yaar-o-wajjay-allah-wali-taar",
+      "title": "Chiran Ae Vichri Da Yaar O Wajjay Allah Wali Taar",
+      "category": "C",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/chiran-ae-vichri-da-yaar-o-wajjay-allah-wali-taar.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "choote-na-kabhi-tera-daman-ya-khwaja-moinuddin-hasan",
+      "title": "Choote Na Kabhi Tera Daman Ya Khwaja Moinuddin Hasan",
+      "category": "C",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/choote-na-kabhi-tera-daman-ya-khwaja-moinuddin-hasan.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "chor-fikr-duniya-ki",
+      "title": "Chor Fikr Duniya Ki",
+      "category": "C",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/chor-fikr-duniya-ki.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "chor-fikr-duniya-ki-chal-madine-chalte-hain",
+      "title": "Chor Fikr Duniya Ki Chal Madine Chalte Hain",
+      "category": "C",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/chor-fikr-duniya-ki-chal-madine-chalte-hain.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "chumma-rozy-di-jali-nu",
+      "title": "Chumma Rozy Di Jali Nu",
+      "category": "C",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/chumma-rozy-di-jali-nu.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "dam-ba-dam-allah-ho-allah-ho-hamd",
+      "title": "Dam Ba Dam Allah Ho Allah Ho (Hamd)",
+      "category": "D",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/dam-ba-dam-allah-ho-allah-ho-hamd.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "damad-e-mustafa-hai-vo-zauj-e-batool-hai",
+      "title": "Damad E Mustafa Hai Vo Zauj E Batool Hai",
+      "category": "D",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/damad-e-mustafa-hai-vo-zauj-e-batool-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "dar-pay-aaon-shaha",
+      "title": "Dar Pay Aaon Shaha",
+      "category": "D",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/dar-pay-aaon-shaha.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "dare-khawaja-pe-sawali",
+      "title": "Dare Khawaja Pe Sawali",
+      "category": "D",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/dare-khawaja-pe-sawali.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "dare-makhdoom-par-batao-kya-nahi-milta",
+      "title": "Dare Makhdoom Par Batao Kya Nahi Milta",
+      "category": "D",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/dare-makhdoom-par-batao-kya-nahi-milta.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "deen-jinda-rasool-jinda-hai",
+      "title": "Deen Jinda Rasool Jinda Hai",
+      "category": "D",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/deen-jinda-rasool-jinda-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "dekar-khuda-ko-jaan-ki-kimat",
+      "title": "Dekar Khuda Ko Jaan Ki Kimat",
+      "category": "D",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/dekar-khuda-ko-jaan-ki-kimat.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "delhi-rajasthan-tumhara-ya-khwaja",
+      "title": "Delhi Rajasthan Tumhara Ya Khwaja",
+      "category": "D",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/delhi-rajasthan-tumhara-ya-khwaja.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "dhadkte-dil-ki-yahi-sada-he-hussain-mera-salam-lelo",
+      "title": "DHADKTE DIL KI YAHI SADA HE HUSSAIN MERA SALAM LELO",
+      "category": "D",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/dhadkte-dil-ki-yahi-sada-he-hussain-mera-salam-lelo.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "dikha-do-mujhko-pyaara-pyaara-kaba-ya-rasulallah",
+      "title": "Dikha Do Mujhko Pyaara Pyaara Kaba Ya Rasulallah",
+      "category": "D",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/dikha-do-mujhko-pyaara-pyaara-kaba-ya-rasulallah.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "dil-dard-se-bismil-ki-tarha-laut-raha-ho",
+      "title": "Dil Dard Se Bismil Ki Tarha Laut Raha Ho",
+      "category": "D",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/dil-dard-se-bismil-ki-tarha-laut-raha-ho.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "dil-ek-pal-aram-na-paye-vo-bhi-itni-raat-gaye",
+      "title": "Dil Ek Pal Aram Na Paye Vo Bhi Itni Raat Gaye",
+      "category": "D",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/dil-ek-pal-aram-na-paye-vo-bhi-itni-raat-gaye.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "dil-ki-duniya-ko-sajao-aaqa",
+      "title": "Dil Ki Duniya Ko Sajao Aaqa",
+      "category": "D",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/dil-ki-duniya-ko-sajao-aaqa.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "dil-ko-unse-khuda-juda-na-kare",
+      "title": "Dil Ko Unse Khuda Juda Na Kare",
+      "category": "D",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/dil-ko-unse-khuda-juda-na-kare.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "dil-main-ishq-e-nabi-ki-ho-aisi-lagan",
+      "title": "Dil Main Ishq E Nabi Ki Ho Aisi Lagan",
+      "category": "D",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/dil-main-ishq-e-nabi-ki-ho-aisi-lagan.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "dil-mein-ho-yaad-teri-gosha-e-tanhaii-ho",
+      "title": "Dil Mein Ho Yaad Teri Gosha E Tanhaii Ho",
+      "category": "D",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/dil-mein-ho-yaad-teri-gosha-e-tanhaii-ho.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "dil-mera-gudgudati-rahi-aarzoo",
+      "title": "Dil Mera Gudgudati Rahi Aarzoo",
+      "category": "D",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/dil-mera-gudgudati-rahi-aarzoo.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "dil-pareshan-hai-kya-hona-hai",
+      "title": "Dil Pareshan Hai Kya Hona Hai",
+      "category": "D",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/dil-pareshan-hai-kya-hona-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "dil-thikana-mere-hussain-ka-hai",
+      "title": "Dil Thikana Mere Hussain Ka Hai",
+      "category": "D",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/dil-thikana-mere-hussain-ka-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "dile-dard-mand-ki-dastan-na-kahu-ju-tum-se-to-kiya-karu",
+      "title": "Dile Dard Mand Ki Dastan Na Kahu Ju Tum Se To Kiya Karu",
+      "category": "D",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/dile-dard-mand-ki-dastan-na-kahu-ju-tum-se-to-kiya-karu.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "do-jahaan-ke-waali-ka",
+      "title": "Do Jahaan Ke Waali Ka",
+      "category": "D",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/do-jahaan-ke-waali-ka.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "duniya-ke-aye-musafir-manzil-teri-qabar-hai",
+      "title": "Duniya Ke Aye Musafir Manzil Teri Qabar Hai",
+      "category": "D",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/duniya-ke-aye-musafir-manzil-teri-qabar-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "duniya-te-aya-koi-teri-na-misaal-da",
+      "title": "Duniya Te Aya Koi Teri Na Misaal Da",
+      "category": "D",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/duniya-te-aya-koi-teri-na-misaal-da.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "durood-lab-par-khayal-dil-mein",
+      "title": "Durood Lab Par Khayal Dil Mein",
+      "category": "D",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/durood-lab-par-khayal-dil-mein.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "eh-sarware-duniya-o-deen",
+      "title": "Eh Sarware Duniya O Deen",
+      "category": "E",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/eh-sarware-duniya-o-deen.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "eid-e-nabvi-ka-zamana-aa-gaya",
+      "title": "Eid-E-Nabvi Ka Zamana Aa Gaya",
+      "category": "E",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/eid-e-nabvi-ka-zamana-aa-gaya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "eidon-ki-hai-eid-aayi",
+      "title": "Eidon Ki Hai Eid Aayi",
+      "category": "E",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/eidon-ki-hai-eid-aayi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ek-ajab-lutf-is-tarah-jeene-mein-hai",
+      "title": "Ek Ajab Lutf Is Tarah Jeene Mein Hai",
+      "category": "E",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ek-ajab-lutf-is-tarah-jeene-mein-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ek-baar-madine-me-ho-jaye-mere-jaana",
+      "title": "Ek Baar Madine Me Ho Jaye Mere Jaana",
+      "category": "E",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ek-baar-madine-me-ho-jaye-mere-jaana.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ek-ghuzarish",
+      "title": "Ek Ghuzarish",
+      "category": "E",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ek-ghuzarish.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ek-khwab-sunawa-n",
+      "title": "Ek Khwab Sunawa'n",
+      "category": "E",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ek-khwab-sunawa-n.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ek-main-hi-nahi-un-par-qurban-zamana-hai",
+      "title": "Ek Main Hi Nahi Un Par Qurban Zamana Hai",
+      "category": "E",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ek-main-hi-nahi-un-par-qurban-zamana-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ek-na-ek-din-ye-maddahe-khairul-bashar",
+      "title": "Ek Na Ek Din Ye Maddahe Khairul Bashar",
+      "category": "E",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ek-na-ek-din-ye-maddahe-khairul-bashar.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "faiz-ke-badal-chhaye-hain-aaj-nabi-ki-aamad-hai",
+      "title": "Faiz Ke Badal Chhaye Hain Aaj Nabi Ki Aamad Hai",
+      "category": "F",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/faiz-ke-badal-chhaye-hain-aaj-nabi-ki-aamad-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "falak-ke-naazaro-zameen-ki-bahaaro",
+      "title": "Falak Ke Naazaro Zameen Ki Bahaaro",
+      "category": "F",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/falak-ke-naazaro-zameen-ki-bahaaro.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "faraz-e-arsh-ne-chuma-hussain-ka-sajda",
+      "title": "Faraz E Arsh Ne Chuma Hussain Ka Sajda",
+      "category": "F",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/faraz-e-arsh-ne-chuma-hussain-ka-sajda.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "fariyad-gause-aazam",
+      "title": "Fariyad Gause Aazam",
+      "category": "F",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/fariyad-gause-aazam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "farsh-se-taa-arsh-hein-saare-zamanne-apkay",
+      "title": "Farsh Se Taa Arsh Hein Saare Zamanne Apkay",
+      "category": "F",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/farsh-se-taa-arsh-hein-saare-zamanne-apkay.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "faslon-ko-takalluf-hai-hum-se-agar",
+      "title": "Faslon Ko Takalluf Hai Hum Se Agar",
+      "category": "F",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/faslon-ko-takalluf-hai-hum-se-agar.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "faslon-ko-takalluf-hai-humse-agar",
+      "title": "Faslon Ko Takalluf Hai Humse Agar",
+      "category": "F",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/faslon-ko-takalluf-hai-humse-agar.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "fatima-tere-chadar-ka-kya-poochna",
+      "title": "Fatima Tere Chadar Ka Kya Poochna",
+      "category": "F",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/fatima-tere-chadar-ka-kya-poochna.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "fauze-ghum-ki-baraa-bar-chadhayi-hai",
+      "title": "Fauze Ghum Ki Baraa Bar Chadhayi Hai",
+      "category": "F",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/fauze-ghum-ki-baraa-bar-chadhayi-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "fida-kr-ishq-e-nabi-par-jaan",
+      "title": "Fida Kr Ishq-e-Nabi Par Jaan",
+      "category": "F",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/fida-kr-ishq-e-nabi-par-jaan.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "furqate-taiba-kee-wehshat-dil-se-jaaye-khair-se",
+      "title": "Furqate Taiba Kee Wehshat Dil Se Jaaye Khair Se",
+      "category": "F",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/furqate-taiba-kee-wehshat-dil-se-jaaye-khair-se.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "gause-azam-bamane-be-saro-saama-n-madade",
+      "title": "Gause Azam Bamane Be Saro Saama'n Madade",
+      "category": "G",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/gause-azam-bamane-be-saro-saama-n-madade.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "gham-hogaye-be-shumar-aaqa",
+      "title": "Gham Hogaye Be Shumar Aaqa",
+      "category": "G",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/gham-hogaye-be-shumar-aaqa.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "gham-sabhi-rahato-taskeen-me-dhal-jaate-hai",
+      "title": "Gham Sabhi Rahato Taskeen Me Dhal Jaate Hai",
+      "category": "G",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/gham-sabhi-rahato-taskeen-me-dhal-jaate-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ghaus-ul-azam-shah-e-jeelan",
+      "title": "Ghaus Ul Azam Shah E Jeelan",
+      "category": "G",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ghaus-ul-azam-shah-e-jeelan.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ghulam-hashar-mein-jab-syed-ul-wara-ke-chalay",
+      "title": "Ghulam Hashar Mein Jab Syed Ul Wara Ke Chalay",
+      "category": "G",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ghulam-hashar-mein-jab-syed-ul-wara-ke-chalay.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "gulam-raza-hoo-mai-aur-hoo-gulam-akhtar",
+      "title": "Gulam Raza Hoo Mai Aur Hoo Gulam Akhtar",
+      "category": "G",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/gulam-raza-hoo-mai-aur-hoo-gulam-akhtar.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "gunahon-ki-adat-churah-meray-mowla",
+      "title": "Gunahon Ki Adat Churah Meray Mowla",
+      "category": "G",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/gunahon-ki-adat-churah-meray-mowla.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "gunahon-ki-nahi-jaati-hai-adat-ya-rasool-allah",
+      "title": "Gunahon Ki Nahi Jaati Hai Adat Ya Rasool Allah",
+      "category": "G",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/gunahon-ki-nahi-jaati-hai-adat-ya-rasool-allah.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "gungunane-ke-liye-salle-ala-kaafi-hai",
+      "title": "Gungunane Ke Liye Salle Ala Kaafi Hai",
+      "category": "G",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/gungunane-ke-liye-salle-ala-kaafi-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "guzre-jis-raah-se-wo-sayyid-e-waala-ho-kar",
+      "title": "Guzre Jis Raah Se Wo Sayyid-e-waala Ho Kar",
+      "category": "G",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/guzre-jis-raah-se-wo-sayyid-e-waala-ho-kar.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "habib-e-khuda-ka-nazaara-karoon-mein",
+      "title": "Habib-e-Khuda Ka Nazaara Karoon Mein",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/habib-e-khuda-ka-nazaara-karoon-mein.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "hai-kalaam-e-ilahi-me-shams-o-duha",
+      "title": "Hai Kalaam-E-Ilahi Me Shams-O-Duha",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/hai-kalaam-e-ilahi-me-shams-o-duha.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "hai-khatm-e-nabuvvat-ke-liye-jaan-bhi-hajir",
+      "title": "Hai Khatm E Nabuvvat Ke Liye Jaan Bhi Hajir",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/hai-khatm-e-nabuvvat-ke-liye-jaan-bhi-hajir.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "hain-kalaame-ilahi-me-shamso-doha",
+      "title": "Hain Kalaame Ilahi Me Shamso Doha",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/hain-kalaame-ilahi-me-shamso-doha.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "hajiyo-aawo-shahenshah-ka-roza-dekho",
+      "title": "Hajiyo Aawo Shahenshah Ka Roza Dekho",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/hajiyo-aawo-shahenshah-ka-roza-dekho.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "hajj-pe-jana-mubarak",
+      "title": "Hajj Pe Jana Mubarak",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/hajj-pe-jana-mubarak.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ham-apne-nabi-paak-se-yun-pyaar-karenge",
+      "title": "Ham Apne Nabi Paak Se Yun Pyaar Karenge",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ham-apne-nabi-paak-se-yun-pyaar-karenge.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ham-bhool-gaye-jannat-ki-gali-jab-taiba-nagar-ki-yaad-aayi",
+      "title": "Ham Bhool Gaye Jannat Ki Gali Jab Taiba Nagar Ki Yaad Aayi",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ham-bhool-gaye-jannat-ki-gali-jab-taiba-nagar-ki-yaad-aayi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ham-dar-e-aaqa-s-a-w-pay-sar-apna-jhuka-letay-hain",
+      "title": "Ham Dar-E-Aaqa (S.A.W) Pay Sar Apna Jhuka Letay Hain",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ham-dar-e-aaqa-s-a-w-pay-sar-apna-jhuka-letay-hain.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ham-dar-e-aaqa-salla-llahu",
+      "title": "Ham Dar-e-Aaqa (salla Llahu",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ham-dar-e-aaqa-salla-llahu.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "hamaray-maula-hamaray-aaqa-imam-e-azam-abu-hanifa",
+      "title": "Hamaray Maula Hamaray Aaqa Imam-e-Azam Abu Hanifa",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/hamaray-maula-hamaray-aaqa-imam-e-azam-abu-hanifa.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "hamne-quraan-mai-parha-hai",
+      "title": "Hamne Quraan Mai Parha Hai",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/hamne-quraan-mai-parha-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "haqeeqat-me-woh-lutfe-zindagi-paya-nehi-karte",
+      "title": "Haqeeqat Me Woh Lutfe Zindagi Paya Nehi Karte",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/haqeeqat-me-woh-lutfe-zindagi-paya-nehi-karte.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "har-des-main-gunjega-ab-ya-rasool-allah",
+      "title": "Har Des Main Gunjega Ab Ya Rasool Allah",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/har-des-main-gunjega-ab-ya-rasool-allah.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "har-maraz-ka-utar-gaya-pani",
+      "title": "Har Maraz Ka Utar Gaya Pani",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/har-maraz-ka-utar-gaya-pani.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "har-nazar-kamp-uthegi-mehshar-ke-din",
+      "title": "Har Nazar Kamp Uthegi Mehshar Ke Din",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/har-nazar-kamp-uthegi-mehshar-ke-din.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "har-su-charcha-hai-aaj-shabbar-ka",
+      "title": "Har Su Charcha Hai Aaj Shabbar Ka",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/har-su-charcha-hai-aaj-shabbar-ka.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "har-waqt-tasaw-wur-mein-madine-ki-gali-ho",
+      "title": "Har Waqt Tasaw'wur Mein Madine Ki Gali Ho",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/har-waqt-tasaw-wur-mein-madine-ki-gali-ho.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "har-zamana-mere-hussain-ka-hai",
+      "title": "Har Zamana Mere Hussain Ka Hai",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/har-zamana-mere-hussain-ka-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "hasbi-rabbi-jallallah-ma-fi-qalbi-ghairullah",
+      "title": "Hasbi Rabbi Jallallah Ma Fi Qalbi Ghairullah",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/hasbi-rabbi-jallallah-ma-fi-qalbi-ghairullah.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "hashr-mein-fir-milenge-mere-doston",
+      "title": "Hashr Mein Fir Milenge Mere Doston",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/hashr-mein-fir-milenge-mere-doston.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "hay-lab-e-isaa-sey-jaan-bakhshi-niraali-haath-mein",
+      "title": "Hay Lab E Isaa Sey Jaan Bakhshi Niraali Haath Mein",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/hay-lab-e-isaa-sey-jaan-bakhshi-niraali-haath-mein.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "hayya-alas-salah-hayya-alal-falah",
+      "title": "Hayya Alas Salah Hayya Alal Falah",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/hayya-alas-salah-hayya-alal-falah.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "he-kalaame-ilahi-me-shamsudduha",
+      "title": "He Kalaame Ilahi Me Shamsudduha",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/he-kalaame-ilahi-me-shamsudduha.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "hind-nagar-me-ek-hi-nara-khaja-humara",
+      "title": "Hind Nagar Me Ek Hi Nara Khaja Humara",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/hind-nagar-me-ek-hi-nara-khaja-humara.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ho-karam-sarkar-ab-tou-ho-gaye-ghum-beshumaar",
+      "title": "Ho Karam Sarkar Ab Tou Ho Gaye Ghum Beshumaar",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ho-karam-sarkar-ab-tou-ho-gaye-ghum-beshumaar.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "hota-agar-zameen-par-saya-rasool-ka",
+      "title": "Hota Agar Zameen Par Saya Rasool Ka",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/hota-agar-zameen-par-saya-rasool-ka.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "hum-dare-yaar-pe-dil-apna-jhuka-lete-hai",
+      "title": "Hum Dare Yaar Pe Dil Apna Jhuka Lete Hai",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/hum-dare-yaar-pe-dil-apna-jhuka-lete-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "hum-ko-bulana-ya-rasulallah",
+      "title": "Hum Ko Bulana Ya Rasulallah",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/hum-ko-bulana-ya-rasulallah.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "hum-ko-sarkar-madine-me-bulaana-hoga",
+      "title": "Hum Ko Sarkar Madine Me Bulaana Hoga",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/hum-ko-sarkar-madine-me-bulaana-hoga.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "hussain-zinda-hai-zinda-hai-zinda-hai",
+      "title": "Hussain Zinda Hai Zinda Hai Zinda Hai",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/hussain-zinda-hai-zinda-hai-zinda-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "huzoor-aa-gaye-hai",
+      "title": "Huzoor Aa Gaye Hai",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/huzoor-aa-gaye-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "huzoor-aisa-koi-intezam",
+      "title": "Huzoor Aisa Koi Intezam",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/huzoor-aisa-koi-intezam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "huzoor-e-kaaba-hazir-hain",
+      "title": "Huzoor E Kaaba Hazir Hain",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/huzoor-e-kaaba-hazir-hain.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "huzoor-jante-hain",
+      "title": "Huzoor Jante Hain",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/huzoor-jante-hain.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "huzoor-meri-to-sari-bahar-aap-se-hai",
+      "title": "Huzoor Meri To Sari Bahar Aap Se Hai",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/huzoor-meri-to-sari-bahar-aap-se-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "huzoor-meri-to-sari-bahar-apse-hai",
+      "title": "Huzoor Meri To Sari Bahar Apse Hai",
+      "category": "H",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/huzoor-meri-to-sari-bahar-apse-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ikrar-hai-sarkar-gunahgaar-bahut-hu",
+      "title": "Ikrar Hai Sarkar Gunahgaar Bahut Hu",
+      "category": "I",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ikrar-hai-sarkar-gunahgaar-bahut-hu.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ilahi-madad-kar-madad-ki-ghari",
+      "title": "Ilahi Madad Kar Madad Ki Ghari",
+      "category": "I",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ilahi-madad-kar-madad-ki-ghari.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ilhaam-ki-rim-jhim-kaheen-bakshish-ki-ghata-he",
+      "title": "Ilhaam Ki Rim Jhim Kaheen Bakshish Ki Ghata He",
+      "category": "I",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ilhaam-ki-rim-jhim-kaheen-bakshish-ki-ghata-he.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "imdad-kun-imdad-kun-ya-ghaus-e-azam-dastagheer",
+      "title": "Imdad Kun Imdad Kun Ya Ghaus E Azam Dastagheer",
+      "category": "I",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/imdad-kun-imdad-kun-ya-ghaus-e-azam-dastagheer.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "is-karam-ka-karoon-shukr-kaise-ada",
+      "title": "Is Karam Ka Karoon Shukr Kaise Ada",
+      "category": "I",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/is-karam-ka-karoon-shukr-kaise-ada.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ishq-o-mohabbat-ala-hazrat",
+      "title": "ISHQ O MOHABBAT ALA HAZRAT",
+      "category": "I",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ishq-o-mohabbat-ala-hazrat.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ishq-e-mawla-mein-hoon-khoon-baar-kinaar-e-daaman",
+      "title": "Ishq-e-Mawla Mein Hoon Khoon Baar Kinaar-e-daaman",
+      "category": "I",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ishq-e-mawla-mein-hoon-khoon-baar-kinaar-e-daaman.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ishqe-nabi-saw-mein-dil-tarpana-sab-ke-bas-ki-baat-nahin",
+      "title": "Ishqe Nabi (SAW) Mein Dil Tarpana Sab Ke Bas Ki Baat Nahin",
+      "category": "I",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ishqe-nabi-saw-mein-dil-tarpana-sab-ke-bas-ki-baat-nahin.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jaam-ulfat-ka-pila-do-ya-rasool",
+      "title": "Jaam Ulfat Ka Pila Do Ya Rasool",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jaam-ulfat-ka-pila-do-ya-rasool.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jaan-e-man-jaan-e-zamana-sayyedi-akhtar-raza",
+      "title": "Jaan E Man Jaan E Zamana Sayyedi Akhtar Raza",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jaan-e-man-jaan-e-zamana-sayyedi-akhtar-raza.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jaane-karbala-ko-hamara-salaam-ho",
+      "title": "Jaane Karbala Ko Hamara Salaam Ho",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jaane-karbala-ko-hamara-salaam-ho.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jab-gumbad-e-khizra-pe-woh-pehli-nazar-gayi",
+      "title": "Jab Gumbad-e-khizra Pe Woh Pehli Nazar Gayi",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jab-gumbad-e-khizra-pe-woh-pehli-nazar-gayi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jab-husn-tha-unka-jalwa-numa",
+      "title": "Jab Husn Tha Unka Jalwa Numa",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jab-husn-tha-unka-jalwa-numa.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jab-jab-nabi-ki-yaad-aye-hai",
+      "title": "Jab Jab Nabi Ki Yaad Aye Hai",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jab-jab-nabi-ki-yaad-aye-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jab-nazar-utthi-nabi-ki-aasma-ke-samne",
+      "title": "Jab Nazar Utthi Nabi Ki Aasma Ke Samne",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jab-nazar-utthi-nabi-ki-aasma-ke-samne.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jabse-mujhko-nisbate-makhdoom-e-simnani-mili",
+      "title": "Jabse Mujhko Nisbate Makhdoom E Simnani Mili",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jabse-mujhko-nisbate-makhdoom-e-simnani-mili.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jahan-bani-ata-karde",
+      "title": "Jahan Bani Ata Karde",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jahan-bani-ata-karde.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jalwa-e-wadduha-dekhte-reh-gaye",
+      "title": "Jalwa E Wadduha Dekhte Reh Gaye",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jalwa-e-wadduha-dekhte-reh-gaye.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jalwa-hai-noor-hai-ke-sarapa-raza-ka-hai",
+      "title": "Jalwa Hai Noor Hai Ke Sarapa Raza Ka Hai",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jalwa-hai-noor-hai-ke-sarapa-raza-ka-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jalwa-kijiye-khwah-parda-kijiye",
+      "title": "Jalwa Kijiye Khwah Parda Kijiye",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jalwa-kijiye-khwah-parda-kijiye.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "janam-fida-e-haideri-ya-ali-ali-ali",
+      "title": "Janam Fida E Haideri Ya Ali Ali Ali",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/janam-fida-e-haideri-ya-ali-ali-ali.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jannat-mein-leke-jayegi-chahat-rasul-ki",
+      "title": "Jannat Mein Leke Jayegi Chahat Rasul Ki",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jannat-mein-leke-jayegi-chahat-rasul-ki.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jashn-e-wiladat-zindabad",
+      "title": "Jashn-e-wiladat Zindabad",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jashn-e-wiladat-zindabad.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jasne-amade-rasool-allah-hi-allah",
+      "title": "Jasne Amade Rasool Allah Hi Allah",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jasne-amade-rasool-allah-hi-allah.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jau-n-dar-e-ghausul-wara-manzil-to-wohi-hai",
+      "title": "Jau(N) Dar-e-Ghausul-Wara Manzil To Wohi Hai",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jau-n-dar-e-ghausul-wara-manzil-to-wohi-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jhoole-jhoole-pyare-mohammad",
+      "title": "Jhoole Jhoole Pyare Mohammad",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jhoole-jhoole-pyare-mohammad.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jidhar-dekhu-madine-ka-haram-ho",
+      "title": "Jidhar Dekhu Madine Ka Haram Ho",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jidhar-dekhu-madine-ka-haram-ho.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jis-nay-madinay-jana-kar-lo-tayarian",
+      "title": "Jis Nay Madinay Jana Kar Lo Tayarian",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jis-nay-madinay-jana-kar-lo-tayarian.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jo-banon-par-hay-bahaar-e-chaman-aarai-e-dost",
+      "title": "Jo Banon Par Hay Bahaar-e-chaman Aarai-e-dost",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jo-banon-par-hay-bahaar-e-chaman-aarai-e-dost.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jo-bhi-dushman-hai-mere-raza-ka",
+      "title": "Jo Bhi Dushman Hai Mere Raza Ka",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jo-bhi-dushman-hai-mere-raza-ka.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jo-bhi-shaida-mere-hussain-ka-hai",
+      "title": "Jo Bhi Shaida Mere HUSSAIN Ka Hai",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jo-bhi-shaida-mere-hussain-ka-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jo-ho-chuka-hai-jo-hoga-huzoor-jante-hain",
+      "title": "Jo Ho Chuka Hai Jo Hoga Huzoor Jante Hain",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jo-ho-chuka-hai-jo-hoga-huzoor-jante-hain.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jo-khayal-aaya-tha-khwab-me-wo-jamal-apna-dikha-gaye",
+      "title": "Jo Khayal Aaya Tha Khwab Me Wo Jamal Apna Dikha Gaye",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jo-khayal-aaya-tha-khwab-me-wo-jamal-apna-dikha-gaye.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jo-nabi-ka-nahi-wo-kisi-ka-nahi",
+      "title": "Jo Nabi Ka Nahi Wo Kisi Ka Nahi",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jo-nabi-ka-nahi-wo-kisi-ka-nahi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jo-sunniyat-ki-shaan-hai-jo-qaum-ka-imaam-hai",
+      "title": "Jo Sunniyat Ki Shaan Hai Jo Qaum Ka Imaam Hai",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jo-sunniyat-ki-shaan-hai-jo-qaum-ka-imaam-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jo-unki-yaad-me-aansu-bahane-wale-hain",
+      "title": "Jo Unki Yaad Me Aansu Bahane Wale Hain",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jo-unki-yaad-me-aansu-bahane-wale-hain.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "jo-yom-sab-ayyam-me-sabse-azeem-he-wo-jumma-karim-he",
+      "title": "Jo Yom Sab Ayyam Me Sabse Azeem He Wo Jumma Karim He",
+      "category": "J",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/jo-yom-sab-ayyam-me-sabse-azeem-he-wo-jumma-karim-he.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kaabe-ke-badrud-duja-tum-pe-karoron-durood",
+      "title": "Kaabe Ke Badrud Duja Tum Pe Karoron Durood",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kaabe-ke-badrud-duja-tum-pe-karoron-durood.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kaabe-ke-dar-ke-saamne-maangi-hai-dua-faqat",
+      "title": "Kaabe Ke Dar Ke Saamne Maangi Hai Dua Faqat",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kaabe-ke-dar-ke-saamne-maangi-hai-dua-faqat.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kaam-rukne-ka-nahi-aye-dile-nada-koi",
+      "title": "Kaam Rukne Ka Nahi Aye Dile Nada Koi",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kaam-rukne-ka-nahi-aye-dile-nada-koi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kab-pahuchu-n-dar-e-ghausul-wara-manzil-to-wohi-hai",
+      "title": "Kab Pahuchu(N) Dar-e-Ghausul Wara Manzil To Wohi Hai",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kab-pahuchu-n-dar-e-ghausul-wara-manzil-to-wohi-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kab-talak-muntazir-hum-rahein-ya-nabi",
+      "title": "Kab Talak Muntazir Hum Rahein Ya Nabi",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kab-talak-muntazir-hum-rahein-ya-nabi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kabe-ki-ronak-kabe-ka-manzar",
+      "title": "Kabe Ki Ronak Kabe Ka Manzar",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kabe-ki-ronak-kabe-ka-manzar.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kabe-pe-pari-jab-pehli-nazar",
+      "title": "Kabe Pe Pari Jab Pehli Nazar",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kabe-pe-pari-jab-pehli-nazar.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kadam-uth-rahe-hai-madine-ke-janib",
+      "title": "Kadam Uth Rahe Hai Madine Ke Janib",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kadam-uth-rahe-hai-madine-ke-janib.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kaliyaan-zulfaa-wala-dukhi-dillan-daa-sahaara",
+      "title": "Kaliyaan Zulfaa Wala Dukhi Dillan Daa Sahaara",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kaliyaan-zulfaa-wala-dukhi-dillan-daa-sahaara.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kankar-se-kalma-padhwao-phir-kehna-hum-jaise-the",
+      "title": "Kankar Se Kalma Padhwao Phir Kehna Hum Jaise The",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kankar-se-kalma-padhwao-phir-kehna-hum-jaise-the.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "karam-farmaya-jab-hujur-hote-hai",
+      "title": "Karam Farmaya Jab Hujur Hote Hai",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/karam-farmaya-jab-hujur-hote-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "karam-hi-karam-hai",
+      "title": "Karam Hi Karam Hai",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/karam-hi-karam-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "karam-jo-aapka-ay-sayyad-e-abrar-ho-jaye",
+      "title": "Karam Jo Aapka Ay Sayyad E Abrar Ho Jaye",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/karam-jo-aapka-ay-sayyad-e-abrar-ho-jaye.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "karam-karam-maula",
+      "title": "Karam Karam Maula",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/karam-karam-maula.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "karam-karte-hi-rehate-ho",
+      "title": "Karam Karte Hi Rehate Ho",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/karam-karte-hi-rehate-ho.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "karam-ke-badal-baras-rahe-hain",
+      "title": "Karam Ke Badal Baras Rahe Hain",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/karam-ke-badal-baras-rahe-hain.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "karam-phir-rasule-khuda-kijiyega",
+      "title": "Karam Phir Rasule Khuda Kijiyega",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/karam-phir-rasule-khuda-kijiyega.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "karam-tera-ki-be-jauhar-nahin-main",
+      "title": "Karam Tera Ki Be-jauhar Nahin Main",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/karam-tera-ki-be-jauhar-nahin-main.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "karbala-k-jan-nisaro-ko-salam",
+      "title": "Karbala K Jan Nisaro Ko Salam",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/karbala-k-jan-nisaro-ko-salam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "karbala-ke-jaan-nisaron-ko-salam-kalam-by-razvi",
+      "title": "Karbala Ke Jaan Nisaron Ko Salam - Kalam By Razvi",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/karbala-ke-jaan-nisaron-ko-salam-kalam-by-razvi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "karbala-ki-hai-yaad-aayi-ab-aashk-bahaane-do",
+      "title": "Karbala Ki Hai Yaad Aayi Ab Aashk Bahaane Do",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/karbala-ki-hai-yaad-aayi-ab-aashk-bahaane-do.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kare-chara-sazi-ziyarat-kisi-ki",
+      "title": "Kare Chara Sazi Ziyarat Kisi Ki",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kare-chara-sazi-ziyarat-kisi-ki.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kash-mein-dor-e-payamber-main-uthaya-jata",
+      "title": "Kash Mein Dor E Payamber Main Uthaya Jata",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kash-mein-dor-e-payamber-main-uthaya-jata.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "katle-hussain-asl-mein-marge-yazeed-hai",
+      "title": "Katle Hussain Asl Mein Marge Yazeed Hai",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/katle-hussain-asl-mein-marge-yazeed-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kaun-kehta-hai-aankhei-n-chura-kar-chale",
+      "title": "Kaun Kehta Hai Aankhei(n) Chura Kar Chale",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kaun-kehta-hai-aankhei-n-chura-kar-chale.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "khairat-lene-aagaye-mangte-tumhare-khwaja",
+      "title": "Khairat Lene Aagaye Mangte Tumhare Khwaja",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/khairat-lene-aagaye-mangte-tumhare-khwaja.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "khairul-bashar-par-lakho-salam",
+      "title": "Khairul Bashar Par Lakho Salam",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/khairul-bashar-par-lakho-salam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "khak-muj-me-kamal-rakhkha-hai",
+      "title": "Khak Muj Me Kamal Rakhkha Hai",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/khak-muj-me-kamal-rakhkha-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "khake-taiba-mere-seene-se-laga-di-jaaye",
+      "title": "Khake Taiba Mere Seene Se Laga Di Jaaye",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/khake-taiba-mere-seene-se-laga-di-jaaye.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kharab-hal-kiya-dil-ko-pur-malal-kiya",
+      "title": "Kharab Hal Kiya Dil Ko Pur Malal Kiya",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kharab-hal-kiya-dil-ko-pur-malal-kiya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "khayal-aata-hai-dil-me-yeh-gar-huwa-hota",
+      "title": "Khayal Aata Hai Dil Me Yeh Gar Huwa Hota",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/khayal-aata-hai-dil-me-yeh-gar-huwa-hota.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "khayal-aata-hai-dil-mein-yeh-gar-huwa-hota",
+      "title": "Khayal Aata Hai Dil Mein Yeh Gar Huwa Hota",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/khayal-aata-hai-dil-mein-yeh-gar-huwa-hota.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "khoob-name-e-muhammad-hai-aye-momino-jisme-nuqta-bi-rabko-gawarah-nahi",
+      "title": "Khoob Name E Muhammad Hai Aye Momino Jisme Nuqta Bi Rabko Gawarah Nahi",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/khoob-name-e-muhammad-hai-aye-momino-jisme-nuqta-bi-rabko-gawarah-nahi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "khuda-ka-khas-ek-ehsaan-hai-ye-aulia-allah",
+      "title": "Khuda Ka Khas Ek Ehsaan Hai Ye Aulia Allah",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/khuda-ka-khas-ek-ehsaan-hai-ye-aulia-allah.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "khuda-ka-zikr-kare",
+      "title": "Khuda Ka Zikr Kare",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/khuda-ka-zikr-kare.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "khuda-ke-fazl-se-hum-par-hai-saaya-ghous-e-azam-ka",
+      "title": "Khuda Ke Fazl Se Hum Par Hai Saaya Ghous E Azam Ka",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/khuda-ke-fazl-se-hum-par-hai-saaya-ghous-e-azam-ka.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "khuda-ne-mujhko-diya-maa-teri-duaaon-se",
+      "title": "Khuda Ne Mujhko Diya Maa Teri Duaaon Se",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/khuda-ne-mujhko-diya-maa-teri-duaaon-se.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "khula-hai-sabhi-kay-liye-baab-e-rehmat",
+      "title": "Khula Hai Sabhi Kay Liye Baab E Rehmat",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/khula-hai-sabhi-kay-liye-baab-e-rehmat.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "khusravi-achi-lagi-na-sarwari-achi-lagi",
+      "title": "Khusravi Achi Lagi Na Sarwari Achi Lagi",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/khusravi-achi-lagi-na-sarwari-achi-lagi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "khwaab-me-gar-ho-gya-deedar-gause-aazam-ka",
+      "title": "Khwaab Me Gar Ho Gya Deedar Gause Aazam Ka",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/khwaab-me-gar-ho-gya-deedar-gause-aazam-ka.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "khwaja-e-hind-wo-darbaar-hai-aala-tera",
+      "title": "Khwaja E Hind Wo Darbaar Hai Aala Tera",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/khwaja-e-hind-wo-darbaar-hai-aala-tera.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "khwaja-piya-khwaja-piya",
+      "title": "Khwaja Piya Khwaja Piya",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/khwaja-piya-khwaja-piya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ki-ki-na-kita-yaar-ney-eik-yaar-waste",
+      "title": "Ki Ki Na Kita Yaar Ney Eik Yaar Waste",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ki-ki-na-kita-yaar-ney-eik-yaar-waste.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kis-chiz-ki-kami-hai-maula-teri-gali-main",
+      "title": "Kis Chiz Ki Kami Hai Maula Teri Gali Main",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kis-chiz-ki-kami-hai-maula-teri-gali-main.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kis-ke-jalwe-ki-jhalak-hai-ye-ujala-kiya-hai",
+      "title": "Kis Ke Jalwe Ki Jhalak Hai Ye Ujala Kiya Hai",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kis-ke-jalwe-ki-jhalak-hai-ye-ujala-kiya-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kithay-meher-ali-kithay-teri-sana",
+      "title": "Kithay Meher Ali, Kithay Teri Sana",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kithay-meher-ali-kithay-teri-sana.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kitna-ala-rutba-hai-mere-ghouse-azam-ka",
+      "title": "Kitna Ala Rutba Hai Mere Ghouse Azam Ka",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kitna-ala-rutba-hai-mere-ghouse-azam-ka.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kiya-khabar-kiya-saza-mujh-ko-milti",
+      "title": "Kiya Khabar Kiya Saza Mujh Ko Milti",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kiya-khabar-kiya-saza-mujh-ko-milti.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "koay-nabi-se-aa-na-sake-hum",
+      "title": "Koay Nabi Se Aa Na Sake Hum",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/koay-nabi-se-aa-na-sake-hum.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "koi-aaye-koi-jaaye",
+      "title": "Koi Aaye Koi Jaaye",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/koi-aaye-koi-jaaye.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "koi-kaise-samajh-paayega-rutba-sabz-gumbad-ka",
+      "title": "Koi Kaise Samajh Paayega Rutba Sabz Gumbad Ka",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/koi-kaise-samajh-paayega-rutba-sabz-gumbad-ka.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "koi-kanton-se-wabasta",
+      "title": "Koi Kanton Se Wabasta",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/koi-kanton-se-wabasta.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "koi-nabi-nahi-hai-mere-mustafa-ke-baad",
+      "title": "Koi Nabi Nahi Hai Mere Mustafa Ke Baad",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/koi-nabi-nahi-hai-mere-mustafa-ke-baad.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "koi-saleeqa-hai-aarzoo-ka-na-bandagi-meri-bandagi-hai",
+      "title": "Koi Saleeqa Hai Aarzoo Ka Na Bandagi Meri Bandagi Hai",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/koi-saleeqa-hai-aarzoo-ka-na-bandagi-meri-bandagi-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "konain-de-wali-da-darbar-bara-sohna",
+      "title": "Konain De Wali Da Darbar Bara Sohna",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/konain-de-wali-da-darbar-bara-sohna.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "koyi-kya-jane-jo-tum-ho-khuda-hi-jaane-kya-tum-ho",
+      "title": "Koyi Kya Jane Jo Tum Ho Khuda Hi Jaane Kya Tum Ho",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/koyi-kya-jane-jo-tum-ho-khuda-hi-jaane-kya-tum-ho.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kuch-aisa-karde-mere-kirdigar-ankhon-mein",
+      "title": "KUCH AISA KARDE MERE KIRDIGAR ANKHON MEIN",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kuch-aisa-karde-mere-kirdigar-ankhon-mein.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kushiyo-ki-bahaare-laaya-ramzan-mubarak-aaya",
+      "title": "Kushiyo Ki Bahaare Laaya Ramzan Mubarak Aaya",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kushiyo-ki-bahaare-laaya-ramzan-mubarak-aaya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kya-hi-zauk-afza-shafaat-hain-tumhari-wah-wah",
+      "title": "Kya Hi Zauk Afza Shafaat Hain Tumhari Wah Wah",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kya-hi-zauk-afza-shafaat-hain-tumhari-wah-wah.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kya-husne-ifteqar-hai-yaade-hussain-mein",
+      "title": "Kya Husne Ifteqar Hai Yaade Hussain Mein",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kya-husne-ifteqar-hai-yaade-hussain-mein.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kya-jane-duniya-wale-rutba-mere-madani-ka",
+      "title": "Kya Jane Duniya Wale Rutba Mere Madani Ka",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kya-jane-duniya-wale-rutba-mere-madani-ka.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kya-khabar-kya-saza-mujh-ko-milti",
+      "title": "Kya Khabar Kya Saza Mujh Ko Milti",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kya-khabar-kya-saza-mujh-ko-milti.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kya-mahekte-hain-mahekne-wale",
+      "title": "Kya Mahekte Hain Mahekne Wale",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kya-mahekte-hain-mahekne-wale.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kya-theek-ho-rukh-e-nabwi-par-misaal-e-gul",
+      "title": "Kya Theek Ho Rukh-e-Nabwi Par Misaal-e-gul",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kya-theek-ho-rukh-e-nabwi-par-misaal-e-gul.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "kyon-log-ye-kehte-hain-ghamkhar-nahi-milta",
+      "title": "Kyon Log Ye Kehte Hain Ghamkhar Nahi Milta",
+      "category": "K",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/kyon-log-ye-kehte-hain-ghamkhar-nahi-milta.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "la-ilah-ki-boli-bol-illallah-se-girah-khol",
+      "title": "La Ilah Ki Boli Bol Illallah Se Girah Khol",
+      "category": "L",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/la-ilah-ki-boli-bol-illallah-se-girah-khol.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "la-mau-jooda-illallah-la-mash-huda-illallah",
+      "title": "La Mau-Jooda Illallah La Mash-huda Illallah",
+      "category": "L",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/la-mau-jooda-illallah-la-mash-huda-illallah.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "lab-pe-aati-hai-dua-banke-tamanna-meri",
+      "title": "Lab Pe Aati Hai Dua Banke Tamanna Meri",
+      "category": "L",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/lab-pe-aati-hai-dua-banke-tamanna-meri.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "lab-per-naat-e-pak-ka-naghma",
+      "title": "Lab Per Naat-e-Pak Ka Naghma",
+      "category": "L",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/lab-per-naat-e-pak-ka-naghma.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "lab-e-kausar-hai-melaa-tishnaah-kaamaan-e-mohabbat-ka",
+      "title": "Lab-e-kausar Hai Melaa Tishnaah Kaamaan-e-mohabbat Ka",
+      "category": "L",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/lab-e-kausar-hai-melaa-tishnaah-kaamaan-e-mohabbat-ka.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "lahad-me-aaqa-ki-deed-hogi",
+      "title": "Lahad Me Aaqa Ki Deed Hogi",
+      "category": "L",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/lahad-me-aaqa-ki-deed-hogi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "lahad-mein-ishq-e-rukh-e-shah-kaa-daagh-ley-key-chale",
+      "title": "Lahad Mein Ishq-e-rukh-e-shah Kaa Daagh Ley Key Chale",
+      "category": "L",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/lahad-mein-ishq-e-rukh-e-shah-kaa-daagh-ley-key-chale.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "lajpal-nabi-mere-dar-da-di-dawa-dena",
+      "title": "Lajpal Nabi Mere Dar Da Di Dawa Dena",
+      "category": "L",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/lajpal-nabi-mere-dar-da-di-dawa-dena.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "likh-raha-hoon-naat-e-sarwar",
+      "title": "Likh Raha Hoon Naat E-Sarwar",
+      "category": "L",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/likh-raha-hoon-naat-e-sarwar.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "llahi-madad-kar-madad-ki-ghari-hai",
+      "title": "Llahi Madad Kar Madad Ki Ghari Hai",
+      "category": "L",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/llahi-madad-kar-madad-ki-ghari-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "lo-madine-ki-tajjali-se-lagaye-huwe-hain",
+      "title": "Lo Madine Ki Tajjali Se Lagaye Huwe Hain",
+      "category": "L",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/lo-madine-ki-tajjali-se-lagaye-huwe-hain.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "lutf-unka-aam-ho-hi-jayega",
+      "title": "Lutf Unka Aam Ho Hi Jayega",
+      "category": "L",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/lutf-unka-aam-ho-hi-jayega.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "maah-e-rabi-ul-awwal-aaya",
+      "title": "Maah E Rabi Ul Awwal Aaya",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/maah-e-rabi-ul-awwal-aaya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "maali-rabbun-illahu-yafnal-kullu-wa-yabqaahu-by-akhtar-raza",
+      "title": "Maali Rabbun Illahu Yafnal Kullu Wa Yabqaahu By Akhtar Raza",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/maali-rabbun-illahu-yafnal-kullu-wa-yabqaahu-by-akhtar-raza.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "maare-angariyen-aao-sarkar-madinah-varaa-saanvariah",
+      "title": "Maare Angariyen Aao Sarkar Madinah Varaa Saanvariah",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/maare-angariyen-aao-sarkar-madinah-varaa-saanvariah.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "madad-ke-waste-aye-sayyedi-ghous-ul-wara-uthye",
+      "title": "Madad Ke Waste Aye Sayyedi Ghous Ul Wara Uthye",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/madad-ke-waste-aye-sayyedi-ghous-ul-wara-uthye.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "madad-par-ho-teri-imdaad-ya-ghous",
+      "title": "Madad Par Ho Teri Imdaad Ya Ghous",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/madad-par-ho-teri-imdaad-ya-ghous.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "madina-madina-hamaara-madina",
+      "title": "Madina Madina Hamaara Madina",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/madina-madina-hamaara-madina.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "madine-bulana-hame-jaane-aalam",
+      "title": "Madine Bulana Hame Jaane Aalam",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/madine-bulana-hame-jaane-aalam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "madine-ka-manzar-haseen-kis-qadar-hai",
+      "title": "Madine Ka Manzar Haseen Kis Qadar Hai",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/madine-ka-manzar-haseen-kis-qadar-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "madine-ke-waali-do-alam-ke-data",
+      "title": "Madine Ke Waali Do Alam Ke Data",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/madine-ke-waali-do-alam-ke-data.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "madine-ke-zaa-ir-salaam-unse-kehna",
+      "title": "Madine Ke Zaa-ir Salaam Unse Kehna",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/madine-ke-zaa-ir-salaam-unse-kehna.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mai-toh-miladi-hu",
+      "title": "Mai Toh Miladi Hu",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mai-toh-miladi-hu.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "main-aasi-hoon-magar-tu-hai-gaffar-ya-allah",
+      "title": "Main Aasi Hoon Magar Tu Hai Gaffar Ya Allah",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/main-aasi-hoon-magar-tu-hai-gaffar-ya-allah.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "main-hoon-gaus-ka-deewana-fikar-nahi-koi",
+      "title": "Main Hoon Gaus Ka Deewana Fikar Nahi Koi",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/main-hoon-gaus-ka-deewana-fikar-nahi-koi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "main-lab-kusha-nahi-hoon-aur-mehre-ilteja-hu",
+      "title": "Main Lab Kusha Nahi Hoon Aur Mehre Ilteja Hu",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/main-lab-kusha-nahi-hoon-aur-mehre-ilteja-hu.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "main-madine-chala",
+      "title": "Main Madine Chala",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/main-madine-chala.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "main-madine-ki-janib-na-kaise-khichu",
+      "title": "Main Madine Ki Janib Na Kaise Khichu",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/main-madine-ki-janib-na-kaise-khichu.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "main-maili-tan-mera-maila-kirpa-karo-sarkar",
+      "title": "Main Maili Tan Mera Maila Kirpa Karo Sarkar",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/main-maili-tan-mera-maila-kirpa-karo-sarkar.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "main-mangta-haan-tere-ishq-da",
+      "title": "Main Mangta Haan Tere Ishq Da",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/main-mangta-haan-tere-ishq-da.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "main-muddat-se-is-aas-par-ji-rahi-hoon",
+      "title": "Main Muddat Se Is Aas Par Ji Rahi Hoon",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/main-muddat-se-is-aas-par-ji-rahi-hoon.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "main-nazar-karun-jaan-o-jiigar",
+      "title": "Main Nazar Karun Jaan O Jiigar",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/main-nazar-karun-jaan-o-jiigar.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "main-to-aashiq-hu-nabi-ka",
+      "title": "Main To Aashiq Hu Nabi Ka",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/main-to-aashiq-hu-nabi-ka.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "maine-ye-kab-kaha-mujhe-duniya-ka-maal-de",
+      "title": "Maine Ye Kab Kaha Mujhe Duniya Ka Maal De",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/maine-ye-kab-kaha-mujhe-duniya-ka-maal-de.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "man-kunto-maulaa",
+      "title": "Man Kunto Maulaa",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/man-kunto-maulaa.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mana-ke-mai-sarkar-gunahgaar-bahut-hu",
+      "title": "Mana Ke Mai Sarkar Gunahgaar Bahut Hu",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mana-ke-mai-sarkar-gunahgaar-bahut-hu.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mangate-hain-karam-unka-saw-sada",
+      "title": "Mangate Hain Karam Unka(saw) Sada",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mangate-hain-karam-unka-saw-sada.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "manqabat-e-taaj-ush-shariyath",
+      "title": "Manqabat E Taaj Ush Shariyath",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/manqabat-e-taaj-ush-shariyath.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "maqbool-dua-karna-manzoor-sana-karna",
+      "title": "Maqbool Dua Karna Manzoor Sana Karna",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/maqbool-dua-karna-manzoor-sana-karna.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mar-ke-jeene-ka-paaun-mazaa-khair-se",
+      "title": "Mar Ke Jeene Ka Paaun Mazaa Khair Se",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mar-ke-jeene-ka-paaun-mazaa-khair-se.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "maray-angariyen-awo-sarkaar",
+      "title": "Maray Angariyen Awo Sarkaar",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/maray-angariyen-awo-sarkaar.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "marhaba-ay-jan-e-jana-jaan-e-imaan-ya-nabi",
+      "title": "MARHABA AY JAN-E-JANA JAAN-E-IMAAN YA NABI",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/marhaba-ay-jan-e-jana-jaan-e-imaan-ya-nabi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "marhaba-sad-marhaba-aamad-e-mahboob-e-gaffar-hai",
+      "title": "Marhaba Sad Marhaba Aamad-e-Mahboob-e-Gaffar Hai",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/marhaba-sad-marhaba-aamad-e-mahboob-e-gaffar-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mashgala-aisa-batao-ke-zara",
+      "title": "Mashgala Aisa Batao Ke Zara",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mashgala-aisa-batao-ke-zara.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mat-poochhiye-ki-kaisi-adaa-hai-bilaal-ki",
+      "title": "Mat Poochhiye Ki Kaisi Adaa Hai Bilaal Ki",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mat-poochhiye-ki-kaisi-adaa-hai-bilaal-ki.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "maula-ali-manqabat-by-tahir-kadri",
+      "title": "Maula Ali Manqabat By Tahir Kadri",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/maula-ali-manqabat-by-tahir-kadri.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "maula-ali-maula-maula-ali-maula",
+      "title": "Maula Ali Maula Maula Ali Maula",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/maula-ali-maula-maula-ali-maula.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "meelad-manaya-kar-tenu-rang-lag-jawan-ge",
+      "title": "Meelad Manaya Kar Tenu Rang Lag Jawan Ge",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/meelad-manaya-kar-tenu-rang-lag-jawan-ge.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "meeran-waliyon-ke-imam-de-do-panjtan-ke-naam-manqabat",
+      "title": "Meeran Waliyon Ke Imam De Do Panjtan Ke Naam (Manqabat)",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/meeran-waliyon-ke-imam-de-do-panjtan-ke-naam-manqabat.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "meetha-meetha-he-mere-muhammad-ka-naam",
+      "title": "Meetha Meetha He Mere Muhammad Ka Naam",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/meetha-meetha-he-mere-muhammad-ka-naam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mehboob-ki-mehfil-ko-mehboob-sajate-hai",
+      "title": "Mehboob Ki Mehfil Ko Mehboob Sajate Hai",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mehboob-ki-mehfil-ko-mehboob-sajate-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mein-chup-khra-huva-hun-darbar-e-muatafa-mein",
+      "title": "Mein Chup Khra Huva Hun Darbar-E-Muatafa Mein",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mein-chup-khra-huva-hun-darbar-e-muatafa-mein.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mein-mangta-haan-teray-ishq-da",
+      "title": "Mein Mangta Haan Teray Ishq Da",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mein-mangta-haan-teray-ishq-da.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mein-nazar-karoon-jaan-o-jigar",
+      "title": "Mein Nazar Karoon Jaan O Jigar",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mein-nazar-karoon-jaan-o-jigar.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mein-sajdah-karun-ya-ke-dil-ko-sambhalun",
+      "title": "Mein Sajdah Karun Ya Ke Dil Ko Sambhalun",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mein-sajdah-karun-ya-ke-dil-ko-sambhalun.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mein-so-jaoo-ya-mustafa-kehte-kehte",
+      "title": "Mein So Jaoo Ya Mustafa Kehte Kehte",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mein-so-jaoo-ya-mustafa-kehte-kehte.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mera-badshah-hussain-hai",
+      "title": "Mera Badshah Hussain Hai",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mera-badshah-hussain-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mera-dil-bane-yadgare-madina",
+      "title": "Mera Dil Bane Yadgare Madina",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mera-dil-bane-yadgare-madina.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mera-dil-madina-bana-de-ya-rasoolallah",
+      "title": "Mera Dil Madina Bana De Ya Rasoolallah",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mera-dil-madina-bana-de-ya-rasoolallah.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mera-dil-or-meri-jaan",
+      "title": "Mera Dil Or Meri Jaan",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mera-dil-or-meri-jaan.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mera-dil-tadap-raha-hai",
+      "title": "Mera Dil Tadap Raha Hai",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mera-dil-tadap-raha-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mera-maula-maula-hussain-hai",
+      "title": "Mera Maula Maula Hussain Hai",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mera-maula-maula-hussain-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mera-sar-ho-nabi-ka-dar-guzara-ho-to-aisa-hon",
+      "title": "Mera Sar Ho Nabi Ka Dar Guzara Ho To Aisa Hon",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mera-sar-ho-nabi-ka-dar-guzara-ho-to-aisa-hon.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "meray-kamli-walay-ki-shaan-hi-nirali-hai",
+      "title": "Meray Kamli Walay Ki Shaan Hi Nirali Hai",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/meray-kamli-walay-ki-shaan-hi-nirali-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mere-aaka-mere-aaka",
+      "title": "Mere Aaka Mere Aaka",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mere-aaka-mere-aaka.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mere-aaqa-ka-roza-madine-mein-hai",
+      "title": "Mere Aaqa Ka Roza Madine Mein Hai",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mere-aaqa-ka-roza-madine-mein-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mere-aaqa-ki-hai-shaan-sabse-alag",
+      "title": "Mere Aaqa Ki Hai Shaan Sabse Alag",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mere-aaqa-ki-hai-shaan-sabse-alag.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mere-allah-ke-nigaar-salaam",
+      "title": "Mere Allah Ke Nigaar Salaam",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mere-allah-ke-nigaar-salaam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mere-aqa-aoo-ke-muddat-hoi-hai",
+      "title": "Mere Aqa Aoo Ke Muddat Hoi Hai",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mere-aqa-aoo-ke-muddat-hoi-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mere-baghdaadi-ghausul-anaam",
+      "title": "Mere Baghdaadi Ghausul Anaam",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mere-baghdaadi-ghausul-anaam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mere-dard-e-dil-ki-dawa-chal-rahi-hai",
+      "title": "Mere Dard E Dil Ki Dawa Chal Rahi Hai",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mere-dard-e-dil-ki-dawa-chal-rahi-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mere-dil-mein-he-yaad-e-muhammad",
+      "title": "Mere Dil Mein He Yaad-E-Muhammad",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mere-dil-mein-he-yaad-e-muhammad.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mere-makhdoom-simnani",
+      "title": "Mere Makhdoom Simnani",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mere-makhdoom-simnani.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mere-maula-teri-rahmat-se-nikla-tere-raste-mein",
+      "title": "Mere Maula Teri Rahmat Se Nikla Tere Raste Mein",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mere-maula-teri-rahmat-se-nikla-tere-raste-mein.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mere-nabi-ne-itna-nawaza-jhuk-gaya-sar-shukran-e-me",
+      "title": "Mere Nabi Ne Itna Nawaza Jhuk Gaya Sar Shukran E Me",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mere-nabi-ne-itna-nawaza-jhuk-gaya-sar-shukran-e-me.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mere-sarkar-sunte-hai",
+      "title": "Mere Sarkar Sunte Hai",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mere-sarkar-sunte-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "meri-baat-ban-gayi-hai-teri-baat-karte-karte",
+      "title": "Meri Baat Ban Gayi Hai Teri Baat Karte Karte",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/meri-baat-ban-gayi-hai-teri-baat-karte-karte.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "meri-dhadkan-me-ya-nabi",
+      "title": "Meri Dhadkan Me Ya Nabi",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/meri-dhadkan-me-ya-nabi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "meri-jholi-main-rehte-hain-sada-tukre-muhammad-ke",
+      "title": "Meri Jholi Main Rehte Hain Sada Tukre Muhammad Ke",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/meri-jholi-main-rehte-hain-sada-tukre-muhammad-ke.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "meri-kismat-jagane-ko-nabi-ka-naam-kaafi-hain",
+      "title": "Meri Kismat Jagane Ko, Nabi Ka Naam Kaafi Hain",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/meri-kismat-jagane-ko-nabi-ka-naam-kaafi-hain.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "meri-tauba-meri-tauba",
+      "title": "Meri Tauba Meri Tauba",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/meri-tauba-meri-tauba.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mil-gaya-dar-tera-garib-nawaz",
+      "title": "Mil Gaya Dar Tera Garib Nawaz",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mil-gaya-dar-tera-garib-nawaz.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "milaad-hai-milaad-hai-sarkaar-ka-milaad-hai",
+      "title": "Milaad Hai Milaad Hai Sarkaar Ka Milaad Hai",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/milaad-hai-milaad-hai-sarkaar-ka-milaad-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "milad-ka-mausam-aaya-hai",
+      "title": "Milad Ka Mausam Aaya Hai",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/milad-ka-mausam-aaya-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mim-madina-marehara-ki-kismat",
+      "title": "Mim Madina Marehara Ki Kismat",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mim-madina-marehara-ki-kismat.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mitha-madina-door-hai",
+      "title": "Mitha Madina Door Hai",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mitha-madina-door-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mohammad-sa-koi-nahi",
+      "title": "Mohammad Sa Koi Nahi",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mohammad-sa-koi-nahi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mojza-mere-nabi-ka",
+      "title": "Mojza Mere Nabi Ka",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mojza-mere-nabi-ka.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "muflis-e-zindagi-ab-na-samjhe-koi",
+      "title": "Muflis E Zindagi Ab Na Samjhe Koi",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/muflis-e-zindagi-ab-na-samjhe-koi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "muh-se-ek-baar-laga-laytey-jo-maula-pani",
+      "title": "Muh Se Ek Baar Laga Laytey Jo Maula Pani",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/muh-se-ek-baar-laga-laytey-jo-maula-pani.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "muhammad-ke-shaher-mein",
+      "title": "Muhammad Ke Shaher Mein",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/muhammad-ke-shaher-mein.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "muhammad-mazhar-e-kamil-hain-haq-ki-shan-e-izzat-ka",
+      "title": "Muhammad Mazhar E Kamil Hain Haq Ki Shan E Izzat Ka",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/muhammad-mazhar-e-kamil-hain-haq-ki-shan-e-izzat-ka.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "muhammad-nabina",
+      "title": "Muhammad Nabina",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/muhammad-nabina.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "muje-mere-aaka-bulate-rahenge",
+      "title": "Muje Mere Aaka Bulate Rahenge",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/muje-mere-aaka-bulate-rahenge.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mujh-pe-bhi-chashme-karam-aye-mere-aaqa-karna",
+      "title": "Mujh Pe Bhi Chashme Karam Aye Mere Aaqa Karna",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mujh-pe-bhi-chashme-karam-aye-mere-aaqa-karna.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mujh-pe-maula-ka-karam-hai",
+      "title": "Mujh Pe Maula Ka Karam Hai",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mujh-pe-maula-ka-karam-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mujhe-apna-bana-lo-tum-khudara",
+      "title": "Mujhe Apna Bana Lo Tum Khudara",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mujhe-apna-bana-lo-tum-khudara.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mujhe-bhi-shahid-e-asra-bana-diya-hota",
+      "title": "Mujhe Bhi Shahid E Asra Bana Diya Hota",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mujhe-bhi-shahid-e-asra-bana-diya-hota.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "munawwar-meri-aankhon-ko-mere-shamsud-duhaa-kar-dein",
+      "title": "Munawwar Meri Aankhon Ko Mere Shamsud Duhaa Kar Dein",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/munawwar-meri-aankhon-ko-mere-shamsud-duhaa-kar-dein.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "murshid-tere-kadmo-mein-mujhe-mar-jana-hai",
+      "title": "Murshid Tere Kadmo Mein Mujhe Mar Jana Hai",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/murshid-tere-kadmo-mein-mujhe-mar-jana-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mustafa-aap-ke-jesa-koi-aaya-hi-nahi",
+      "title": "Mustafa Aap Ke Jesa Koi Aaya Hi Nahi",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mustafa-aap-ke-jesa-koi-aaya-hi-nahi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mustafa-aapke-jaisa-koi-aaya-hi-nahi",
+      "title": "Mustafa Aapke Jaisa Koi Aaya Hi Nahi",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mustafa-aapke-jaisa-koi-aaya-hi-nahi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mustafa-jaan-e-rehmat-pe-laakho-n-salaam",
+      "title": "Mustafa Jaan E Rehmat Pe Laakho(n) Salaam",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mustafa-jaan-e-rehmat-pe-laakho-n-salaam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mustafa-jaane-rehmat-pe-laakhon-salaam-with-tazmeen",
+      "title": "Mustafa Jaane Rehmat Pe Laakhon Salaam With Tazmeen",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mustafa-jaane-rehmat-pe-laakhon-salaam-with-tazmeen.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mustafa-jane-rehmat-pe-lakhon-salam",
+      "title": "Mustafa Jane Rehmat Pe Lakhon Salam",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mustafa-jane-rehmat-pe-lakhon-salam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mustafa-ke-pyare-ladle-khwaja-hame-dar-pe-bula-le",
+      "title": "Mustafa Ke Pyare Ladle Khwaja Hame Dar Pe Bula Le",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mustafa-ke-pyare-ladle-khwaja-hame-dar-pe-bula-le.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "mustafa-khairul-wara-ho",
+      "title": "Mustafa Khairul Wara Ho",
+      "category": "M",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/mustafa-khairul-wara-ho.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "na-aasmaan-ko-yun-sar-kashida-hona-tha",
+      "title": "Na Aasmaan Ko Yun Sar Kashida Hona Tha",
+      "category": "N",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/na-aasmaan-ko-yun-sar-kashida-hona-tha.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "na-chedo-zirk-e-jannat",
+      "title": "Na Chedo Zirk E Jannat",
+      "category": "N",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/na-chedo-zirk-e-jannat.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "na-dolat-de-na-shohrat-de",
+      "title": "Na Dolat De Na Shohrat De",
+      "category": "N",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/na-dolat-de-na-shohrat-de.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "na-ho-aram-jis-bimar-ko-sare-zamane-se",
+      "title": "Na Ho Aram Jis Bimar Ko Sare Zamane Se",
+      "category": "N",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/na-ho-aram-jis-bimar-ko-sare-zamane-se.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "na-kahin-se-door-hein-manzilen",
+      "title": "Na Kahin Se Door Hein Manzilen",
+      "category": "N",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/na-kahin-se-door-hein-manzilen.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "na-kaleem-ka-tasawwur-na-khiyaal-e-tur-e-sinaa",
+      "title": "Na Kaleem Ka Tasawwur Na Khiyaal-E-Tur-E-Sinaa",
+      "category": "N",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/na-kaleem-ka-tasawwur-na-khiyaal-e-tur-e-sinaa.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "naara-e-takbeer-allaho-akbar",
+      "title": "Naara E Takbeer Allaho Akbar",
+      "category": "N",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/naara-e-takbeer-allaho-akbar.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "naare-dozakh-ko-chaman-kar-de-bahare-aariz",
+      "title": "Naare Dozakh Ko Chaman Kar De Bahare Aariz",
+      "category": "N",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/naare-dozakh-ko-chaman-kar-de-bahare-aariz.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "naat-sarkar-ki-parta-hoon-mein",
+      "title": "Naat Sarkar Ki Parta Hoon Mein",
+      "category": "N",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/naat-sarkar-ki-parta-hoon-mein.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "nabi-ka-aastan-ho-or-mera-sar-ho-to-kia-kehna",
+      "title": "Nabi Ka Aastan Ho Or Mera Sar Ho To Kia Kehna",
+      "category": "N",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/nabi-ka-aastan-ho-or-mera-sar-ho-to-kia-kehna.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "nabi-ka-jashn-aaya",
+      "title": "Nabi Ka Jashn Aaya",
+      "category": "N",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/nabi-ka-jashn-aaya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "nabi-ka-sani-nahi-hai-dhoondhate-reh-jaoge",
+      "title": "Nabi Ka Sani Nahi Hai Dhoondhate Reh Jaoge",
+      "category": "N",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/nabi-ka-sani-nahi-hai-dhoondhate-reh-jaoge.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "nabi-ke-nawase-hussain-ibn-e-haider",
+      "title": "Nabi Ke Nawase Hussain Ibn E Haider",
+      "category": "N",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/nabi-ke-nawase-hussain-ibn-e-haider.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "nabi-ki-naat-ki-mahefil-sajana-hum-na-chhorenge",
+      "title": "Nabi Ki Naat Ki Mahefil Sajana Hum Na Chhorenge",
+      "category": "N",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/nabi-ki-naat-ki-mahefil-sajana-hum-na-chhorenge.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "nabi-nabi-nabi-nabi",
+      "title": "Nabi Nabi Nabi Nabi",
+      "category": "N",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/nabi-nabi-nabi-nabi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "nabi-sarware-har-rasool-o-wali-hai",
+      "title": "Nabi Sarware Har Rasool O Wali Hai",
+      "category": "N",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/nabi-sarware-har-rasool-o-wali-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "nabiyo-ke-sardar-aae",
+      "title": "Nabiyo Ke Sardar Aae",
+      "category": "N",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/nabiyo-ke-sardar-aae.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "nabiyon-ke-paishwa-ko-hamara-salaam-ho",
+      "title": "Nabiyon Ke Paishwa Ko Hamara Salaam Ho",
+      "category": "N",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/nabiyon-ke-paishwa-ko-hamara-salaam-ho.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "nahi-he-koi-duniya-main-hamara",
+      "title": "Nahi He Koi Duniya Main Hamara",
+      "category": "N",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/nahi-he-koi-duniya-main-hamara.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "najdiya-sakht-hi-gandi-hai-tabiyat-teri",
+      "title": "Najdiya Sakht Hi Gandi Hai Tabiyat Teri",
+      "category": "N",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/najdiya-sakht-hi-gandi-hai-tabiyat-teri.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "nazar-ko-bax-do-aisa-asar-garib-nawaz",
+      "title": "Nazar Ko Bax Do Aisa Asar GARIB NAWAZ",
+      "category": "N",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/nazar-ko-bax-do-aisa-asar-garib-nawaz.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "nazar-mai-hai-kaba-tu-dil-mai",
+      "title": "Nazar Mai Hai Kaba Tu Dil Mai",
+      "category": "N",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/nazar-mai-hai-kaba-tu-dil-mai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "nazar-me-basa-hai-jamale-madina",
+      "title": "Nazar Me Basa Hai Jamale Madina",
+      "category": "N",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/nazar-me-basa-hai-jamale-madina.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "nida-thi-ke-sarkar-tashrif-lao",
+      "title": "Nida Thi Ke Sarkar Tashrif Lao",
+      "category": "N",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/nida-thi-ke-sarkar-tashrif-lao.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "noor-e-ahmed-ki-ziyaa-hai-maslak-e-ahmed-raza",
+      "title": "Noor E Ahmed Ki Ziyaa Hai Maslak E Ahmed Raza",
+      "category": "N",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/noor-e-ahmed-ki-ziyaa-hai-maslak-e-ahmed-raza.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "noor-se-apne-sarwar-e-aalam",
+      "title": "Noor Se Apne Sarwar E Aalam",
+      "category": "N",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/noor-se-apne-sarwar-e-aalam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "noor-wala-aya-hai",
+      "title": "Noor Wala Aya Hai",
+      "category": "N",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/noor-wala-aya-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "owaisiyon-me-baith-ja-bilaliyon-me-baith-ja",
+      "title": "Owaisiyon Me Baith Ja Bilaliyon Me Baith Ja",
+      "category": "O",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/owaisiyon-me-baith-ja-bilaliyon-me-baith-ja.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "paat-wo-kuch-dhaar-ye-kuch-zaar-ham",
+      "title": "Paat Wo Kuch Dhaar Ye Kuch Zaar Ham",
+      "category": "P",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/paat-wo-kuch-dhaar-ye-kuch-zaar-ham.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "pade-mujh-par-na-kuch-iftaad-ya-ghous",
+      "title": "Pade Mujh Par Na Kuch Iftaad Ya Ghous",
+      "category": "P",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/pade-mujh-par-na-kuch-iftaad-ya-ghous.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "paigham-saba-layee-hai-yeh-gulzar-e-nabi",
+      "title": "Paigham Saba Layee Hai Yeh Gulzar E Nabi",
+      "category": "P",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/paigham-saba-layee-hai-yeh-gulzar-e-nabi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "pare-pare-pe-likhkha-hai-aaka-ka-naam",
+      "title": "Pare Pare Pe Likhkha Hai Aaka Ka Naam",
+      "category": "P",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/pare-pare-pe-likhkha-hai-aaka-ka-naam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "parho-durood-kay-molood-ki-ghari-aayi",
+      "title": "Parho Durood Kay Molood Ki Ghari Aayi",
+      "category": "P",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/parho-durood-kay-molood-ki-ghari-aayi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "patta-patta-boota-boota-zikr-e-khuda-mein-khoya",
+      "title": "Patta Patta Boota Boota Zikr E Khuda Mein Khoya",
+      "category": "P",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/patta-patta-boota-boota-zikr-e-khuda-mein-khoya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "peshe-aaka-naate-unki-hum-sunate",
+      "title": "Peshe Aaka Naate Unki Hum Sunate",
+      "category": "P",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/peshe-aaka-naate-unki-hum-sunate.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "phir-utha-walwala-e-yaad-e-mugheelan-e-arab",
+      "title": "Phir Utha Walwala E Yaad E Mugheelan E Arab",
+      "category": "P",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/phir-utha-walwala-e-yaad-e-mugheelan-e-arab.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "pir-mere-baghdaadi-ghaus-ul-anaam",
+      "title": "Pir Mere Baghdaadi Ghaus Ul Anaam",
+      "category": "P",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/pir-mere-baghdaadi-ghaus-ul-anaam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "piraane-pir-meri-bigri-banaao",
+      "title": "Piraane Pir, Meri Bigri Banaao",
+      "category": "P",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/piraane-pir-meri-bigri-banaao.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "pirane-pir-meri-bigari-banao",
+      "title": "Pirane Pir Meri Bigari Banao",
+      "category": "P",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/pirane-pir-meri-bigari-banao.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "piro-ka-pir-hai",
+      "title": "Piro Ka Pir Hai",
+      "category": "P",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/piro-ka-pir-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "poochte-kya-ho-arsh-par-yun-gaye-mustafa-ke-yun",
+      "title": "Poochte Kya Ho Arsh Par Yun Gaye Mustafa Ke Yun",
+      "category": "P",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/poochte-kya-ho-arsh-par-yun-gaye-mustafa-ke-yun.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "pukaro-mere-maula-ko-pukaro",
+      "title": "Pukaro Mere Maula Ko Pukaro",
+      "category": "P",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/pukaro-mere-maula-ko-pukaro.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "pukaro-shahe-jilan-ko-pukaro",
+      "title": "Pukaro Shahe Jilan Ko Pukaro",
+      "category": "P",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/pukaro-shahe-jilan-ko-pukaro.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "purnoor-hai-zamana-sub-he-shabe-wiladat",
+      "title": "Purnoor Hai Zamana Sub-he Shabe Wiladat",
+      "category": "P",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/purnoor-hai-zamana-sub-he-shabe-wiladat.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "pyase-imam-assalam-ali-maqam-assalam",
+      "title": "Pyase Imam Assalam Ali Maqam Assalam",
+      "category": "P",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/pyase-imam-assalam-ali-maqam-assalam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "qadam-qadam-pe-khuda-ki-madad-pohanchti-hai",
+      "title": "Qadam Qadam Pe Khuda Ki Madad Pohanchti Hai",
+      "category": "Q",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/qadam-qadam-pe-khuda-ki-madad-pohanchti-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "qadri-izz-o-rifat-ki-kya-baat-hai",
+      "title": "Qadri Izz O Rifat Ki Kya Baat Hai",
+      "category": "Q",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/qadri-izz-o-rifat-ki-kya-baat-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "qalb-ko-uski-rooyat-ki-hain-aarzu",
+      "title": "Qalb Ko Uski Rooyat Ki Hain Aarzu",
+      "category": "Q",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/qalb-ko-uski-rooyat-ki-hain-aarzu.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "qaseeda-e-mearaj",
+      "title": "Qaseeda E Mearaj",
+      "category": "Q",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/qaseeda-e-mearaj.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "qaseeda-e-meeraj",
+      "title": "Qaseeda E Meeraj",
+      "category": "Q",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/qaseeda-e-meeraj.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "qaseeda-e-gausiya",
+      "title": "Qaseeda-E-Gausiya",
+      "category": "Q",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/qaseeda-e-gausiya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "qaseedah-e-noor",
+      "title": "Qaseedah E Noor",
+      "category": "Q",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/qaseedah-e-noor.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "qurbaan-mein-unki-bakhshish-ke",
+      "title": "Qurbaan Mein Unki Bakhshish Ke",
+      "category": "Q",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/qurbaan-mein-unki-bakhshish-ke.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "raah-pur-khaar-hai-kya-hona-hai",
+      "title": "Raah Pur Khaar Hai Kya Hona Hai",
+      "category": "R",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/raah-pur-khaar-hai-kya-hona-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "raah-e-irfan-sey-jo-hum-naa-deedah-ru-mahram-nahin",
+      "title": "Raah-e-irfan Sey Jo Hum Naa Deedah Ru Mahram Nahin",
+      "category": "R",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/raah-e-irfan-sey-jo-hum-naa-deedah-ru-mahram-nahin.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "raate-bhi-madine-kee-baate-bhi-madine-kee",
+      "title": "Raate Bhi Madine Kee Baate Bhi Madine Kee",
+      "category": "R",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/raate-bhi-madine-kee-baate-bhi-madine-kee.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "rab-ne-diya-hai-unko",
+      "title": "Rab Ne Diya Hai Unko",
+      "category": "R",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/rab-ne-diya-hai-unko.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "rabbana-ya-rabbana",
+      "title": "Rabbana Ya Rabbana",
+      "category": "R",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/rabbana-ya-rabbana.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "rahe-khuda-main-shouq-se-sar-ko-kata-gaye-hussain",
+      "title": "Rahe Khuda Main Shouq Se Sar Ko Kata Gaye Hussain",
+      "category": "R",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/rahe-khuda-main-shouq-se-sar-ko-kata-gaye-hussain.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "rahey-jate-hein-ye-arman-haye-mere-sine-mein",
+      "title": "Rahey Jate Hein Ye Arman Haye Mere Sine Mein",
+      "category": "R",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/rahey-jate-hein-ye-arman-haye-mere-sine-mein.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "rashke-qamar-hu-range-rukhe-aftaab-hu",
+      "title": "Rashke Qamar Hu Range Rukhe Aftaab Hu",
+      "category": "R",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/rashke-qamar-hu-range-rukhe-aftaab-hu.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ravi-de-kande-mere-data-dera-laya",
+      "title": "Ravi De Kande Mere Data Dera Laya",
+      "category": "R",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ravi-de-kande-mere-data-dera-laya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "raza-raza-raza-raza-manqabat",
+      "title": "Raza Raza Raza Raza Manqabat",
+      "category": "R",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/raza-raza-raza-raza-manqabat.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "rehbar-o-taaj-e-shariat-hai-aaaj-bhia",
+      "title": "Rehbar O Taaj E Shariat Hai Aaaj Bhia",
+      "category": "R",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/rehbar-o-taaj-e-shariat-hai-aaaj-bhia.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "rehmat-baras-rahi-hai-muhammad-ke-shaher-mein",
+      "title": "Rehmat Baras Rahi Hai Muhammad Ke Shaher Mein",
+      "category": "R",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/rehmat-baras-rahi-hai-muhammad-ke-shaher-mein.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "rehmat-ka-hai-darwaza-khula-maang-are-maang",
+      "title": "Rehmat Ka Hai Darwaza Khula Maang Are Maang",
+      "category": "R",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/rehmat-ka-hai-darwaza-khula-maang-are-maang.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "rifaete-subhe-saadat-zindabad",
+      "title": "Rifaete Subhe Saadat Zindabad",
+      "category": "R",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/rifaete-subhe-saadat-zindabad.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "rok-leti-hai-aapki-nisbat",
+      "title": "Rok Leti Hai Aapki Nisbat",
+      "category": "R",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/rok-leti-hai-aapki-nisbat.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "roze-ki-deewar-se-rishta-jor-liya",
+      "title": "Roze Ki Deewar Se Rishta Jor Liya",
+      "category": "R",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/roze-ki-deewar-se-rishta-jor-liya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "rukh-se-parda-ab-apne-hata-do",
+      "title": "Rukh Se Parda Ab Apne Hata Do",
+      "category": "R",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/rukh-se-parda-ab-apne-hata-do.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "rukh-e-sarkar-sa-koi-nazara-ho-nahi-sakta",
+      "title": "Rukh-e-Sarkar Sa Koi Nazara Ho Nahi Sakta",
+      "category": "R",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/rukh-e-sarkar-sa-koi-nazara-ho-nahi-sakta.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "rusul-unhi-ka-to-muzdah-sunane-aaye-hai",
+      "title": "Rusul Unhi Ka To Muzdah Sunane Aaye Hai",
+      "category": "R",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/rusul-unhi-ka-to-muzdah-sunane-aaye-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "rutba-hi-kuch-aisa-hai-uncha-aala-hazrat-ka",
+      "title": "Rutba Hi Kuch Aisa Hai Uncha Aala Hazrat Ka",
+      "category": "R",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/rutba-hi-kuch-aisa-hai-uncha-aala-hazrat-ka.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "saara-jag-aaj-phir-jagmagaya-mere-aaqa-ka-milaad-aaya",
+      "title": "Saara Jag Aaj Phir Jagmagaya Mere Aaqa Ka Milaad Aaya",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/saara-jag-aaj-phir-jagmagaya-mere-aaqa-ka-milaad-aaya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "saare-jag-nalo-lagdiyaan-changiya",
+      "title": "Saare Jag Nalo Lagdiyaan Changiya",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/saare-jag-nalo-lagdiyaan-changiya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sab-ke-bas-ki-baat-nahi",
+      "title": "Sab Ke Bas Ki Baat Nahi",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sab-ke-bas-ki-baat-nahi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sab-nabiyon-se-aala-mera-kali-kamli-wala",
+      "title": "Sab Nabiyon Se Aala Mera Kali Kamli Wala",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sab-nabiyon-se-aala-mera-kali-kamli-wala.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sabab-e-taskeen-e-qalb-e-aasi-hai-zikr-tumhara",
+      "title": "Sabab E Taskeen E Qalb E Aasi Hai Zikr Tumhara",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sabab-e-taskeen-e-qalb-e-aasi-hai-zikr-tumhara.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sabke-hajat-rawa-garib-nawaj",
+      "title": "Sabke Hajat Rawa Garib Nawaj",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sabke-hajat-rawa-garib-nawaj.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sabse-aula-wo-aala-hamara-nabi",
+      "title": "Sabse Aula Wo Aala Hamara Nabi",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sabse-aula-wo-aala-hamara-nabi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sada-islam-chamka-hai-sada-islam-chamkega",
+      "title": "Sada Islam Chamka Hai Sada Islam Chamkega",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sada-islam-chamka-hai-sada-islam-chamkega.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sadkhe-me-mustafa-ke-madine-ko-jayeinge",
+      "title": "Sadkhe Me Mustafa Ke Madine Ko Jayeinge",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sadkhe-me-mustafa-ke-madine-ko-jayeinge.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sahab-e-rehmat-e-baari-hai-barahvi-tareekh",
+      "title": "Sahab E Rehmat E Baari Hai Barahvi Tareekh",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sahab-e-rehmat-e-baari-hai-barahvi-tareekh.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sahar-ka-waqt-hai-masum-kaliya-muskurati-hain",
+      "title": "Sahar Ka Waqt Hai Masum Kaliya Muskurati Hain",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sahar-ka-waqt-hai-masum-kaliya-muskurati-hain.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sahara-chahiye-sarkar-zindagi-ke-liye",
+      "title": "Sahara Chahiye Sarkar Zindagi Ke Liye",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sahara-chahiye-sarkar-zindagi-ke-liye.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sahib-e-meraj-hain-aur-ayn-e-noor-aaqa-huzoor",
+      "title": "Sahib E Meraj Hain Aur Ayn E Noor Aaqa Huzoor",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sahib-e-meraj-hain-aur-ayn-e-noor-aaqa-huzoor.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "saja-hai-aisa-tera-aastan-gareeb-nawaz",
+      "title": "SAJA HAI AISA TERA AASTAN GAREEB NAWAZ",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/saja-hai-aisa-tera-aastan-gareeb-nawaz.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sallay-ala-pukaro-sarkar-s-a-w-arahe-hain",
+      "title": "Sallay Ala Pukaro Sarkar (S.A.W) Arahe Hain",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sallay-ala-pukaro-sarkar-s-a-w-arahe-hain.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "salle-ala-nabi-ye-na-sale-ala-mohammadin",
+      "title": "Salle Ala Nabi Ye Na Sale Ala Mohammadin",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/salle-ala-nabi-ye-na-sale-ala-mohammadin.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sambhal-jaa-ai-dile-muztar-madeenah-aane-waala-hai",
+      "title": "Sambhal Jaa Ai Dile Muztar Madeenah Aane Waala Hai",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sambhal-jaa-ai-dile-muztar-madeenah-aane-waala-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sana-ae-mustafa-ke-geet-gaye-roze-khwaja-par",
+      "title": "Sana Ae Mustafa Ke Geet Gaye Roze Khwaja Par",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sana-ae-mustafa-ke-geet-gaye-roze-khwaja-par.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sar-bulandi-ki-rawayat-sir-katanay-say-chali",
+      "title": "Sar Bulandi Ki Rawayat Sir Katanay Say Chali",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sar-bulandi-ki-rawayat-sir-katanay-say-chali.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sar-se-paa-tak-har-ada-he-lajawab",
+      "title": "Sar Se Paa Tak Har Ada He Lajawab",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sar-se-paa-tak-har-ada-he-lajawab.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sar-sue-rauza-jhuka-phir-tujhko-kiya-with-tazmeen",
+      "title": "Sar Sue Rauza Jhuka Phir Tujhko Kiya With Tazmeen",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sar-sue-rauza-jhuka-phir-tujhko-kiya-with-tazmeen.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sare-bazm-jhoomta-hai-sare-aam-jhoomta-hai",
+      "title": "Sare Bazm Jhoomta Hai Sare Aam Jhoomta Hai",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sare-bazm-jhoomta-hai-sare-aam-jhoomta-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sare-jahan-se-achha-hai-sange-dar-tumhara",
+      "title": "Sare Jahan Se Achha Hai Sange Dar Tumhara",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sare-jahan-se-achha-hai-sange-dar-tumhara.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sarkaar-ke-qadmo-mein",
+      "title": "Sarkaar Ke Qadmo Mein",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sarkaar-ke-qadmo-mein.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sarkaare-ghaus-e-azam-nazre-karam-khudaara",
+      "title": "Sarkaare Ghaus E Azam, Nazre Karam Khudaara",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sarkaare-ghaus-e-azam-nazre-karam-khudaara.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sarkar-bulae-kadmo-mai",
+      "title": "Sarkar Bulae Kadmo Mai",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sarkar-bulae-kadmo-mai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sarkar-ka-madina",
+      "title": "Sarkar Ka Madina",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sarkar-ka-madina.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sarkar-ke-jaisa-mere-sarkar-ke-jaisa",
+      "title": "Sarkar Ke Jaisa Mere Sarkar Ke Jaisa",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sarkar-ke-jaisa-mere-sarkar-ke-jaisa.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sawali-ne-aaka-s-a-w-ke-roze",
+      "title": "Sawali Ne Aaka (s.a.w) Ke Roze",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sawali-ne-aaka-s-a-w-ke-roze.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "shaahe-madina-taybah-bulalo-shaahe-madina",
+      "title": "Shaahe Madina Taybah Bulalo Shaahe Madina",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/shaahe-madina-taybah-bulalo-shaahe-madina.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "shah-e-wala-mujhe-taiba-bulalo",
+      "title": "Shah-e-Wala Mujhe Taiba Bulalo",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/shah-e-wala-mujhe-taiba-bulalo.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "shahe-di-ki-nalain-uthane-ke-qabil",
+      "title": "Shahe Di Ki Nalain Uthane Ke Qabil",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/shahe-di-ki-nalain-uthane-ke-qabil.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "shahe-ghoushul-wara-salam-alay",
+      "title": "Shahe Ghoushul Wara Salam Alay",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/shahe-ghoushul-wara-salam-alay.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "shahe-madeena-shahe-do-aalam",
+      "title": "Shahe Madeena Shahe Do Aalam",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/shahe-madeena-shahe-do-aalam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "shai-al-lillah-ya-abdul-qadir",
+      "title": "Shai Al Lillah Ya Abdul Qadir",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/shai-al-lillah-ya-abdul-qadir.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "shamsuz-zuha-par-laakho-n-salaam",
+      "title": "Shamsuz Zuha Par Laakho(n) Salaam",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/shamsuz-zuha-par-laakho-n-salaam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "shor-e-mehno-sun-kar-main-dawan-aya",
+      "title": "Shor E Mehno Sun Kar Main Dawan Aya",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/shor-e-mehno-sun-kar-main-dawan-aya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "shujaat-ka-johar-dikhane-chale-hai",
+      "title": "Shujaat Ka Johar Dikhane Chale Hai",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/shujaat-ka-johar-dikhane-chale-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "shukr-e-khuda-ki-aaj-ghari-us-safar-ki-hai",
+      "title": "Shukr E Khuda Ki Aaj Ghari Us Safar Ki Hai",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/shukr-e-khuda-ki-aaj-ghari-us-safar-ki-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "shukr-e-khuda-ke-mujh-pe-hai-saaya-e-ghaus-ul-wara",
+      "title": "Shukr-e-Khuda Ke Mujh Pe Hai Saaya-e-Ghaus-Ul-Wara",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/shukr-e-khuda-ke-mujh-pe-hai-saaya-e-ghaus-ul-wara.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sidra-se-bhi-aage-kaun-gaya-jibril-e-amin-se-poocho",
+      "title": "Sidra Se Bhi Aage Kaun Gaya Jibril E Amin Se Poocho",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sidra-se-bhi-aage-kaun-gaya-jibril-e-amin-se-poocho.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sirf-ek-baar",
+      "title": "Sirf Ek Baar",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sirf-ek-baar.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sone-ka-kalsa-noorani-jaali",
+      "title": "Sone Ka Kalsa Noorani Jaali",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sone-ka-kalsa-noorani-jaali.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "soona-jungle-raat-andheri-chaayi-badli-kaali-hai",
+      "title": "Soona Jungle Raat Andheri Chaayi Badli Kaali Hai",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/soona-jungle-raat-andheri-chaayi-badli-kaali-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "star-of-the-eyes-name-of-mohammed",
+      "title": "Star Of The Eyes Name Of Mohammed",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/star-of-the-eyes-name-of-mohammed.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sub-kuch-ye-mere-maa-ki-dowao-ka-sila-he",
+      "title": "Sub Kuch Ye Mere Maa Ki Dowao Ka Sila He",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sub-kuch-ye-mere-maa-ki-dowao-ka-sila-he.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "subha-ka-noor-chamka-fir-adab-ka-wo-mukam-aaya",
+      "title": "Subha Ka Noor Chamka Fir Adab Ka Wo Mukam Aaya",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/subha-ka-noor-chamka-fir-adab-ka-wo-mukam-aaya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "subha-taibah-me-hui-bat-ta-hain-baada-noor-ka",
+      "title": "Subha Taibah Me Hui Bat'ta Hain Baada Noor Ka",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/subha-taibah-me-hui-bat-ta-hain-baada-noor-ka.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "subha-tayba-me-huwi-chhayi-hai-rehmat-noor-ki",
+      "title": "Subha Tayba Me Huwi Chhayi Hai Rehmat Noor Ki",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/subha-tayba-me-huwi-chhayi-hai-rehmat-noor-ki.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "subhanallah-al-humdulillah-allahu-akbar",
+      "title": "Subhanallah Al Humdulillah Allahu Akbar",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/subhanallah-al-humdulillah-allahu-akbar.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "subhe-baharaan",
+      "title": "Subhe Baharaan",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/subhe-baharaan.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sultane-jahan-mehboobe-khuda-teri-shaano-shaukat-kya-kehna",
+      "title": "Sultane Jahan Mehboobe Khuda Teri Shaano Shaukat Kya Kehna",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sultane-jahan-mehboobe-khuda-teri-shaano-shaukat-kya-kehna.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sun-lo-khuda-kay-wastay-apnay-gada-ki-arz",
+      "title": "Sun Lo Khuda Kay Wastay Apnay Gada Ki Arz",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sun-lo-khuda-kay-wastay-apnay-gada-ki-arz.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sunega-kaun-meri-ilteja-rasoollah",
+      "title": "Sunega Kaun Meri Ilteja Rasoollah",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sunega-kaun-meri-ilteja-rasoollah.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sunehri-jalion-ko-ab-nazar-aane-ka-muqam-do",
+      "title": "Sunehri Jalion Ko Ab Nazar Aane Ka Muqam Do",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sunehri-jalion-ko-ab-nazar-aane-ka-muqam-do.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sunni-musalman-mai-sunni-musalman",
+      "title": "Sunni Musalman Mai Sunni Musalman",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sunni-musalman-mai-sunni-musalman.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sunniyo-ka-peshwa-mera-raza-mera-raza",
+      "title": "Sunniyo Ka Peshwa Mera Raza Mera Raza",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sunniyo-ka-peshwa-mera-raza-mera-raza.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sunte-hain-ki-mehshar-mein-sirf-unki-rasai-hai",
+      "title": "Sunte Hain Ki Mehshar Mein Sirf Unki Rasai Hai",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sunte-hain-ki-mehshar-mein-sirf-unki-rasai-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sunte-ho-bekaso-fariyad-ki-gause-aazam",
+      "title": "Sunte Ho Bekaso Fariyad Ki Gause Aazam",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sunte-ho-bekaso-fariyad-ki-gause-aazam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "sweet-madina-sweet-madina",
+      "title": "Sweet Madina Sweet Madina",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/sweet-madina-sweet-madina.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "syed-ne-karbala-main-waday-nibha-diye-hain",
+      "title": "Syed Ne Karbala Main Waday Nibha Diye Hain",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/syed-ne-karbala-main-waday-nibha-diye-hain.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "syed-e-konain-sultan-e-jahan",
+      "title": "Syed-e-Konain Sultan-e-Jahan",
+      "category": "S",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/syed-e-konain-sultan-e-jahan.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "taab-e-miraat-e-saher-gard-e-bayabaan-e-arab",
+      "title": "Taab E Miraat E Saher Gard E Bayabaan E Arab",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/taab-e-miraat-e-saher-gard-e-bayabaan-e-arab.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tadap-raha-hu-madine-ki-haazri-ke-liye",
+      "title": "Tadap Raha Hu Madine Ki Haazri Ke Liye",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tadap-raha-hu-madine-ki-haazri-ke-liye.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tajub-kya-gasha-sukhandar-naat-padte-hai",
+      "title": "Tajub Kya Gasha Sukhandar Naat Padte Hai",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tajub-kya-gasha-sukhandar-naat-padte-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "takdir-muje-lai-sarkar-saw-ke-roze-par",
+      "title": "Takdir Muje Lai Sarkar(saw) Ke Roze Par",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/takdir-muje-lai-sarkar-saw-ke-roze-par.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "taru-arab-lage-re-khajur-khajur",
+      "title": "Taru Arab Lage Re Khajur Khajur",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/taru-arab-lage-re-khajur-khajur.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tatjallia-ey-noor-fidam-ghaus-e-azam",
+      "title": "Tatjallia Ey Noor Fidam Ghaus E Azam",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tatjallia-ey-noor-fidam-ghaus-e-azam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "taybah-rashke-jina-khuldazar",
+      "title": "Taybah Rashke Jina Khuldazar",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/taybah-rashke-jina-khuldazar.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tera-dar-rahe-salamat-woh-jahan-ki-zindagi-hai",
+      "title": "Tera Dar Rahe Salamat Woh Jahan Ki Zindagi Hai",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tera-dar-rahe-salamat-woh-jahan-ki-zindagi-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tera-khawan-me-tere-geet-gawa-ya-rasulallah",
+      "title": "Tera Khawan Me Tere Geet Gawa Ya Rasulallah",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tera-khawan-me-tere-geet-gawa-ya-rasulallah.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tera-naam-khwaja-moinuddin",
+      "title": "Tera Naam Khwaja Moinuddin",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tera-naam-khwaja-moinuddin.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tera-rutba-hai-dil-nashee-ghous-e-aazam",
+      "title": "Tera Rutba Hai Dil Nashee Ghous E Aazam",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tera-rutba-hai-dil-nashee-ghous-e-aazam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tere-damane-karam-me-jise-neend-aa-gayi-hai",
+      "title": "Tere Damane Karam Me Jise Neend Aa Gayi Hai",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tere-damane-karam-me-jise-neend-aa-gayi-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tere-dayaar-ke-ehsaan-bhoolte-hi-nahin",
+      "title": "Tere Dayaar Ke Ehsaan Bhoolte Hi Nahin",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tere-dayaar-ke-ehsaan-bhoolte-hi-nahin.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tere-ghar-ke-fere-lagata-rahu-main",
+      "title": "Tere Ghar Ke Fere Lagata Rahu Main",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tere-ghar-ke-fere-lagata-rahu-main.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tere-hote-janam-liya-hota",
+      "title": "Tere Hote Janam Liya Hota",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tere-hote-janam-liya-hota.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tere-ishq-di-dolat-mil-jae-dunya-di-dolat-ki-karni",
+      "title": "Tere Ishq Di Dolat Mil Jae Dunya Di Dolat Ki Karni",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tere-ishq-di-dolat-mil-jae-dunya-di-dolat-ki-karni.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tere-karam-ki-kya-baat-maula-tere-haram-ki-kya-baat-maula",
+      "title": "Tere Karam Ki Kya Baat Maula Tere Haram Ki Kya Baat Maula",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tere-karam-ki-kya-baat-maula-tere-haram-ki-kya-baat-maula.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "teri-jaliyoon-ke-neechy",
+      "title": "Teri Jaliyoon Ke Neechy",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/teri-jaliyoon-ke-neechy.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "teri-baat-gause-aazam",
+      "title": "Teri Baat Gause Aazam",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/teri-baat-gause-aazam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "teri-hamdo-sana-hamse-kab-ho-baya",
+      "title": "Teri Hamdo Sana Hamse Kab Ho Baya",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/teri-hamdo-sana-hamse-kab-ho-baya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "teri-raah-me-jaan-diye-jaa-raha-hu",
+      "title": "Teri Raah Me Jaan Diye Jaa Raha Hu",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/teri-raah-me-jaan-diye-jaa-raha-hu.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "teri-rehmato-ka-dariya-sare-aam-chal-raha-hai",
+      "title": "Teri Rehmato Ka Dariya Sare Aam Chal Raha Hai",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/teri-rehmato-ka-dariya-sare-aam-chal-raha-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "teri-wehshaton-se-ae-dil",
+      "title": "Teri Wehshaton Se Ae Dil",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/teri-wehshaton-se-ae-dil.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "teri-wehshaton-se-ae-dil-mujhe-kiun-na-aar-aaye",
+      "title": "Teri Wehshaton Se Ae Dil Mujhe Kiun Na Aar Aaye",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/teri-wehshaton-se-ae-dil-mujhe-kiun-na-aar-aaye.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "thaama-jis-ne-dar-tumhara-hazrat-e-hafiz-wazeer",
+      "title": "Thaama Jis Ne Dar Tumhara Hazrat-e-hafiz Wazeer",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/thaama-jis-ne-dar-tumhara-hazrat-e-hafiz-wazeer.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tore-dekhan-ko-tarse-jiyara-ya-abdal-qadir-jilani",
+      "title": "Tore Dekhan Ko Tarse Jiyara Ya Abdal Qadir Jilani",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tore-dekhan-ko-tarse-jiyara-ya-abdal-qadir-jilani.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tu-ameer-e-haram-main-fakir-e-ajam",
+      "title": "Tu Ameer-E-Haram Main Fakir-E-Ajam",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tu-ameer-e-haram-main-fakir-e-ajam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tu-hai-woh-ghaus-ke-har-ghaus-hai-shaida-tera",
+      "title": "Tu Hai Woh Ghaus Ke Har Ghaus Hai Shaida Tera",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tu-hai-woh-ghaus-ke-har-ghaus-hai-shaida-tera.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tu-hain-wo-ghous-ki-har-ghous-hain-sheda-tera",
+      "title": "Tu Hain Wo Ghous Ki Har Ghous Hain Sheda Tera",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tu-hain-wo-ghous-ki-har-ghous-hain-sheda-tera.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tu-ne-batil-ko-mitaya-hai-imam-ahmed-raza",
+      "title": "Tu Ne Batil Ko Mitaya Hai Imam Ahmed Raza",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tu-ne-batil-ko-mitaya-hai-imam-ahmed-raza.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tu-shamme-risalat-hain",
+      "title": "Tu Shamme Risalat Hain",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tu-shamme-risalat-hain.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tujh-pe-karam-ho-jayega-tera-wird-ho-allahu",
+      "title": "Tujh Pe Karam Ho Jayega Tera Wird Ho Allahu",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tujh-pe-karam-ho-jayega-tera-wird-ho-allahu.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tum-bhi-karke-unka-charcha-apne-dil-chamkao",
+      "title": "Tum Bhi Karke Unka Charcha Apne Dil Chamkao",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tum-bhi-karke-unka-charcha-apne-dil-chamkao.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tum-ho-jane-ali-daata-hindal-wali",
+      "title": "Tum Ho Jane Ali Daata Hindal Wali",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tum-ho-jane-ali-daata-hindal-wali.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tum-ik-gorakh-dhanda-ho",
+      "title": "Tum Ik Gorakh Dhanda Ho",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tum-ik-gorakh-dhanda-ho.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tum-par-main-lakh-jaan-se-fida-ya-rasool",
+      "title": "Tum Par Main Lakh Jaan Se Fida Ya Rasool",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tum-par-main-lakh-jaan-se-fida-ya-rasool.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tum-rab-ka-intekhab-ho-izzat-ma-aab-ho",
+      "title": "Tum Rab Ka Intekhab Ho, Izzat Ma'aab Ho",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tum-rab-ka-intekhab-ho-izzat-ma-aab-ho.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tumhare-dar-pe-jo-main-baaryaab-ho-jaun",
+      "title": "Tumhare Dar Pe Jo Main Baaryaab Ho Jaun",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tumhare-dar-pe-jo-main-baaryaab-ho-jaun.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tumhare-sajde-ko-kaba-salam-kehta-hai",
+      "title": "Tumhare Sajde Ko Kaba Salam Kehta Hai",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tumhare-sajde-ko-kaba-salam-kehta-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tumhare-zare-ke-parto-sitar-haaye-falak",
+      "title": "Tumhare Zare Ke Parto Sitar Haaye Falak",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tumhare-zare-ke-parto-sitar-haaye-falak.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tumhi-farsh-se-arsh-par-jaane-waale",
+      "title": "Tumhi Farsh Se Arsh Par Jaane Waale",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tumhi-farsh-se-arsh-par-jaane-waale.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "tumko-mai-kya-bataun-taiba-nagar-me-kya-hai",
+      "title": "Tumko Mai Kya Bataun Taiba Nagar Me Kya Hai",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tumko-mai-kya-bataun-taiba-nagar-me-kya-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "uncha-jahaa-n-mei-n-naam-hai-piraane-pir-ka",
+      "title": "Uncha Jahaa(N) Mei(N) Naam Hai, Piraane Pir Ka,",
+      "category": "U",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/uncha-jahaa-n-mei-n-naam-hai-piraane-pir-ka.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "unke-saw-jo-gulam-ho-gaye",
+      "title": "Unke (saw) Jo Gulam Ho Gaye",
+      "category": "U",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/unke-saw-jo-gulam-ho-gaye.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "unki-chowkhat-pe-sar-jhukayen-hain",
+      "title": "Unki Chowkhat Pe Sar Jhukayen Hain",
+      "category": "U",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/unki-chowkhat-pe-sar-jhukayen-hain.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "unki-mahak-ne-dil-ke-gujnche-khila-diya-hai",
+      "title": "Unki Mahak Ne Dil Ke Gujnche Khila Diya Hai",
+      "category": "U",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/unki-mahak-ne-dil-ke-gujnche-khila-diya-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "us-husain-ibn-e-haidar-pe-lakho-salam",
+      "title": "Us Husain Ibn-e-Haidar Pe Lakho Salam",
+      "category": "U",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/us-husain-ibn-e-haidar-pe-lakho-salam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "utha-do-parda-dikha-do-chehra",
+      "title": "Utha Do Parda Dikha Do Chehra",
+      "category": "U",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/utha-do-parda-dikha-do-chehra.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "wah-kya-joodo-karam-with-tazmeen",
+      "title": "Wah Kya Joodo Karam With Tazmeen",
+      "category": "W",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/wah-kya-joodo-karam-with-tazmeen.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "wah-kya-judo-o-karam-hain-shahe-bat-ha-tera",
+      "title": "Wah Kya Judo O Karam Hain Shahe Bat-Ha Tera",
+      "category": "W",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/wah-kya-judo-o-karam-hain-shahe-bat-ha-tera.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "wah-kya-martaba-ae-ghous-hai-bala-tera",
+      "title": "Wah Kya Martaba Ae Ghous Hai Bala Tera",
+      "category": "W",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/wah-kya-martaba-ae-ghous-hai-bala-tera.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "wah-kya-martaba-hai-gaus-e-bala-tera-tazmeen",
+      "title": "Wah Kya Martaba Hai Gaus E Bala Tera Tazmeen",
+      "category": "W",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/wah-kya-martaba-hai-gaus-e-bala-tera-tazmeen.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "wahi-rab-hain-jisne-tujhko",
+      "title": "Wahi Rab Hain Jisne Tujhko",
+      "category": "W",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/wahi-rab-hain-jisne-tujhko.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "wirde-tha-ghous-e-paak-ka-salle-ala-mohammadin",
+      "title": "Wirde Tha Ghous E Paak Ka Salle Ala Mohammadin",
+      "category": "W",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/wirde-tha-ghous-e-paak-ka-salle-ala-mohammadin.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "wo-dhoopon-me-tapti-zameeno-pe-sajde",
+      "title": "Wo Dhoopon Me Tapti Zameeno Pe Sajde",
+      "category": "W",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/wo-dhoopon-me-tapti-zameeno-pe-sajde.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "wo-mera-nabi-hai",
+      "title": "Wo Mera Nabi Hai",
+      "category": "W",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/wo-mera-nabi-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "wo-meri-jaan-bhi-jaan-ki-jaan-bhi",
+      "title": "Wo Meri Jaan Bhi Jaan Ki Jaan Bhi",
+      "category": "W",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/wo-meri-jaan-bhi-jaan-ki-jaan-bhi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "woh-barta-saaya-e-rahmat-chala-zulf-e-mu-ambar-ka",
+      "title": "Woh Barta Saaya-e-rahmat Chala Zulf-e-mu’ambar Ka",
+      "category": "W",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/woh-barta-saaya-e-rahmat-chala-zulf-e-mu-ambar-ka.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "woh-nabiyon-main-rehmat-laqab-panay-wala",
+      "title": "Woh Nabiyon Main Rehmat Laqab Panay Wala",
+      "category": "W",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/woh-nabiyon-main-rehmat-laqab-panay-wala.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ya-garib-nawaz-pukaro-ya-garib-nawaz",
+      "title": "Ya Garib Nawaz Pukaro Ya Garib Nawaz",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ya-garib-nawaz-pukaro-ya-garib-nawaz.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ya-ghaus-al-madad",
+      "title": "Ya Ghaus Al Madad",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ya-ghaus-al-madad.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ya-khuda-charkhe-islam-par",
+      "title": "Ya Khuda Charkhe Islam Par",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ya-khuda-charkhe-islam-par.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ya-khwaja-shamna-miran-mera-salaam-lelo",
+      "title": "Ya Khwaja Shamna Miran Mera Salaam Lelo",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ya-khwaja-shamna-miran-mera-salaam-lelo.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ya-nabi-dekha-ye-rutba",
+      "title": "Ya Nabi Dekha Ye Rutba",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ya-nabi-dekha-ye-rutba.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ya-nabi-itni-maharbani-ho",
+      "title": "Ya Nabi Itni Maharbani Ho",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ya-nabi-itni-maharbani-ho.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ya-nabi-salaam-alaika",
+      "title": "Ya Nabi Salaam Alaika",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ya-nabi-salaam-alaika.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ya-nabi-salaam-alaika-salaam",
+      "title": "Ya Nabi Salaam Alaika (salaam)",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ya-nabi-salaam-alaika-salaam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ya-nabi-ya-nabi-mai-jo-kehta-raha",
+      "title": "Ya NABI Ya NABI Mai Jo Kehta Raha",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ya-nabi-ya-nabi-mai-jo-kehta-raha.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ya-rab-madinay-pak-me-jana-naseeb-ho",
+      "title": "YA RAB MADINAY PAK ME JANA NASEEB HO",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ya-rab-madinay-pak-me-jana-naseeb-ho.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ya-rab-madine-pak-main-jana-nasib-ho",
+      "title": "Ya Rab Madine Pak Main Jana Nasib Ho",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ya-rab-madine-pak-main-jana-nasib-ho.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ya-rab-mein-gunahgar-hoon-tauba-qabool-ho",
+      "title": "Ya Rab Mein Gunahgar Hoon Tauba Qabool Ho",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ya-rab-mein-gunahgar-hoon-tauba-qabool-ho.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ya-rab-meri-soyi-hui-taqdeer-jaga-de",
+      "title": "Ya Rab Meri Soyi Hui Taqdeer Jaga De",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ya-rab-meri-soyi-hui-taqdeer-jaga-de.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ya-rabbana-irhamlana-tere-ghar-ke-fere-lagata-rahu-main",
+      "title": "Ya Rabbana Irhamlana Tere Ghar Ke Fere Lagata Rahu Main",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ya-rabbana-irhamlana-tere-ghar-ke-fere-lagata-rahu-main.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ya-rabbe-muhammad-meri-taqdeer-jagade",
+      "title": "Ya Rabbe Muhammad Meri Taqdeer Jagade",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ya-rabbe-muhammad-meri-taqdeer-jagade.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ya-rasool-allah-karam-ya-habib-allah-karam",
+      "title": "Ya Rasool Allah Karam Ya Habib Allah Karam",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ya-rasool-allah-karam-ya-habib-allah-karam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ya-rasoolallah-tere-chahne-walo-ki-khair",
+      "title": "Ya Rasoolallah Tere Chahne Walo Ki Khair",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ya-rasoolallah-tere-chahne-walo-ki-khair.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ya-rasoolallah-tere-dar-ki-fazaao-ko-salaam",
+      "title": "Ya Rasoolallah Tere Dar Ki Fazaao Ko Salaam",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ya-rasoolallah-tere-dar-ki-fazaao-ko-salaam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ya-rasul-allah-karam-ya-habib-allah-karam",
+      "title": "YA RASUL ALLAH KARAM YA HABIB ALLAH KARAM",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ya-rasul-allah-karam-ya-habib-allah-karam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ya-rasulallah-shafqat-kijiye",
+      "title": "Ya Rasulallah Shafqat Kijiye",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ya-rasulallah-shafqat-kijiye.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ya-safiae-umam-lillah-kardo-karam",
+      "title": "Ya Safiae Umam Lillah Kardo Karam",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ya-safiae-umam-lillah-kardo-karam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ya-saiyadi-habibi-khairul-anaam-aaqa",
+      "title": "Ya Saiyadi Habibi, Khairul Anaam Aaqa",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ya-saiyadi-habibi-khairul-anaam-aaqa.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ya-sayyidi-irhamlana",
+      "title": "Ya Sayyidi Irhamlana",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ya-sayyidi-irhamlana.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ya-shahe-behro-bar",
+      "title": "Ya Shahe Behro Bar",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ya-shahe-behro-bar.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ya-shahe-uamm",
+      "title": "Ya Shahe Uamm",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ya-shahe-uamm.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ya-shahe-umam-allah-ki-kasam",
+      "title": "Ya Shahe Umam Allah Ki Kasam",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ya-shahe-umam-allah-ki-kasam.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "yaad-e-watan-sitam-kiya-dasht-e-haram-sey-laayi-kyoon",
+      "title": "Yaad-e-watan Sitam Kiya Dasht-e-Haram Sey Laayi Kyoon",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/yaad-e-watan-sitam-kiya-dasht-e-haram-sey-laayi-kyoon.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "yahi-humne-samjha-yahi-hai-padha-mohammad-sa-koi-nahi",
+      "title": "Yahi Humne Samjha Yahi Hai Padha Mohammad Sa Koi Nahi",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/yahi-humne-samjha-yahi-hai-padha-mohammad-sa-koi-nahi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "yaro-kasam-allah-ki-is-moat-ki-daru-nahi",
+      "title": "Yaro Kasam Allah Ki Is Moat Ki Daru Nahi",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/yaro-kasam-allah-ki-is-moat-ki-daru-nahi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ye-chahaton-k-wahi-silsile-purane-hai",
+      "title": "Ye Chahaton K Wahi Silsile Purane Hai",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ye-chahaton-k-wahi-silsile-purane-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ye-dava-he-vatan-apna",
+      "title": "Ye Dava He Vatan Apna",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ye-dava-he-vatan-apna.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ye-ikraam-he-mustafa-par-khuda-ka",
+      "title": "Ye Ikraam He Mustafa Par Khuda Ka",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ye-ikraam-he-mustafa-par-khuda-ka.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ye-inayaton-ki-jaza-mili-ye-hidayaton-ka-sila-diya",
+      "title": "Ye Inayaton Ki Jaza Mili Ye Hidayaton Ka Sila Diya",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ye-inayaton-ki-jaza-mili-ye-hidayaton-ka-sila-diya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ye-jashn-mubarak-ki-ghadi-kaisi-ghadi-hai",
+      "title": "Ye Jashn Mubarak Ki Ghadi Kaisi Ghadi Hai",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ye-jashn-mubarak-ki-ghadi-kaisi-ghadi-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ye-kehti-thi-ghar-ghar-me-ja-kar-haleema",
+      "title": "Ye Kehti Thi Ghar Ghar Me Ja Kar Haleema",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ye-kehti-thi-ghar-ghar-me-ja-kar-haleema.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "ye-wo-sach-hai-ke-jisse-ek-jahan-maan-gaya",
+      "title": "Ye Wo Sach Hai Ke Jisse Ek Jahan Maan Gaya",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ye-wo-sach-hai-ke-jisse-ek-jahan-maan-gaya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "yeh-maherma-sitaron-ki-dilkashi-kyaa-hai",
+      "title": "Yeh Maherma Sitaron Ki Dilkashi Kyaa Hai",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/yeh-maherma-sitaron-ki-dilkashi-kyaa-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "yeh-rifat-e-zikar-e-mustafa-hai",
+      "title": "Yeh Rifat-e-Zikar-e-Mustafa Hai",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/yeh-rifat-e-zikar-e-mustafa-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "yeh-sab-tumhara-karam-hai-aaqa",
+      "title": "Yeh Sab Tumhara Karam Hai Aaqa",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/yeh-sab-tumhara-karam-hai-aaqa.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "yehi-humne-samjha-yehi-hai-padha-mohammed-sa-koi-nahi",
+      "title": "Yehi Humne Samjha Yehi Hai Padha Mohammed Sa Koi Nahi",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/yehi-humne-samjha-yehi-hai-padha-mohammed-sa-koi-nahi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "zaer-e-koay-jinaah-aahista-chal",
+      "title": "Zaer-e-Koay Jinaah Aahista Chal",
+      "category": "Z",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/zaer-e-koay-jinaah-aahista-chal.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "zahe-bakht-mil-jaye-wo-aastana",
+      "title": "Zahe Bakht Mil Jaye Wo Aastana",
+      "category": "Z",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/zahe-bakht-mil-jaye-wo-aastana.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "zahe-muqaddar-huzur-e-haq-se-salaam-aaya-payam-aaya",
+      "title": "Zahe Muqaddar Huzur-e-haq Se Salaam Aaya Payam Aaya",
+      "category": "Z",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/zahe-muqaddar-huzur-e-haq-se-salaam-aaya-payam-aaya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "zamane-me-agar-dekhi-to-shane-qadri-dekhi",
+      "title": "Zamane Me Agar Dekhi To Shane Qadri Dekhi",
+      "category": "Z",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/zamane-me-agar-dekhi-to-shane-qadri-dekhi.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "zameen-falak-maah-o-akhtar-hussain-waale-hain",
+      "title": "Zameen Falak Maah O Akhtar Hussain Waale Hain",
+      "category": "Z",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/zameen-falak-maah-o-akhtar-hussain-waale-hain.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "zamin-o-zaman-tumhare-liye",
+      "title": "Zamin O Zaman Tumhare Liye",
+      "category": "Z",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/zamin-o-zaman-tumhare-liye.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "zarray-jhar-kar-teri-pezaron-kay",
+      "title": "Zarray Jhar Kar Teri Pezaron Kay",
+      "category": "Z",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/zarray-jhar-kar-teri-pezaron-kay.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "zarre-jhar-kar-teri-paizaaro-ke",
+      "title": "Zarre Jhar Kar Teri Paizaaro Ke",
+      "category": "Z",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/zarre-jhar-kar-teri-paizaaro-ke.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "zeenato-sajda-o-bazme-qazaa-milta-nahein",
+      "title": "Zeenato Sajda-O Bazme Qazaa Milta Nahein",
+      "category": "Z",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/zeenato-sajda-o-bazme-qazaa-milta-nahein.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "zehe-izzat-o-itlaaye-muhammad",
+      "title": "Zehe Izzat-O Itlaaye Muhammad",
+      "category": "Z",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/zehe-izzat-o-itlaaye-muhammad.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "zikr-e-khairulwara",
+      "title": "Zikr E Khairulwara",
+      "category": "Z",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/zikr-e-khairulwara.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "zikr-tede-yaar-da-moula-karenda-re-wnya",
+      "title": "Zikr Tede Yaar Da Moula Karenda Re Wnya",
+      "category": "Z",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/zikr-tede-yaar-da-moula-karenda-re-wnya.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "zikre-aaqa-se-seena-saja-hai",
+      "title": "Zikre Aaqa Se Seena Saja Hai",
+      "category": "Z",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/zikre-aaqa-se-seena-saja-hai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "zikre-nabi-ki-jaan-se-khushboo-nahi-gai",
+      "title": "Zikre Nabi Ki Jaan Se Khushboo Nahi Gai",
+      "category": "Z",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/zikre-nabi-ki-jaan-se-khushboo-nahi-gai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "zindagi-hay-nabi-ki-nabi-ke-liye",
+      "title": "Zindagi Hay Nabi Ki Nabi Ke Liye",
+      "category": "Z",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/zindagi-hay-nabi-ki-nabi-ke-liye.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "zindagi-phir-muskurai",
+      "title": "Zindagi Phir Muskurai",
+      "category": "Z",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/zindagi-phir-muskurai.txt",
+      "mediaUrl": ""
+    },
+    {
+      "id": "zor-e-bazu-e-haider-is-tarah-dikha-dala",
+      "title": "Zor E Bazu E Haider Is Tarah Dikha Dala",
+      "category": "Z",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/zor-e-bazu-e-haider-is-tarah-dikha-dala.txt",
+      "mediaUrl": ""
     }
   ]
 }
