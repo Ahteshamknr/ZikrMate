@@ -5,7 +5,32 @@
       "title": "Aaqa Ka Milad Aaya",
       "category": "A",
       "author": "Traditional",
-      "lyricsUrl": "lyrics/aaqa-ka-milad-aaya.txt"
+      "lyricsUrl": "lyrics/aaqa-ka-milad-aaya.txt",
+      "mediaUrl": "https://www.youtube.com/watch?v=..."
+    },
+    {
+      "id": "bhar-do-jholi",
+      "title": "Bhar Do Jholi Meri",
+      "category": "B",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/bhar-do-jholi.txt",
+      "mediaUrl": "https://www.youtube.com/watch?v=..."
+    },
+    {
+      "id": "tajdar-e-haram",
+      "title": "Tajdar-e-Haram",
+      "category": "T",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/tajdar-e-haram.txt",
+      "mediaUrl": "https://www.youtube.com/watch?v=..."
+    },
+    {
+      "id": "ya-nabi-salam-alaika",
+      "title": "Ya Nabi Salam Alaika",
+      "category": "Y",
+      "author": "Traditional",
+      "lyricsUrl": "lyrics/ya-nabi-salam-alaika.txt",
+      "mediaUrl": "https://www.youtube.com/watch?v=..."
     }
   ]
 }
