@@ -18,10 +18,10 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="meta">App: <strong>ZikrMate</strong> &nbsp;|&nbsp; Developer: Syed Ahtesham Ullah Quadri &nbsp;|&nbsp; Last updated: March 28, 2026</p>
+<p class="meta">App: <strong>ZikrMate</strong> &nbsp;|&nbsp; Developer: Syed Ahtesham Ullah Quadri &nbsp;|&nbsp; Last updated: July 4, 2026</p>
 
 <div class="highlight">
-  ZikrMate is built to help Muslims with prayer times, Zikr tracking, and masjid announcements. We take your privacy seriously and collect only what is strictly necessary for the app to function.
+  ZikrMate is built to help Muslims with prayer times, Quran reading, Zikr tracking, Duas, Hadith, and masjid announcements. We take your privacy seriously and collect only what is strictly necessary for the app to function.
 </div>
 
 <h2>1. Information We Collect</h2>
@@ -32,6 +32,10 @@
   <li><strong>Anonymous usage data:</strong> Firebase Analytics collects anonymised usage events (e.g. app opened, screen views) to help us improve the app. No personally identifiable information is included.</li>
   <li><strong>Device token (FCM):</strong> Firebase Cloud Messaging generates a device token used to deliver prayer time update notifications and masjid announcements. This token is not linked to your personal identity.</li>
   <li><strong>Zikr / tasbih counter data:</strong> Stored locally on your device using Android DataStore. This data never leaves your device unless you sign in with Google, in which case your cycle count and streak are synced to Firebase for the leaderboard.</li>
+  <li><strong>Quran bookmarks and reading progress:</strong> Stored locally on your device only. Never transmitted to any server.</li>
+  <li><strong>Rakat Tracker data:</strong> Your daily prayer completion logs are stored locally on your device only. Never transmitted to any server.</li>
+  <li><strong>Naat and Islamic Guide bookmarks:</strong> Stored locally on your device only. Never transmitted to any server.</li>
+  <li><strong>Quran audio cache:</strong> Downloaded recitation audio files are saved to your device's private app storage for offline playback. These files are not accessible to other apps.</li>
 </ul>
 
 <h2>2. How We Use Your Information</h2>
@@ -41,42 +45,48 @@
   <li>To send timely prayer time notifications and adhan alerts</li>
   <li>To deliver masjid announcements from your selected masjid</li>
   <li>To maintain your Zikr streak and display it on the leaderboard (Google sign-in only)</li>
+  <li>To fetch and display Quran text, translations, and audio recitation</li>
+  <li>To fetch and display Duas, Hadith, and Naat content from public content sources</li>
   <li>To improve app performance using anonymised analytics</li>
 </ul>
 
-<h2>3. Data Sharing</h2>
+<h2>3. Third-Party Services and APIs</h2>
 <p>We do not sell, trade, or rent your personal information. Data is shared only with the following service providers who are essential for the app to function:</p>
 <ul>
-  <li><strong>Google Firebase</strong> (Firestore, Authentication, Analytics, Cloud Messaging) — for database, login, and push notifications</li>
+  <li><strong>Google Firebase</strong> (Firestore, Authentication, Analytics, Cloud Messaging) — for database, login, push notifications, and analytics. <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></li>
   <li><strong>Aladhan API</strong> (api.aladhan.com) — a free, open prayer times API. Only your masjid's latitude, longitude, and calculation method are sent. No personal data is transmitted.</li>
+  <li><strong>Al-Quran Cloud API</strong> (api.alquran.cloud) — a free, open Quran API used to fetch Surah text, translations, and audio URLs. No personal data is sent to this service.</li>
+  <li><strong>Hadith API</strong> (hadithapi.com) — used to fetch Hadith collections. Only search queries and page numbers are sent. No personal data is transmitted.</li>
+  <li><strong>ZikrMate Content Repository</strong> (raw.githubusercontent.com) — Dua and Naat content is fetched from our public GitHub repository. No personal data is sent.</li>
 </ul>
-<p>Both services operate under their own privacy policies. ZikrMate is not responsible for their data handling practices.</p>
+<p>All third-party services operate under their own privacy policies. ZikrMate is not responsible for their data handling practices.</p>
 
 <h2>4. Permissions Explained</h2>
 <ul>
-  <li><strong>ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION:</strong> Qibla direction and nearest masjid detection only</li>
+  <li><strong>ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION:</strong> Qibla direction and nearest masjid detection only. Never stored on servers.</li>
   <li><strong>CAMERA:</strong> QR code scanning to join a masjid. Never used for photos or video.</li>
-  <li><strong>POST_NOTIFICATIONS:</strong> Prayer time alerts and masjid announcements</li>
-  <li><strong>SCHEDULE_EXACT_ALARM:</strong> Required to fire prayer alarms at the exact correct time</li>
-  <li><strong>RECEIVE_BOOT_COMPLETED:</strong> Reschedules prayer alarms after device restart</li>
-  <li><strong>FOREGROUND_SERVICE / FOREGROUND_SERVICE_MEDIA_PLAYBACK:</strong> Required to play the adhan audio reliably even when the app is in the background</li>
-  <li><strong>WAKE_LOCK:</strong> Prevents the device from sleeping before the adhan has finished playing</li>
-  <li><strong>VIBRATE:</strong> Prayer time vibration alerts</li>
-  <li><strong>INTERNET:</strong> Fetching prayer times, masjid data, and announcements from Firebase</li>
+  <li><strong>POST_NOTIFICATIONS:</strong> Prayer time alerts and masjid announcements.</li>
+  <li><strong>SCHEDULE_EXACT_ALARM:</strong> Required to fire prayer alarms at the exact correct time so you never miss a prayer.</li>
+  <li><strong>RECEIVE_BOOT_COMPLETED:</strong> Reschedules prayer alarms after device restart so alarms continue working without reopening the app.</li>
+  <li><strong>FOREGROUND_SERVICE / FOREGROUND_SERVICE_MEDIA_PLAYBACK:</strong> Required to play the Adhan audio and Quran recitation reliably when the app is in the background.</li>
+  <li><strong>WAKE_LOCK:</strong> Prevents the device from sleeping before the adhan has finished playing.</li>
+  <li><strong>VIBRATE:</strong> Prayer time vibration alerts.</li>
+  <li><strong>INTERNET:</strong> Fetching prayer times, Quran data, Duas, Hadith, Naat content, and masjid data.</li>
 </ul>
 
-<h2>5. Data Retention</h2>
+<h2>5. Data Storage and Retention</h2>
 <ul>
-  <li>Local data (Zikr counter, prayer preferences) remains on your device until you uninstall the app or clear app data.</li>
+  <li>Local data (Zikr counter, prayer preferences, Quran bookmarks, Rakat logs, Naat bookmarks, Islamic Guide bookmarks, downloaded audio) remains on your device until you uninstall the app or clear app data.</li>
   <li>Firebase data (leaderboard score, streak) is retained as long as your account is active. You may request deletion by contacting us.</li>
   <li>Analytics data is retained for 14 months per Google's default Firebase Analytics retention policy.</li>
+  <li>Quran audio files downloaded for offline use are stored in your device's private app storage and are deleted when you uninstall the app.</li>
 </ul>
 
 <h2>6. Children's Privacy</h2>
 <p>ZikrMate is not directed at children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided personal information, please contact us and we will delete it promptly.</p>
 
 <h2>7. Security</h2>
-<p>We use Firebase's built-in security rules to protect data stored in Firestore. All network communications use HTTPS/TLS. Notification sounds (adhan MP3 files) are stored locally in your device's private app storage and are not accessible to other apps.</p>
+<p>We use Firebase's built-in security rules to protect data stored in Firestore. All network communications use HTTPS/TLS. Notification sounds (adhan MP3 files) and downloaded Quran audio are stored locally in your device's private app storage and are not accessible to other apps.</p>
 
 <h2>8. Your Rights</h2>
 <p>You may at any time:</p>
@@ -85,6 +95,7 @@
   <li>Revoke camera permission from Android Settings → Apps → ZikrMate → Permissions</li>
   <li>Disable notifications from Android Settings → Apps → ZikrMate → Notifications</li>
   <li>Sign out of your Google account within the app to remove synced data</li>
+  <li>Clear all local data (bookmarks, Rakat logs, downloaded audio) by clearing app data from Android Settings</li>
   <li>Request deletion of your Firebase data by emailing us</li>
 </ul>
 
