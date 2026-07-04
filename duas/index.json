@@ -1,0 +1,104 @@
+{
+  "duas": [
+    {
+      "id": "quran-rabbana-atina",
+      "title": "Good in This World and the Hereafter",
+      "category": "Quran",
+      "arabic": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+      "transliteration": "Rabbana atina fid-dunya hasanatan wa fil-akhirati hasanatan wa qina 'adhaban-nar.",
+      "english": "Our Lord, grant us good in this world and good in the Hereafter, and protect us from the punishment of the Fire.",
+      "urdu": "اے ہمارے رب! ہمیں دنیا میں بھی بھلائی عطا فرما، آخرت میں بھی بھلائی عطا فرما، اور ہمیں آگ کے عذاب سے بچا۔",
+      "reference": "Quran 2:201"
+    },
+    {
+      "id": "quran-rabbana-la-tuakhidhna",
+      "title": "Do Not Burden Us",
+      "category": "Quran",
+      "arabic": "رَبَّنَا لَا تُؤَاخِذْنَا إِن نَّسِينَا أَوْ أَخْطَأْنَا",
+      "transliteration": "Rabbana la tu'akhidhna in nasina aw akhta'na.",
+      "english": "Our Lord, do not take us to task if we forget or make a mistake.",
+      "urdu": "اے ہمارے رب! اگر ہم بھول جائیں یا خطا کریں تو ہماری گرفت نہ فرما۔",
+      "reference": "Quran 2:286"
+    },
+    {
+      "id": "quran-rabbana-afrigh",
+      "title": "Grant Us Patience",
+      "category": "Quran",
+      "arabic": "رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَثَبِّتْ أَقْدَامَنَا وَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ",
+      "transliteration": "Rabbana afrigh 'alayna sabran wa thabbit aqdamana wansurna 'alal qawmil kafirin.",
+      "english": "Our Lord, pour upon us patience, make our feet firm, and grant us victory over the disbelieving people.",
+      "urdu": "اے ہمارے رب! ہم پر صبر نازل فرما، ہمارے قدم جما دے، اور ہمیں کافروں پر فتح عطا فرما۔",
+      "reference": "Quran 2:250"
+    },
+    {
+      "id": "quran-rabbi-zidni-ilma",
+      "title": "Increase Me in Knowledge",
+      "category": "Knowledge",
+      "arabic": "رَبِّ زِدْنِي عِلْمًا",
+      "transliteration": "Rabbi zidni ilma.",
+      "english": "My Lord, increase me in knowledge.",
+      "urdu": "اے میرے رب! میرے علم میں اضافہ فرما۔",
+      "reference": "Quran 20:114"
+    },
+    {
+      "id": "quran-rabbi-yassir",
+      "title": "Ease My Task",
+      "category": "Knowledge",
+      "arabic": "رَبِّ اشْرَحْ لِي صَدْرِي وَيَسِّرْ لِي أَمْرِي وَاحْلُلْ عُقْدَةً مِن لِّسَانِي يَفْقَهُوا قَوْلِي",
+      "transliteration": "Rabbi ishrah li sadri wa yassir li amri wahlul uqdatan min lisani yafqahu qawli.",
+      "english": "My Lord, expand my chest, ease my task for me, untie the knot from my tongue, so they may understand my speech.",
+      "urdu": "اے میرے رب! میرا سینہ کھول دے، میرا کام آسان کر دے، میری زبان کی گرہ کھول دے تاکہ لوگ میری بات سمجھ سکیں۔",
+      "reference": "Quran 20:25-28"
+    },
+    {
+      "id": "quran-rabbighfir-warham",
+      "title": "Forgive and Have Mercy",
+      "category": "Forgiveness",
+      "arabic": "رَبِّ اغْفِرْ وَارْحَمْ وَأَنتَ خَيْرُ الرَّاحِمِينَ",
+      "transliteration": "Rabbighfir warham wa anta khayrur rahimin.",
+      "english": "My Lord, forgive and have mercy, for You are the Best of those who show mercy.",
+      "urdu": "اے میرے رب! مجھے بخش دے، مجھ پر رحم فرما، اور تو سب سے بہتر رحم کرنے والا ہے۔",
+      "reference": "Quran 23:118"
+    },
+    {
+      "id": "quran-rabbana-hab-lana",
+      "title": "Family and Righteous Leaders",
+      "category": "Family",
+      "arabic": "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا",
+      "transliteration": "Rabbana hab lana min azwajina wa dhurriyyatina qurrata a'yunin waj'alna lil muttaqina imama.",
+      "english": "Our Lord, grant us comfort in our spouses and children, and make us leaders for the righteous.",
+      "urdu": "اے ہمارے رب! ہماری بیویوں اور اولاد کو ہماری آنکھوں کی ٹھنڈک بنا، اور ہمیں پرہیزگاروں کا پیشوا بنا۔",
+      "reference": "Quran 25:74"
+    },
+    {
+      "id": "quran-rabbi-awzini",
+      "title": "Be Grateful",
+      "category": "Gratitude",
+      "arabic": "رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَى وَالِدَيَّ",
+      "transliteration": "Rabbi awzi'ni an ashkura ni'mataka allati an'amta 'alayya wa 'ala walidayya.",
+      "english": "My Lord, enable me to be grateful for Your favor which You have bestowed upon me and upon my parents.",
+      "urdu": "اے میرے رب! مجھے توفیق دے کہ میں تیری نعمتوں کا شکر ادا کروں جو تو نے مجھ پر اور میرے والدین پر فرمائیں۔",
+      "reference": "Quran 27:19"
+    },
+    {
+      "id": "quran-rabbana-la-tuzigh",
+      "title": "Keep Our Hearts Firm",
+      "category": "Faith",
+      "arabic": "رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً",
+      "transliteration": "Rabbana la tuzigh qulubana ba'da idh hadaytana wa hab lana min ladunka rahmah.",
+      "english": "Our Lord, do not let our hearts deviate after You have guided us, and grant us mercy from Yourself.",
+      "urdu": "اے ہمارے رب! ہدایت دینے کے بعد ہمارے دلوں کو ٹیڑھا نہ کر، اور ہمیں اپنی خاص رحمت عطا فرما۔",
+      "reference": "Quran 3:8"
+    },
+    {
+      "id": "quran-rabbana-taqabbal",
+      "title": "Accept From Us",
+      "category": "Worship",
+      "arabic": "رَبَّنَا تَقَبَّلْ مِنَّا ۖ إِنَّكَ أَنتَ السَّمِيعُ الْعَلِيمُ",
+      "transliteration": "Rabbana taqabbal minna innaka antas-sami'ul alim.",
+      "english": "Our Lord, accept this from us. Indeed, You are the All-Hearing, the All-Knowing.",
+      "urdu": "اے ہمارے رب! ہم سے قبول فرما، بے شک تو ہی خوب سننے والا، خوب جاننے والا ہے۔",
+      "reference": "Quran 2:127"
+    }
+  ]
+}
