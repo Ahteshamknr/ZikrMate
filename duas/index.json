@@ -1,5 +1,105 @@
 {
   "duas": [
+      {
+      "id": "quran-rabbana-amanna",
+      "title": "We Believe, Forgive Us",
+      "category": "Faith",
+      "arabic": "رَبَّنَا آمَنَّا فَاغْفِرْ لَنَا وَارْحَمْنَا وَأَنتَ خَيْرُ الرَّاحِمِينَ",
+      "transliteration": "Rabbana amanna faghfir lana warhamna wa anta khayrur rahimin.",
+      "english": "Our Lord, we have believed, so forgive us, have mercy upon us, and You are the Best of those who show mercy.",
+      "urdu": "اے ہمارے رب! ہم ایمان لائے، پس ہمیں بخش دے، ہم پر رحم فرما، اور تو سب سے بہتر رحم کرنے والا ہے۔",
+      "reference": "Quran 23:109"
+    },
+    {
+      "id": "quran-rabbana-atim",
+      "title": "Perfect Our Light",
+      "category": "Day of Judgment",
+      "arabic": "رَبَّنَا أَتْمِمْ لَنَا نُورَنَا وَاغْفِرْ لَنَا ۖ إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+      "transliteration": "Rabbana atmim lana nurana waghfir lana innaka ala kulli shay'in qadir.",
+      "english": "Our Lord, perfect for us our light and forgive us. Indeed, You are over all things competent.",
+      "urdu": "اے ہمارے رب! ہمارے لیے ہمارا نور مکمل فرما اور ہمیں بخش دے، بے شک تو ہر چیز پر قادر ہے۔",
+      "reference": "Quran 66:8"
+    },
+    {
+      "id": "quran-rabbi-anzilni",
+      "title": "Blessed Landing",
+      "category": "Travel",
+      "arabic": "رَبِّ أَنزِلْنِي مُنزَلًا مُّبَارَكًا وَأَنتَ خَيْرُ الْمُنزِلِينَ",
+      "transliteration": "Rabbi anzilni munzalan mubarakan wa anta khayrul munzilin.",
+      "english": "My Lord, let me land at a blessed place, for You are the Best to accommodate us.",
+      "urdu": "اے میرے رب! مجھے بابرکت مقام پر اتار، اور تو بہترین اتارنے والا ہے۔",
+      "reference": "Quran 23:29"
+    },
+    {
+      "id": "quran-rabbi-inni-lima",
+      "title": "Need of Good",
+      "category": "Rizq",
+      "arabic": "رَبِّ إِنِّي لِمَا أَنزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ",
+      "transliteration": "Rabbi inni lima anzalta ilayya min khayrin faqir.",
+      "english": "My Lord, I am truly in need of whatever good You send down to me.",
+      "urdu": "اے میرے رب! تو جو بھی بھلائی میری طرف نازل کرے، میں اس کا محتاج ہوں۔",
+      "reference": "Quran 28:24"
+    },
+    {
+      "id": "quran-rabbi-najjini",
+      "title": "Save Me",
+      "category": "Protection",
+      "arabic": "رَبِّ نَجِّنِي مِنَ الْقَوْمِ الظَّالِمِينَ",
+      "transliteration": "Rabbi najjini minal qawmiz-zalimin.",
+      "english": "My Lord, save me from the wrongdoing people.",
+      "urdu": "اے میرے رب! مجھے ظالم لوگوں سے نجات عطا فرما۔",
+      "reference": "Quran 28:21"
+    },
+    {
+      "id": "quran-rabbi-habli",
+      "title": "Grant Me Righteous Offspring",
+      "category": "Children",
+      "arabic": "رَبِّ هَبْ لِي مِنَ الصَّالِحِينَ",
+      "transliteration": "Rabbi hab li minas-salihin.",
+      "english": "My Lord, grant me righteous offspring.",
+      "urdu": "اے میرے رب! مجھے نیک اولاد عطا فرما۔",
+      "reference": "Quran 37:100"
+    },
+    {
+      "id": "quran-rabbi-la-tadharni",
+      "title": "Do Not Leave Me Childless",
+      "category": "Children",
+      "arabic": "رَبِّ لَا تَذَرْنِي فَرْدًا وَأَنتَ خَيْرُ الْوَارِثِينَ",
+      "transliteration": "Rabbi la tadharni fardan wa anta khayrul warithin.",
+      "english": "My Lord, do not leave me childless, though You are the Best of inheritors.",
+      "urdu": "اے میرے رب! مجھے اکیلا نہ چھوڑ، اور تو بہترین وارث ہے۔",
+      "reference": "Quran 21:89"
+    },
+    {
+      "id": "quran-rabbi-awzi-ni-amal",
+      "title": "Do Righteous Deeds",
+      "category": "Righteousness",
+      "arabic": "رَبِّ أَوْزِعْنِي أَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ",
+      "transliteration": "Rabbi awzi'ni an a'mala salihan tardahu.",
+      "english": "My Lord, inspire me to do righteous deeds that please You.",
+      "urdu": "اے میرے رب! مجھے ایسے نیک اعمال کی توفیق دے جن سے تو راضی ہو۔",
+      "reference": "Quran 46:15"
+    },
+    {
+      "id": "quran-rabbana-ghfirli",
+      "title": "Forgive Me and My Parents",
+      "category": "Parents",
+      "arabic": "رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الْحِسَابُ",
+      "transliteration": "Rabbanaghfir li wa liwalidayya walil mu'minina yawma yaqumul hisab.",
+      "english": "Our Lord, forgive me, my parents, and the believers on the Day the account is established.",
+      "urdu": "اے ہمارے رب! مجھے، میرے والدین کو اور تمام مومنوں کو حساب کے دن بخش دے۔",
+      "reference": "Quran 14:41"
+    },
+    {
+      "id": "quran-rabbi-adkhilni",
+      "title": "Enter Me with Truth",
+      "category": "Guidance",
+      "arabic": "رَبِّ أَدْخِلْنِي مُدْخَلَ صِدْقٍ وَأَخْرِجْنِي مُخْرَجَ صِدْقٍ وَاجْعَل لِّي مِن لَّدُنكَ سُلْطَانًا نَّصِيرًا",
+      "transliteration": "Rabbi adkhilni mudkhala sidqin wa akhrijni mukhraja sidqin waj'al li min ladunka sultanan nasira.",
+      "english": "My Lord, let me enter with truth and exit with truth, and grant me supporting authority from Yourself.",
+      "urdu": "اے میرے رب! مجھے سچائی کے ساتھ داخل کر، سچائی کے ساتھ نکال، اور اپنی طرف سے مددگار قوت عطا فرما۔",
+      "reference": "Quran 17:80"
+    }
     {
       "id": "quran-rabbana-atina",
       "title": "Good in This World and the Hereafter",
